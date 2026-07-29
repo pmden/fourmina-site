@@ -222,7 +222,7 @@ footer a{ text-decoration:underline; }
   <div class="topbar bleed">
   <nav class="nav">
     <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></a>
-    <div class="nav-links"><a href="#assistants" data-i18n="n1">Assistants</a><a href="#automation" data-i18n="n2">Automation</a><a href="#languages" data-i18n="n3">Languages</a><a href="#how" data-i18n="n4">How it works</a><a href="#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html">Plans</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a free audit</a></div>
+    <div class="nav-links"><a href="#assistants" data-i18n="n1">Assistants</a><a href="#automation" data-i18n="n2">Automation</a><a href="#languages" data-i18n="n3">Languages</a><a href="#how" data-i18n="n4">How it works</a><a href="#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html" data-i18n="npl">Plans</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a free audit</a></div>
   </nav>
   </div>
 
@@ -231,7 +231,7 @@ footer a{ text-decoration:underline; }
       <span class="eyebrow" data-i18n="hk">AI assistants · voice · automation · 10 languages</span>
       <h1 data-i18n="hh">Every customer answered. Day and night.</h1>
       <p data-i18n="hp">AI assistants that answer your customers on the phone, in chat and email — and run the routine behind the desk: bookings, invoices, stock, alerts. Installed in weeks.</p>
-      <div class="hero-cta"><a class="btn btn-primary" href="fourmina-plans.html">See plans →</a><a class="btn btn-ghost" href="#demo" data-i18n="hb2" onclick="fmPlayDemo()">Hear the voice demo</a></div>
+      <div class="hero-cta"><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="hsp">See plans →</a><a class="btn btn-ghost" href="#demo" data-i18n="hb2" onclick="fmPlayDemo()">Hear the voice demo</a></div>
       <div class="trust" data-i18n="htr">A <b>Krok Group</b> company · senior developers · your data stays yours</div>
     </div>
     <div class="hviz" id="demo">
@@ -245,7 +245,7 @@ footer a{ text-decoration:underline; }
         </div>
         <div class="line" data-i18n="cln">"I can move your appointment to <b>Thursday at 10:30</b>. You will get a confirmation by SMS. Anything else?"</div>
         <div class="meta"><span data-i18n="cm1">Answered in 2 sec</span><span data-i18n="cm2">Booking updated in CRM</span><span data-i18n="cm3">After hours</span></div>
-        <button class="playdemo" id="playBtn" onclick="fmPlayDemo()">▶&nbsp; Play the call · 0:16</button>
+        <button class="playdemo" id="playBtn" onclick="fmPlayDemo()" data-i18n="pdm">▶&nbsp; Play the call · 0:16</button>
         <audio id="minaDemo" src="fourmina-assets/mina-demo.mp3" preload="none"></audio>
         <style>.playdemo{ margin-top:12px; width:100%; padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-weight:600; font-size:13.5px; cursor:pointer; font-family:inherit; } .playdemo:hover{ border-color:var(--muted); }</style>
       </div>
@@ -587,7 +587,7 @@ footer a{ text-decoration:underline; }
   </section>
 
   <section class="sec" style="padding-top:0" id="faq">
-    <div class="sec-head"><div class="kick">Honest answers</div><h2>The questions everyone asks.</h2></div>
+    <div class="sec-head"><div class="kick" data-i18n="fqk">Honest answers</div><h2 data-i18n="fqh">The questions everyone asks.</h2></div>
     <div class="faq">
       <div class="qa"><h4 data-i18n="q1">Will it sound like a robot?</h4><p data-i18n="a1">No. Modern voices are natural, and the agent says it is an assistant. Customers care about being helped in two seconds, not about who picked up.</p></div>
       <div class="qa"><h4 data-i18n="q2">What happens with hard questions?</h4><p data-i18n="a2">The assistant passes the conversation to your team with a full summary. It never guesses on things it does not know.</p></div>
@@ -630,6 +630,10 @@ footer a{ text-decoration:underline; }
 <script>
 var I18N = {
 de: {
+hsp:`Preise ansehen →`,
+fqk:`Ehrliche Antworten`, fqh:`Die Fragen, die alle stellen.`,
+pdm:`▶&nbsp; Anruf abspielen · 0:16`,
+npl:`Preise`, ck1:`Wir nutzen lokalen Speicher und Cookies, um Ihre Einstellungen zu merken — Theme und Sprache. Kein Tracking, keine Werbung. <a href="fourmina-privacy.html">Datenschutz</a>`, ck2:`Akzeptieren`, ck3:`Nur notwendige`,
 n1:`Assistenten`, n2:`Automatisierung`, n3:`Sprachen`, n4:`So funktioniert's`, n5:`Anwendungsfälle`, nbtn:`Audit buchen`,
 hk:`KI-Assistenten · Voice · Automatisierung · 10 Sprachen`, hh:`Jeder Kunde bekommt eine Antwort. Tag und Nacht.`,
 hp:`KI-Assistenten, die Ihre Kunden am Telefon, im Chat und per E-Mail beantworten — und die Routine im Hintergrund erledigen: Termine, Rechnungen, Lager, Alarme. Einsatzbereit in Wochen.`,
@@ -701,6 +705,10 @@ o1:`Praxis`, o2:`Beratung &amp; Recht`, o3:`Handwerk &amp; Service`, o4:`Restaur
 mbtn:`Anfrage senden →`, mnote:`Wir antworten innerhalb eines Werktags. Oder schreiben Sie an <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>`
 },
 fr: {
+hsp:`Voir les tarifs →`,
+fqk:`Réponses honnêtes`, fqh:`Les questions que tout le monde pose.`,
+pdm:`▶&nbsp; Écouter l'appel · 0:16`,
+npl:`Tarifs`, ck1:`Nous utilisons le stockage local et des cookies pour retenir vos préférences — thème et langue. Pas de traçage, pas de publicité. <a href="fourmina-privacy.html">Confidentialité</a>`, ck2:`Accepter`, ck3:`Essentiels uniquement`,
 n1:`Assistants`, n2:`Automatisation`, n3:`Langues`, n4:`Comment ça marche`, n5:`Cas d'usage`, nbtn:`Audit gratuit`,
 hk:`Assistants IA · voix · automatisation · 10 langues`, hh:`Chaque client obtient une réponse. Jour et nuit.`,
 hp:`Des assistants IA qui répondent à vos clients au téléphone, par chat et par e-mail — et gèrent la routine en coulisses : rendez-vous, factures, stocks, alertes. Installés en quelques semaines.`,
@@ -869,8 +877,8 @@ function fmToggle(){
 </script>
 
 <div class="cookiebar" id="fmCookie" role="dialog" aria-label="Cookie consent">
-  <span>We use local storage and cookies to remember your preferences — theme and language. No tracking, no ads. <a href="fourmina-privacy.html">Privacy</a></span>
-  <div class="cb-btns"><button class="btn btn-primary" onclick="fmCookieOk('all')">Accept</button><button class="btn btn-ghost" onclick="fmCookieOk('essential')">Essential only</button></div>
+  <span data-i18n="ck1">We use local storage and cookies to remember your preferences — theme and language. No tracking, no ads. <a href="fourmina-privacy.html">Privacy</a></span>
+  <div class="cb-btns"><button class="btn btn-primary" onclick="fmCookieOk('all')" data-i18n="ck2">Accept</button><button class="btn btn-ghost" onclick="fmCookieOk('essential')" data-i18n="ck3">Essential only</button></div>
 </div>
 <style>
 .cookiebar{ position:fixed; left:16px; right:16px; bottom:16px; z-index:1200; display:none; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:16px; padding:16px 20px; box-shadow:0 12px 40px rgba(0,0,0,.18); font-size:14px; max-width:760px; margin:0 auto; }

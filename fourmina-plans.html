@@ -222,31 +222,31 @@ footer a{ text-decoration:underline; }
   <div class="topbar bleed">
   <nav class="nav">
     <a class="brand" href="index.html"><span class="mark"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></a>
-    <div class="nav-links"><a href="index.html#assistants" data-i18n="n1">Assistants</a><a href="index.html#automation" data-i18n="n2">Automation</a><a href="index.html#languages" data-i18n="n3">Languages</a><a href="index.html#how" data-i18n="n4">How it works</a><a href="index.html#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html">Plans</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a free audit</a></div>
+    <div class="nav-links"><a href="index.html#assistants" data-i18n="n1">Assistants</a><a href="index.html#automation" data-i18n="n2">Automation</a><a href="index.html#languages" data-i18n="n3">Languages</a><a href="index.html#how" data-i18n="n4">How it works</a><a href="index.html#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html" data-i18n="npl">Plans</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a free audit</a></div>
   </nav>
   </div>
 
   <section class="hero" style="grid-template-columns:1fr; padding:76px 0 20px">
     <div>
-      <span class="eyebrow">Plans · monthly · cancel anytime</span>
-      <h1>One assistant. Three sizes.</h1>
-      <p>Every plan starts with a free 30-minute audit and a one-time setup (from <span data-gbp="£780">€900</span>) — then a flat monthly fee. No long contracts: stay because it works, not because you signed. Prices exclude VAT.</p>
+      <span class="eyebrow" data-i18n="plhk">Plans · monthly · cancel anytime</span>
+      <h1 data-i18n="plh">One assistant. Three sizes.</h1>
+      <p data-i18n="plp">Every plan starts with a free 30-minute audit and a one-time setup (from <span data-gbp="£780">€900</span>) — then a flat monthly fee. No long contracts: stay because it works, not because you signed. Prices exclude VAT.</p>
     </div>
   </section>
 
   <section class="sec" style="padding-top:20px" id="plans">
     <div class="billtoggle">
       <div class="bt-wrap">
-        <button id="btY" class="on" onclick="fmBill('y')"><span class="save">Save up to 20%</span>Yearly</button>
-        <button id="btM" onclick="fmBill('m')">Monthly</button>
+        <button id="btY" class="on" onclick="fmBill('y')"><span class="save" data-i18n="plsv">Save up to 20%</span><span data-i18n="plyy">Yearly</span></button>
+        <button id="btM" onclick="fmBill('m')"><span data-i18n="plmm">Monthly</span></button>
       </div>
     </div>
     <div class="prods">
       <div class="prod">
         <div class="ico">◒</div>
         <h3>Mina Chat</h3>
-        <div class="planprice"><s class="pold"></s><b class="pval" data-m-eur="€290" data-y-eur="€235" data-m-gbp="£250" data-y-gbp="£205">€235</b>/mo</div>
-        <ul class="feats">
+        <div class="planprice"><s class="pold"></s><b class="pval" data-m-eur="€290" data-y-eur="€235" data-m-gbp="£250" data-y-gbp="£205">€235</b><span data-i18n="plmo">/mo</span></div>
+        <ul class="feats" data-i18n="plf1">
           <li>Chat assistant on your website, WhatsApp and Instagram</li>
           <li>Up to 500 chat conversations a month included</li>
           <li>Support inbox sorted and answered</li>
@@ -254,14 +254,14 @@ footer a{ text-decoration:underline; }
           <li>Connected to your calendar and CRM</li>
           <li>Monthly tuning and a written report</li>
         </ul>
-        <a class="btn btn-primary planbtn" href="#" onclick="fmModal(true);return false;">Select →</a>
+        <a class="btn btn-primary planbtn" href="#" onclick="fmModal(true);return false;" data-i18n="plsel">Select →</a>
       </div>
       <div class="prod" style="border-color:var(--brand)">
         <div class="ico">◉</div>
-        <span class="tag" style="float:right">Most popular</span>
+        <span class="tag" style="float:right" data-i18n="pltag">Most popular</span>
         <h3>Mina Voice</h3>
-        <div class="planprice"><s class="pold"></s><b class="pval" data-m-eur="€590" data-y-eur="€475" data-m-gbp="£510" data-y-gbp="£410">€475</b>/mo</div>
-        <ul class="feats">
+        <div class="planprice"><s class="pold"></s><b class="pval" data-m-eur="€590" data-y-eur="€475" data-m-gbp="£510" data-y-gbp="£410">€475</b><span data-i18n="plmo">/mo</span></div>
+        <ul class="feats" data-i18n="plf2">
           <li>Everything in Mina Chat</li>
           <li>Voice agent on your phone number, 24/7</li>
           <li>Up to 1,500 chat conversations a month included</li>
@@ -269,13 +269,13 @@ footer a{ text-decoration:underline; }
           <li>Call summaries after every conversation</li>
           <li>Fair-use minutes included; heavy volume priced at audit</li>
         </ul>
-        <a class="btn btn-primary planbtn" href="#" onclick="fmModal(true);return false;">Select →</a>
+        <a class="btn btn-primary planbtn" href="#" onclick="fmModal(true);return false;" data-i18n="plsel">Select →</a>
       </div>
       <div class="prod">
         <div class="ico">⧉</div>
         <h3>Mina Complete</h3>
-        <div class="planprice"><s class="pold"></s><b class="pval" data-m-eur="€890" data-y-eur="€750" data-m-gbp="£770" data-y-gbp="£650">€750</b>/mo</div>
-        <ul class="feats">
+        <div class="planprice"><s class="pold"></s><b class="pval" data-m-eur="€890" data-y-eur="€750" data-m-gbp="£770" data-y-gbp="£650">€750</b><span data-i18n="plmo">/mo</span></div>
+        <ul class="feats" data-i18n="plf3">
           <li>Everything in Mina Voice</li>
           <li>Up to 4,000 chat conversations a month included</li>
           <li>Back office: invoices, reminders, stock, rotas</li>
@@ -283,53 +283,53 @@ footer a{ text-decoration:underline; }
           <li>Internal assistant &amp; company-wide search</li>
           <li>One daily summary to you</li>
         </ul>
-        <a class="btn btn-primary planbtn" href="#" onclick="fmModal(true);return false;">Select →</a>
+        <a class="btn btn-primary planbtn" href="#" onclick="fmModal(true);return false;" data-i18n="plsel">Select →</a>
       </div>
     </div>
-    <p style="margin-top:18px; font-size:14.5px; color:var(--muted); text-align:center;">All plans: <b style="color:var(--ink)">one-time setup fee from <span data-gbp="£780">€900</span></b> — fixed price quoted at the free audit. All prices exclude VAT. Yearly prices are per month, billed annually.</p>
-    <p id="fmCurNote" style="display:none; margin-top:10px; font-size:12.5px; color:var(--muted); text-align:center;">Prices shown in £ are approximate equivalents — billing is in EUR.</p>
+    <p style="margin-top:18px; font-size:14.5px; color:var(--muted); text-align:center;"><span data-i18n="plnote">All plans: <b style="color:var(--ink)">one-time setup fee from <span data-gbp="£780">€900</span></b> — fixed price quoted at the free audit. All prices exclude VAT. Yearly prices are per month, billed annually.</span></p>
+    <p id="fmCurNote" style="display:none; margin-top:10px; font-size:12.5px; color:var(--muted); text-align:center;" data-i18n="plcur">Prices shown in £ are approximate equivalents — billing is in EUR.</p>
   </section>
 
   <section class="sec" style="padding-top:0" id="addons">
-    <div class="sec-head"><div class="kick">Add-ons</div><h2>Make AI send you customers, too.</h2></div>
+    <div class="sec-head"><div class="kick" data-i18n="adk">Add-ons</div><h2 data-i18n="adh">Make AI send you customers, too.</h2></div>
     <div class="prods">
       <div class="prod" onclick="location.href='fourmina-geo.html'" style="cursor:pointer">
         <div class="ico">◈</div>
-        <h3>AI visibility (GEO)</h3>
-        <div class="planprice"><b><span data-gbp="£855">€990</span></b>/mo · report free</div>
-        <p>ChatGPT, Gemini and Perplexity recommend your business. Free visibility report first — see the gap before you pay.</p>
-        <a class="btn btn-primary planbtn" href="#" onclick="event.stopPropagation();fmModal(true);return false;">Get the free report →</a>
+        <h3 data-i18n="adg0">AI visibility (GEO)</h3>
+        <div class="planprice"><b><span data-gbp="£855">€990</span></b><span data-i18n="adg1">/mo · report free</span></div>
+        <p data-i18n="adg2">ChatGPT, Gemini and Perplexity recommend your business. Free visibility report first — see the gap before you pay.</p>
+        <a class="btn btn-primary planbtn" href="#" onclick="event.stopPropagation();fmModal(true);return false;" data-i18n="adg3">Get the free report →</a>
       </div>
       <div class="prod" onclick="location.href='fourmina-geo.html#ai-agents'" style="cursor:pointer">
         <div class="ico">⬡</div>
-        <h3>Agent-ready website</h3>
-        <div class="planprice"><b><span data-gbp="£250">€290</span></b> check · fix from <span data-gbp="£780">€900</span></div>
-        <p>12 buyer tasks run by 4 real AI agents, with recordings. The check is credited in full if you take the fix.</p>
-        <a class="btn btn-primary planbtn" href="#" onclick="event.stopPropagation();fmModal(true);return false;">Get the check →</a>
+        <h3 data-i18n="ada0">Agent-ready website</h3>
+        <div class="planprice"><b><span data-gbp="£250">€290</span></b><span data-i18n="ada1"> check · fix from <span data-gbp="£780">€900</span></span></div>
+        <p data-i18n="ada2">12 buyer tasks run by 4 real AI agents, with recordings. The check is credited in full if you take the fix.</p>
+        <a class="btn btn-primary planbtn" href="#" onclick="event.stopPropagation();fmModal(true);return false;" data-i18n="ada3">Get the check →</a>
       </div>
       <div class="prod">
         <div class="ico">⚙</div>
-        <h3>Custom integrations</h3>
-        <div class="planprice"><b>Priced at audit</b></div>
-        <p>Unusual CRM, legacy booking system, industry software — we scope it in the audit and quote a fixed price.</p>
-        <a class="btn btn-primary planbtn" href="#" onclick="event.stopPropagation();fmModal(true);return false;">Contact us →</a>
+        <h3 data-i18n="adc0">Custom integrations</h3>
+        <div class="planprice"><b data-i18n="adc1">Priced at audit</b></div>
+        <p data-i18n="adc2">Unusual CRM, legacy booking system, industry software — we scope it in the audit and quote a fixed price.</p>
+        <a class="btn btn-primary planbtn" href="#" onclick="event.stopPropagation();fmModal(true);return false;" data-i18n="adc3">Contact us →</a>
       </div>
     </div>
   </section>
 
   <section class="sec" style="padding-top:0">
-    <div class="sec-head"><div class="kick">Honest answers</div><h2>Pricing questions, answered straight.</h2></div>
+    <div class="sec-head"><div class="kick" data-i18n="fqk">Honest answers</div><h2 data-i18n="plfq">Pricing questions, answered straight.</h2></div>
     <div class="faq">
-      <div class="qa"><h4>Why a setup fee?</h4><p>The first weeks are real engineering: training on your documents, connecting your number, calendar and CRM, testing before launch. The fee covers that once — the monthly covers running and improving it.</p></div>
-      <div class="qa"><h4>Can I change plans?</h4><p>Yes, monthly. Most start with Chat or Voice and add the back office once the front desk proves itself.</p></div>
-      <div class="qa"><h4>What if it doesn't work for us?</h4><p>Cancel any month, no penalties. The audit is free precisely so we both know it fits before any money moves.</p></div>
-      <div class="qa"><h4>How does this compare to hiring?</h4><p>A part-time receptionist costs <span data-gbp="£700–1,050">€800–1,200</span> a month and works set hours. Mina Voice answers around the clock for less than half of that — and never calls in sick.</p></div>
+      <div class="qa"><h4 data-i18n="plq1">Why a setup fee?</h4><p data-i18n="pla1">The first weeks are real engineering: training on your documents, connecting your number, calendar and CRM, testing before launch. The fee covers that once — the monthly covers running and improving it.</p></div>
+      <div class="qa"><h4 data-i18n="plq2">Can I change plans?</h4><p data-i18n="pla2">Yes, monthly. Most start with Chat or Voice and add the back office once the front desk proves itself.</p></div>
+      <div class="qa"><h4 data-i18n="plq3">What if it doesn't work for us?</h4><p data-i18n="pla3">Cancel any month, no penalties. The audit is free precisely so we both know it fits before any money moves.</p></div>
+      <div class="qa"><h4 data-i18n="plq4">How does this compare to hiring?</h4><p data-i18n="pla4">A part-time receptionist costs <span data-gbp="£700–1,050">€800–1,200</span> a month and works set hours. Mina Voice answers around the clock for less than half of that — and never calls in sick.</p></div>
     </div>
   </section>
 
   <div class="ctaband">
-    <div><h2>Not sure which size? That's the audit.</h2><p>Free, 30 minutes. We look at your calls, chats and routine — and tell you which plan pays for itself fastest.</p></div>
-    <div class="cta-btns"><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;">Book a free audit →</a><a class="btn btn-ghost" href="mailto:hello@fourmina.com">hello@fourmina.com</a></div>
+    <div><h2 data-i18n="plct1">Not sure which size? That's the audit.</h2><p data-i18n="plct2">Free, 30 minutes. We look at your calls, chats and routine — and tell you which plan pays for itself fastest.</p></div>
+    <div class="cta-btns"><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="hb1">Book a free audit →</a><a class="btn btn-ghost" href="mailto:hello@fourmina.com">hello@fourmina.com</a></div>
   </div>
 
   <style>.pold{ color:var(--muted); font-size:16px; font-weight:600; text-decoration:line-through; margin-right:8px; } .billtoggle{ display:flex; justify-content:flex-end; margin-bottom:18px; }
@@ -364,6 +364,25 @@ footer a{ text-decoration:underline; }
 <script>
 var I18N = {
 de: {
+npl:`Preise`, ck1:`Wir nutzen lokalen Speicher und Cookies, um Ihre Einstellungen zu merken — Theme und Sprache. Kein Tracking, keine Werbung. <a href="fourmina-privacy.html">Datenschutz</a>`, ck2:`Akzeptieren`, ck3:`Nur notwendige`,
+plhk:`Preise · monatlich · jederzeit kündbar`, plh:`Ein Assistent. Drei Größen.`,
+plp:`Jeder Plan beginnt mit einem kostenlosen 30-Minuten-Audit und einer einmaligen Einrichtung (ab <span data-gbp="£780">€900</span>) — danach eine feste Monatsgebühr. Keine langen Verträge: Sie bleiben, weil es funktioniert, nicht weil Sie unterschrieben haben. Preise zzgl. MwSt.`,
+plsv:`Bis zu 20 % sparen`, plyy:`Jährlich`, plmm:`Monatlich`, pltag:`Am beliebtesten`, plmo:`/Monat`, plsel:`Auswählen →`,
+plf1:`<li>Chat-Assistent auf Ihrer Website, WhatsApp und Instagram</li><li>Bis zu 500 Chat-Gespräche pro Monat inklusive</li><li>Support-Postfach sortiert und beantwortet</li><li>Alle 10 Sprachen inklusive</li><li>Verbunden mit Kalender und CRM</li><li>Monatliches Tuning und ein schriftlicher Report</li>`,
+plf2:`<li>Alles aus Mina Chat</li><li>Voice-Agent auf Ihrer Telefonnummer, 24/7</li><li>Bis zu 1.500 Chat-Gespräche pro Monat inklusive</li><li>Bucht, verschiebt und storniert Termine</li><li>Anruf-Zusammenfassungen nach jedem Gespräch</li><li>Fair-Use-Minuten inklusive; hohes Volumen im Audit bepreist</li>`,
+plf3:`<li>Alles aus Mina Voice</li><li>Bis zu 4.000 Chat-Gespräche pro Monat inklusive</li><li>Back-Office: Rechnungen, Erinnerungen, Lager, Dienstpläne</li><li>Alarme, bevor kleine Probleme wachsen</li><li>Interner Assistent &amp; unternehmensweite Suche</li><li>Eine tägliche Zusammenfassung an Sie</li>`,
+plnote:`Alle Pläne: <b style="color:var(--ink)">einmalige Einrichtungsgebühr ab €900</b> — Festpreis im Gratis-Audit. Alle Preise zzgl. MwSt. Jahrespreise gelten pro Monat, jährlich abgerechnet.`,
+plcur:`In £ angezeigte Preise sind ungefähre Gegenwerte — abgerechnet wird in EUR.`,
+adg0:`KI-Sichtbarkeit (GEO)`, ada0:`Agententaugliche Website`, adk:`Extras`, adh:`Lassen Sie KI Ihnen auch Kunden schicken.`,
+adg1:`/Monat · Report gratis`, adg2:`ChatGPT, Gemini und Perplexity empfehlen Ihr Unternehmen. Zuerst ein kostenloser Sichtbarkeits-Report — sehen Sie die Lücke, bevor Sie zahlen.`, adg3:`Gratis-Report anfordern →`,
+ada1:` Check · Fix ab €900`, ada2:`12 Käufer-Aufgaben, ausgeführt von 4 echten KI-Agenten, mit Aufzeichnungen. Der Check wird voll angerechnet, wenn Sie den Fix beauftragen.`, ada3:`Check anfordern →`,
+adc0:`Individuelle Integrationen`, adc1:`Preis im Audit`, adc2:`Ungewöhnliches CRM, altes Buchungssystem, Branchensoftware — wir erfassen es im Audit und nennen einen Festpreis.`, adc3:`Kontakt →`,
+fqk:`Ehrliche Antworten`, plfq:`Preisfragen, klar beantwortet.`,
+plq1:`Warum eine Einrichtungsgebühr?`, pla1:`Die ersten Wochen sind echte Ingenieursarbeit: Training auf Ihren Dokumenten, Anbindung von Nummer, Kalender und CRM, Tests vor dem Start. Die Gebühr deckt das einmalig — die Monatsgebühr deckt Betrieb und Verbesserung.`,
+plq2:`Kann ich den Plan wechseln?`, pla2:`Ja, monatlich. Die meisten starten mit Chat oder Voice und ergänzen das Back-Office, sobald sich der Empfang bewährt hat.`,
+plq3:`Und wenn es bei uns nicht funktioniert?`, pla3:`Kündigen Sie in jedem Monat, ohne Strafgebühren. Das Audit ist genau deshalb kostenlos, damit wir beide wissen, dass es passt, bevor Geld fließt.`,
+plq4:`Wie ist das im Vergleich zu einer Einstellung?`, pla4:`Eine Teilzeit-Empfangskraft kostet €800–1.200 im Monat und arbeitet zu festen Zeiten. Mina Voice antwortet rund um die Uhr für weniger als die Hälfte — und meldet sich nie krank.`,
+plct1:`Unsicher, welche Größe? Genau dafür ist das Audit.`, plct2:`Kostenlos, 30 Minuten. Wir schauen auf Ihre Anrufe, Chats und Routine — und sagen Ihnen, welcher Plan sich am schnellsten bezahlt macht.`,
 n1:`Assistenten`, n2:`Automatisierung`, n3:`Sprachen`, n4:`So funktioniert's`, n5:`Anwendungsfälle`, nbtn:`Audit buchen`,
 hk:`KI-Assistenten · Voice · Automatisierung · 10 Sprachen`, hh:`Jeder Kunde bekommt eine Antwort. Tag und Nacht.`,
 hp:`KI-Assistenten, die Ihre Kunden am Telefon, im Chat und per E-Mail beantworten — und die Routine im Hintergrund erledigen: Termine, Rechnungen, Lager, Alarme. Einsatzbereit in Wochen.`,
@@ -435,6 +454,25 @@ o1:`Praxis`, o2:`Beratung &amp; Recht`, o3:`Handwerk &amp; Service`, o4:`Restaur
 mbtn:`Anfrage senden →`, mnote:`Wir antworten innerhalb eines Werktags. Oder schreiben Sie an <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>`
 },
 fr: {
+npl:`Tarifs`, ck1:`Nous utilisons le stockage local et des cookies pour retenir vos préférences — thème et langue. Pas de traçage, pas de publicité. <a href="fourmina-privacy.html">Confidentialité</a>`, ck2:`Accepter`, ck3:`Essentiels uniquement`,
+plhk:`Tarifs · mensuel · résiliable à tout moment`, plh:`Un assistant. Trois tailles.`,
+plp:`Chaque formule commence par un audit gratuit de 30 minutes et une installation unique (dès <span data-gbp="£780">€900</span>) — puis un abonnement mensuel fixe. Pas d'engagement : vous restez parce que ça marche, pas parce que vous avez signé. Prix hors TVA.`,
+plsv:`Jusqu'à −20 %`, plyy:`Annuel`, plmm:`Mensuel`, pltag:`La plus populaire`, plmo:`/mois`, plsel:`Choisir →`,
+plf1:`<li>Assistant de chat sur votre site, WhatsApp et Instagram</li><li>Jusqu'à 500 conversations de chat par mois incluses</li><li>Boîte support triée et traitée</li><li>Les 10 langues incluses</li><li>Connecté à votre agenda et votre CRM</li><li>Réglage mensuel et rapport écrit</li>`,
+plf2:`<li>Tout Mina Chat</li><li>Agent vocal sur votre numéro, 24 h/24 et 7 j/7</li><li>Jusqu'à 1 500 conversations de chat par mois incluses</li><li>Réserve, déplace et annule les rendez-vous</li><li>Résumé d'appel après chaque conversation</li><li>Minutes fair-use incluses ; gros volumes tarifés à l'audit</li>`,
+plf3:`<li>Tout Mina Voice</li><li>Jusqu'à 4 000 conversations de chat par mois incluses</li><li>Back-office : factures, rappels, stock, plannings</li><li>Alertes avant que les petits problèmes grandissent</li><li>Assistant interne &amp; recherche d'entreprise</li><li>Un résumé quotidien pour vous</li>`,
+plnote:`Toutes les formules : <b style="color:var(--ink)">frais d'installation uniques dès €900</b> — prix fixe donné à l'audit gratuit. Prix hors TVA. Les prix annuels s'entendent par mois, facturés à l'année.`,
+plcur:`Les prix affichés en £ sont des équivalents approximatifs — la facturation est en EUR.`,
+adg0:`Visibilité IA (GEO)`, ada0:`Site prêt pour les agents`, adk:`Options`, adh:`Faites aussi de l'IA une source de clients.`,
+adg1:`/mois · rapport gratuit`, adg2:`ChatGPT, Gemini et Perplexity recommandent votre entreprise. D'abord un rapport de visibilité gratuit — voyez l'écart avant de payer.`, adg3:`Obtenir le rapport gratuit →`,
+ada1:` check · correction dès €900`, ada2:`12 tâches d'acheteur exécutées par 4 vrais agents IA, avec enregistrements. Le check est intégralement déduit si vous prenez la correction.`, ada3:`Obtenir le check →`,
+adc0:`Intégrations sur mesure`, adc1:`Tarifé à l'audit`, adc2:`CRM inhabituel, système de réservation ancien, logiciel métier — nous le cadrons à l'audit et donnons un prix fixe.`, adc3:`Nous contacter →`,
+fqk:`Réponses honnêtes`, plfq:`Questions de prix, réponses franches.`,
+plq1:`Pourquoi des frais d'installation ?`, pla1:`Les premières semaines sont de la vraie ingénierie : entraînement sur vos documents, connexion de votre numéro, agenda et CRM, tests avant lancement. Les frais couvrent cela une fois — l'abonnement couvre le fonctionnement et l'amélioration.`,
+plq2:`Puis-je changer de formule ?`, pla2:`Oui, chaque mois. La plupart commencent avec Chat ou Voice et ajoutent le back-office une fois l'accueil rodé.`,
+plq3:`Et si ça ne marche pas pour nous ?`, pla3:`Résiliez n'importe quel mois, sans pénalité. L'audit est gratuit précisément pour que nous sachions tous les deux que ça colle avant le moindre paiement.`,
+plq4:`Et par rapport à une embauche ?`, pla4:`Un(e) réceptionniste à temps partiel coûte €800–1 200 par mois, à horaires fixes. Mina Voice répond 24 h/24 pour moins de la moitié — et n'est jamais en arrêt maladie.`,
+plct1:`Pas sûr de la taille ? C'est justement l'audit.`, plct2:`Gratuit, 30 minutes. Nous examinons vos appels, chats et routines — et vous disons quelle formule s'amortit le plus vite.`,
 n1:`Assistants`, n2:`Automatisation`, n3:`Langues`, n4:`Comment ça marche`, n5:`Cas d'usage`, nbtn:`Audit gratuit`,
 hk:`Assistants IA · voix · automatisation · 10 langues`, hh:`Chaque client obtient une réponse. Jour et nuit.`,
 hp:`Des assistants IA qui répondent à vos clients au téléphone, par chat et par e-mail — et gèrent la routine en coulisses : rendez-vous, factures, stocks, alertes. Installés en quelques semaines.`,
@@ -603,8 +641,8 @@ function fmToggle(){
 </script>
 
 <div class="cookiebar" id="fmCookie" role="dialog" aria-label="Cookie consent">
-  <span>We use local storage and cookies to remember your preferences — theme and language. No tracking, no ads. <a href="fourmina-privacy.html">Privacy</a></span>
-  <div class="cb-btns"><button class="btn btn-primary" onclick="fmCookieOk('all')">Accept</button><button class="btn btn-ghost" onclick="fmCookieOk('essential')">Essential only</button></div>
+  <span data-i18n="ck1">We use local storage and cookies to remember your preferences — theme and language. No tracking, no ads. <a href="fourmina-privacy.html">Privacy</a></span>
+  <div class="cb-btns"><button class="btn btn-primary" onclick="fmCookieOk('all')" data-i18n="ck2">Accept</button><button class="btn btn-ghost" onclick="fmCookieOk('essential')" data-i18n="ck3">Essential only</button></div>
 </div>
 <style>
 .cookiebar{ position:fixed; left:16px; right:16px; bottom:16px; z-index:1200; display:none; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:16px; padding:16px 20px; box-shadow:0 12px 40px rgba(0,0,0,.18); font-size:14px; max-width:760px; margin:0 auto; }
