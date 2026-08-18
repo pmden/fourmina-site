@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Processing Addendum - Fourmina</title>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231D1D1F'/%3E%3Cellipse cx='6.5' cy='14.2' rx='3.4' ry='2.6' fill='white'/%3E%3Cellipse cx='12.3' cy='12.4' rx='2.2' ry='1.9' fill='white'/%3E%3Ccircle cx='16.5' cy='11' r='2' fill='white'/%3E%3Cpath d='M17.5 9.4 C18 8 19 7 20.3 6.8' stroke='white' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3Cpath d='M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9' stroke='white' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3Cpath d='M13.8 13.6 L15.6 17.2' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M12.3 14.2 L12.1 18' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M10.9 13.8 L8.9 17.4' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{ box-sizing:border-box; margin:0; padding:0; }
+:root{
+  --bg:#FFFFFF; --panel:#F5F5F7; --surface:#FFFFFF; --ink:#1D1D1F; --muted:#6E6E73;
+  --line:#E8E8ED; --brand:#0071E3; --brand-dk:#0077ED; --link:#0066CC;
+}
+:root[data-theme="dark"]{
+  --bg:#0B0C0E; --panel:#141518; --surface:#1D2025; --ink:#F5F5F7; --muted:#A1A1A6;
+  --line:#26282C; --brand:#0A84FF; --brand-dk:#3395FF; --link:#2997FF;
+}
+body{ font-family:'Inter',system-ui,sans-serif; color:var(--ink); background:var(--bg); -webkit-font-smoothing:antialiased; line-height:1.6; transition:background .25s, color .25s; }
+.wrap{ max-width:1272px; margin:0 auto; padding:0 28px; }
+a{ color:inherit; text-decoration:none; }
+.topbar{ position:sticky; top:0; z-index:40; background:rgba(255,255,255,.8); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+:root[data-theme="dark"] .topbar{ background:rgba(11,12,14,.8); }
+.nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+.brand{ display:flex; align-items:center; gap:12px; font-weight:700; font-size:19px; letter-spacing:-.02em; }
+.brand em{ font-style:normal; color:var(--muted); }
+.brand .mark{ position:relative; width:34px; height:34px; border-radius:10px; background:var(--ink); color:var(--bg); display:flex; align-items:center; justify-content:center; }
+.brand .mark:after{ content:''; position:absolute; left:7px; bottom:-3.5px; width:9px; height:9px; background:var(--ink); border-radius:2px; transform:rotate(45deg); }
+.brand .mark svg{ width:80%; height:80%; display:block; }
+.nav-links{ display:flex; gap:20px; align-items:center; font-size:14px; color:var(--muted); font-weight:500; }
+.nav-links a:hover{ color:var(--ink); }
+.theme-btn{ width:34px; height:34px; border-radius:50%; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:15px; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.doc{ max-width:760px; padding:44px 0 90px; }
+.doc .updated{ font-size:13px; color:var(--muted); margin-bottom:10px; }
+.doc h1{ font-family:'Space Grotesk','Inter',sans-serif; font-size:38px; letter-spacing:-.025em; font-weight:700; margin-bottom:10px; }
+.doc .lede{ font-size:16px; color:var(--muted); margin-bottom:28px; }
+.doc h2{ font-size:19px; font-weight:700; margin:34px 0 10px; }
+.doc p{ font-size:15px; color:var(--muted); margin-bottom:12px; }
+.doc p b, .doc li b{ color:var(--ink); font-weight:600; }
+.doc ul{ margin:0 0 12px 20px; }
+.doc li{ font-size:15px; color:var(--muted); margin-bottom:6px; }
+.doc a{ color:var(--link); text-decoration:underline; }
+footer{ padding:36px 0; border-top:1px solid var(--line); font-size:13px; color:var(--muted); display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+footer a{ text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="mark"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></a>
+      <div class="nav-links"><a href="index.html">← Back to site</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button></div>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="doc">
+    <div class="updated">Last updated: 18 August 2026</div>
+    <h1>Data Processing Addendum</h1>
+    <p class="lede">This page summarises the standard Data Processing Addendum ("DPA") between KROK GROUP LTD (operating Fourmina, the "Processor") and each business customer (the "Controller"), as required by Article 28 UK GDPR / EU GDPR. The full signed DPA is available on request at <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>.</p>
+
+    <h2>1. Scope of processing</h2>
+    <p><b>Subject matter:</b> operation of AI assistants (voice agent, WhatsApp/web chat assistant, restaurant voice ordering) on the Controller's behalf. <b>Duration:</b> the term of the subscription. <b>Nature and purpose:</b> receiving, transcribing, answering and logging calls and chats from the Controller's end customers. <b>Data subjects:</b> the Controller's end customers and staff. <b>Data categories:</b> call audio and recordings, conversation transcripts, call metadata (caller number, time, duration, outcome), chat logs, names, contact details, and booking or order details shared in conversation.</p>
+
+    <h2>2. Instructions</h2>
+    <p>We process personal data only on the Controller's documented instructions, including the assistant configuration and retention settings the Controller chooses in the product, unless UK or EU law requires otherwise. If we believe an instruction breaches data protection law, we inform the Controller before proceeding. We do not use the data for our own purposes and do not use it to train public AI models.</p>
+
+    <h2>3. Confidentiality</h2>
+    <p>Everyone we authorise to process personal data is bound by a contractual or statutory duty of confidentiality. Access is limited to what each role requires.</p>
+
+    <h2>4. Security measures</h2>
+    <p>We implement appropriate technical and organisational measures under Article 32 GDPR, including:</p>
+    <ul>
+      <li>encryption of personal data <b>in transit</b> (TLS) and <b>at rest</b>;</li>
+      <li>role-based access controls and unique credentials for staff access;</li>
+      <li>logging of access to production systems;</li>
+      <li>separation of each customer's data;</li>
+      <li>backup and recovery procedures.</li>
+    </ul>
+    <p>The full description of our technical and organisational measures is set out in the <a href="fourmina-toms.html">TOMs annex</a>, which forms part of the DPA.</p>
+    <!-- VERIFY: confirm this list against the actual production infrastructure before signing DPAs; do not add certifications (ISO/SOC) unless actually held -->
+
+    <h2>5. Subprocessors</h2>
+    <p>The Controller gives general authorisation for the subprocessors we use to run the Service (cloud hosting, LLM APIs, telephony, payments, email - described generically in our <a href="fourmina-privacy-v2.html">Privacy Policy</a>; the named list is available on request). We notify Controllers of intended additions or replacements in advance. A Controller may object on reasonable data protection grounds; if no workable alternative exists, the Controller may terminate the affected service. Every subprocessor is bound by data protection obligations equivalent to this DPA, and we remain fully liable to the Controller for their performance.</p>
+
+    <h2>6. Assistance</h2>
+    <p>Taking into account the nature of the processing, we assist the Controller with data subject requests (access, erasure, portability and the rest of Articles 12-23), with security, breach notification, and with data protection impact assessments where relevant. We notify the Controller of a personal data breach without undue delay after becoming aware of it.</p>
+
+    <h2>7. International transfers</h2>
+    <p>Transfers outside the UK/EEA occur only with recognised safeguards: an adequacy decision or Standard Contractual Clauses, plus the UK International Data Transfer Addendum where UK GDPR applies.</p>
+
+    <h2>8. Deletion on termination</h2>
+    <p>At the end of the subscription, we delete or return all personal data processed on the Controller's behalf, at the Controller's choice, and delete existing copies unless UK or EU law requires storage. Export is available for 30 days after termination; deletion follows.</p>
+
+    <h2>9. Audit rights</h2>
+    <p>We make available the information necessary to demonstrate compliance with Article 28 and allow for and contribute to audits, including inspections, conducted by the Controller or an auditor mandated by the Controller, on reasonable notice and no more than once per year unless a supervisory authority requires otherwise or a breach has occurred.</p>
+
+    <h2>10. Full DPA</h2>
+    <p>This page is a summary for transparency. It does not replace the signed agreement. Request the full signed DPA at <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>.</p>
+  </div>
+
+  <footer>
+    <div>© 2026 Fourmina</div>
+    <div><a href="mailto:hello@fourmina.com">hello@fourmina.com</a> · <a href="fourmina-terms-v2.html">Terms</a> · <a href="fourmina-privacy-v2.html">Privacy</a> · <a href="fourmina-impressum.html">Impressum</a> · <a href="fourmina-dpa.html">DPA</a> · <a href="fourmina-toms.html">TOMs</a> · <a href="fourmina-verschwiegenheit-de.html">Verschwiegenheit DE</a> · <a href="fourmina-verschwiegenheit-at.html">Verschwiegenheit AT</a></div>
+  </footer>
+</div>
+<script>
+function fmToggle(){
+  var r = document.documentElement;
+  r.dataset.theme = r.dataset.theme === 'dark' ? 'light' : 'dark';
+  try{ localStorage.setItem('fm-theme', r.dataset.theme); }catch(e){}
+  document.getElementById('themeBtn').textContent = r.dataset.theme === 'dark' ? '☀' : '☾';
+}
+(function(){
+  var r = document.documentElement;
+  var saved = null;
+  try{ saved = localStorage.getItem('fm-theme'); }catch(e){}
+  r.dataset.theme = saved === 'dark' ? 'dark' : 'light';
+  var b = document.getElementById('themeBtn');
+  if(b) b.textContent = r.dataset.theme === 'dark' ? '☀' : '☾';
+})();
+</script>
+</body>
+</html>

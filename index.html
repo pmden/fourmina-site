@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fourmina — AI assistants for your business</title>
+<title>Fourmina - AI assistants for your business</title>
+<meta property="og:site_name" content="Fourmina">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fourmina - AI assistants for your business">
+<meta property="og:description" content="AI assistants that answer your customers on the phone, in chat and email - and run the routine behind the desk: bookings, invoices, alerts.">
+<meta property="og:url" content="https://fourmina.com/">
+<meta property="og:image" content="https://fourmina.com/favicon-192.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://fourmina.com/#website","url":"https://fourmina.com/","name":"Fourmina","alternateName":"fourmina.com"},{"@type":"Organization","@id":"https://fourmina.com/#org","name":"Fourmina","url":"https://fourmina.com/","logo":"https://fourmina.com/favicon-192.png"}]}
+</script>
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231D1D1F'/%3E%3Cellipse cx='6.5' cy='14.2' rx='3.4' ry='2.6' fill='white'/%3E%3Cellipse cx='12.3' cy='12.4' rx='2.2' ry='1.9' fill='white'/%3E%3Ccircle cx='16.5' cy='11' r='2' fill='white'/%3E%3Cpath d='M17.5 9.4 C18 8 19 7 20.3 6.8' stroke='white' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3Cpath d='M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9' stroke='white' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3Cpath d='M13.8 13.6 L15.6 17.2' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M12.3 14.2 L12.1 18' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M10.9 13.8 L8.9 17.4' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +62,7 @@ a{ color:inherit; text-decoration:none; }
 .btn-ghost{ background:var(--bg); color:var(--ink); border:1px solid var(--line); } .btn-ghost:hover{ border-color:var(--muted); }
 
 /* hero */
-.hero{ display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center; padding:76px 0 96px; }
+.hero{ display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:start; padding:76px 0 96px; }
 @media(max-width:900px){ .hero{ grid-template-columns:1fr; gap:36px; } }
 .eyebrow{ display:inline-block; font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:20px; }
 h1{ font-size:56px; line-height:1.05; letter-spacing:-.035em; font-weight:700; margin-bottom:22px; }
@@ -71,7 +85,7 @@ h1{ font-size:56px; line-height:1.05; letter-spacing:-.035em; font-weight:700; m
 .callcard .who b{ font-size:14px; }
 .live{ display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:600; color:var(--green); background:var(--green-soft); padding:4px 10px; border-radius:14px; }
 .live i{ width:6px; height:6px; border-radius:50%; background:var(--green); }
-.wave{ display:flex; align-items:center; gap:3px; height:30px; margin-bottom:12px; }
+.wave{ display:flex; align-items:center; justify-content:flex-start; gap:3px; height:30px; margin-bottom:12px; }
 .wave i{ width:4px; border-radius:3px; background:var(--brand); opacity:.8; animation:wv 1.1s ease-in-out infinite; }
 @keyframes wv{ 0%,100%{ transform:scaleY(.35);} 50%{ transform:scaleY(1);} }
 .callcard .line{ font-size:13.5px; color:var(--ink); background:var(--panel); border-radius:12px; padding:10px 13px; }
@@ -94,37 +108,10 @@ h1{ font-size:56px; line-height:1.05; letter-spacing:-.035em; font-weight:700; m
 /* section */
 .sec{ padding:140px 0; }
 .bleed{ margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw); padding-left:calc(50vw - 50%); padding-right:calc(50vw - 50%); }
-.sec-head{ margin-bottom:48px; }
+.sec-head{ margin-bottom:48px; text-align:left; }
 .sec-head .kick{ font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; }
 .sec-head h2{ font-size:42px; letter-spacing:-.03em; font-weight:700; margin-bottom:14px; }
 .sec-head p{ font-size:17px; color:var(--muted); max-width:680px; }
-
-/* products */
-.glabel{ font-size:12.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:34px 0 14px; }
-.glabel:first-of-type{ margin-top:0; }
-.prods{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-@media(max-width:900px){ .prods{ grid-template-columns:1fr; } }
-.prod{ background:var(--panel); border-radius:20px; padding:28px; position:relative; }
-.prod .tag{ position:absolute; top:22px; right:22px; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--link); background:var(--tint); padding:5px 11px; border-radius:14px; }
-.prod .ico{ width:42px; height:42px; border-radius:13px; background:var(--tint); color:var(--link); display:flex; align-items:center; justify-content:center; font-size:18px; margin-bottom:16px; }
-.prod h3{ font-size:18px; font-weight:700; letter-spacing:-.01em; margin-bottom:8px; }
-.prod > p{ font-size:14.5px; color:var(--muted); }
-
-/* automation day plan */
-.daycard{ background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:20px 22px; box-shadow:0 14px 36px rgba(0,0,0,.06); }
-.daycard .t{ font-size:12.5px; font-weight:600; color:var(--muted); margin-bottom:6px; display:flex; justify-content:space-between; }
-.drow{ display:flex; gap:12px; padding:11px 0; border-top:1px solid var(--line); align-items:flex-start; }
-.drow:first-of-type{ border-top:none; }
-.drow .tm{ font-size:12.5px; color:var(--muted); width:44px; flex:none; padding-top:2px; font-variant-numeric:tabular-nums; }
-.drow .tx{ flex:1; font-size:14px; }
-.drow .tx small{ display:block; color:var(--muted); font-size:12.5px; margin-top:2px; }
-.dst{ font-size:11px; font-weight:700; padding:4px 9px; border-radius:12px; flex:none; margin-top:1px; }
-.dst.done{ color:var(--green); background:var(--green-soft); }
-.dst.prog{ color:var(--link); background:var(--tint); }
-.dst.next{ color:var(--muted); background:var(--panel); }
-.dsum{ margin-top:12px; background:var(--brand); color:#fff; border-radius:14px; border-bottom-right-radius:5px; padding:11px 14px; font-size:13px; margin-left:12%; }
-:root[data-theme="dark"] .dsum{ background:#0A84FF; }
-.dsum small{ display:block; font-size:11px; opacity:.75; margin-top:3px; }
 
 /* languages */
 .langsec{ display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center; }
@@ -132,6 +119,32 @@ h1{ font-size:56px; line-height:1.05; letter-spacing:-.035em; font-weight:700; m
 .langchips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
 .chip{ font-size:13px; font-weight:600; color:var(--ink); background:var(--panel); padding:8px 14px; border-radius:980px; }
 .chip b{ color:var(--link); font-weight:700; margin-right:5px; }
+
+/* integrations - marquee */
+#integrations .sec-head p, #cases .sec-head p{ max-width:none; }
+.mq{ position:relative; overflow:hidden; }
+.mq + .mq{ margin-top:18px; }
+.mq.rev .mq-track{ animation-direction:reverse; }
+.mq-track{ display:flex; width:max-content; padding:10px 0; animation:mqscroll 40s linear infinite; }
+@keyframes mqscroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+.mq-group{ display:flex; gap:34px; padding-right:34px; align-items:center; }
+.mq:before, .mq:after{ content:''; position:absolute; top:0; bottom:0; width:7%; z-index:2; pointer-events:none; }
+.mq:before{ left:0; background:linear-gradient(90deg, var(--bg), transparent); }
+.mq:after{ right:0; background:linear-gradient(270deg, var(--bg), transparent); }
+.mpill{ display:flex; align-items:center; gap:12px; background:transparent; border:none; border-radius:0; padding:6px 10px; box-shadow:none; flex:none; }
+:root[data-theme="dark"] .mpill{ background:transparent; }
+.mpill .tile{ width:34px; height:34px; border-radius:0; background:transparent; display:flex; align-items:center; justify-content:center; flex:none; }
+:root[data-theme="dark"] .mpill .tile{ background:transparent; }
+.mpill .tile svg{ width:28px; height:28px; fill:currentColor; display:block; }
+.mpill .tile.mono{ color:var(--ink); }
+:root[data-theme="dark"] .mpill .tile.slack{ color:var(--ink); }
+:root[data-theme="dark"] .mpill .tile.make{ color:#9E4DFF; }
+.mpill .tile.letter{ background:var(--tint); color:var(--brand); font-size:20px; font-weight:700; }
+.mpill .nm{ font-size:15px; font-weight:600; white-space:nowrap; }
+@media (prefers-reduced-motion: reduce){
+  .mq-track{ animation:none; }
+  .mq{ overflow-x:auto; }
+}
 
 /* steps */
 .steps.sec{ background:var(--panel); padding-top:110px; padding-bottom:110px; }
@@ -144,29 +157,58 @@ h1{ font-size:56px; line-height:1.05; letter-spacing:-.035em; font-weight:700; m
 .step .wk{ position:absolute; top:22px; right:20px; font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--link); background:var(--tint); padding:4px 9px; border-radius:12px; }
 .step h4{ font-size:16px; font-weight:700; margin-bottom:7px; } .step p{ font-size:13.5px; color:var(--muted); }
 
-/* use cases — tabs */
-.tabbar{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px; }
-.tab{ display:inline-flex; align-items:center; gap:8px; font-family:inherit; font-size:14px; font-weight:600; color:var(--muted); background:var(--panel); border:none; border-radius:10px; padding:10px 16px; cursor:pointer; transition:background .15s, color .15s; }
-.tab i{ font-style:normal; font-size:14px; }
-.tab:hover{ color:var(--ink); }
-.tab.active{ background:var(--ink); color:var(--bg); }
-.tpanel{ display:none; grid-template-columns:1.05fr .95fr; gap:52px; align-items:center; min-height:400px; }
-.tpanel.active{ display:grid; }
-@media(max-width:900px){ .tpanel.active{ grid-template-columns:1fr; gap:32px; min-height:0; } }
-.tpanel h3{ font-size:28px; font-weight:700; letter-spacing:-.02em; margin-bottom:10px; }
-.tpanel .desc{ font-size:16px; color:var(--muted); margin-bottom:16px; max-width:480px; }
-.feats{ list-style:none; max-width:480px; }
-.feats li{ font-size:14.5px; color:var(--ink); padding:8px 0 8px 24px; position:relative; border-top:1px solid var(--line); }
-.feats li:before{ content:'✓'; position:absolute; left:2px; color:var(--green); font-weight:700; font-size:13px; }
-.payoff{ margin-top:16px; font-size:14px; color:var(--muted); }
-.payoff:before{ content:'✓'; color:var(--green); font-weight:700; margin-right:7px; }
+/* use cases - story-card carousel */
+.car-row{ display:flex; align-items:stretch; gap:20px; }
+.car-arrow{ align-self:center; flex:none; width:44px; height:44px; border-radius:50%; border:1px solid var(--line); background:var(--surface); color:var(--ink); font-size:17px; cursor:pointer; display:flex; align-items:center; justify-content:center; font-family:inherit; transition:border-color .15s; }
+.car-arrow:hover{ border-color:var(--muted); }
+.car-vp{ flex:1; min-width:0; overflow:hidden; }
+.car-track{ display:flex; align-items:stretch; gap:20px; transition:transform .45s cubic-bezier(.4,0,.2,1); }
+.ccard{ width:380px; flex:none; background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:26px 26px 24px; display:flex; flex-direction:column; opacity:.75; transform:scale(.96); transition:opacity .45s, transform .45s, border-color .45s, box-shadow .45s; }
+.ccard.on{ opacity:1; transform:none; border-color:var(--ink); box-shadow:0 14px 36px rgba(0,0,0,.08); }
+.cc-biz{ display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.cc-biz i{ font-style:normal; font-size:15px; width:34px; height:34px; border-radius:10px; background:var(--panel); display:flex; align-items:center; justify-content:center; flex:none; }
+.ccard.on .cc-biz i{ background:var(--ink); color:var(--bg); }
+.cc-biz span{ font-size:16px; font-weight:700; }
+.cc-pain{ font-size:14px; color:var(--muted); margin-bottom:14px; }
+.cc-feats{ list-style:none; margin-bottom:14px; }
+.cc-feats li{ font-size:13px; color:var(--ink); padding:6px 0 6px 20px; position:relative; border-top:1px solid var(--line); }
+.cc-feats li:before{ content:'✓'; position:absolute; left:0; color:var(--green); font-weight:700; font-size:12px; }
+.cc-payoff{ font-size:12.5px; color:var(--muted); margin-bottom:16px; }
+.cc-payoff:before{ content:'✓'; color:var(--green); font-weight:700; margin-right:7px; }
+.cc-chat{ margin-top:auto; background:var(--panel); border-radius:14px; padding:12px 13px; }
+.cc-chat .t{ font-size:11.5px; font-weight:600; color:var(--muted); margin-bottom:8px; display:flex; justify-content:space-between; gap:10px; }
+.cc-chat .msg{ font-size:12.5px; padding:8px 11px; margin-bottom:6px; }
+.cc-chat .msg.in{ background:var(--surface); }
+.cc-chat .msg:last-child{ margin-bottom:0; }
+.car-ctrl{ display:flex; justify-content:center; align-items:center; gap:16px; margin-top:28px; }
+.car-ctrl .car-arrow{ display:none; width:38px; height:38px; font-size:15px; }
+.car-dots{ display:flex; gap:2px; }
+.car-dots button{ width:18px; height:18px; background:none; border:none; padding:0; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.car-dots button i{ display:block; font-style:normal; width:7px; height:7px; border-radius:50%; background:var(--line); transition:background .2s; }
+.car-dots button.on i{ background:var(--ink); }
+@media(max-width:900px){
+  .car-row > .car-arrow{ display:none; }
+  .car-ctrl .car-arrow{ display:flex; }
+  .ccard{ width:min(380px, calc(100vw - 56px)); }
+}
+@media (prefers-reduced-motion: reduce){
+  .car-track, .ccard{ transition:none; }
+}
 
-/* faq */
-.faq{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-@media(max-width:900px){ .faq{ grid-template-columns:1fr; } }
-.qa{ background:var(--panel); border-radius:18px; padding:24px 26px; }
-.qa h4{ font-size:15.5px; font-weight:700; margin-bottom:8px; }
-.qa p{ font-size:14px; color:var(--muted); }
+/* integrations - vertical air */
+#integrations{ padding-top:116px; padding-bottom:56px; }
+#integrations .sec-head{ margin-bottom:64px; }
+#integrations .mq-track{ padding:14px 0 20px; }
+
+/* faq - collapsed accordions (same pattern as plans page) */
+.accwrap{ display:grid; grid-template-columns:1fr 1fr; gap:14px 16px; align-items:start; }
+@media(max-width:900px){ .accwrap{ grid-template-columns:1fr; } }
+details.acc{ background:var(--panel); border-radius:14px; }
+details.acc summary{ cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px 22px; font-size:15.5px; font-weight:700; }
+details.acc summary::-webkit-details-marker{ display:none; }
+details.acc summary:after{ content:'+'; font-size:20px; font-weight:400; color:var(--muted); flex:none; }
+details.acc[open] summary:after{ content:'\2212'; }
+details.acc p{ padding:0 22px 18px; font-size:14px; color:var(--muted); max-width:640px; }
 
 /* cta band */
 .ctaband{ background:var(--band); color:var(--band-ink); border-radius:28px; padding:56px 52px; display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap; }
@@ -185,7 +227,7 @@ footer{ padding:40px 0; border-top:1px solid var(--line); margin-top:110px; disp
   .nav-links{ gap:10px; }
   .nav .btn{ white-space:nowrap; padding:9px 14px; font-size:13.5px; }
   h1{ font-size:38px; }
-  .sec{ padding:88px 0; }
+  .sec{ padding-top:88px; padding-bottom:88px; }
   .sec-head h2{ font-size:32px; }
   .langsec h2{ font-size:32px !important; }
   .stat b{ font-size:30px; }
@@ -196,10 +238,14 @@ footer{ padding:40px 0; border-top:1px solid var(--line); margin-top:110px; disp
 @media(max-width:600px){
   .steprow{ grid-template-columns:1fr; }
   .stats{ grid-template-columns:1fr 1fr; }
-  .tpanel h3{ font-size:24px; }
+  .live{ white-space:nowrap; }
+  .ctaband .cta-btns{ width:100%; flex-direction:column; align-items:stretch; }
+  .ctaband .cta-btns .btn{ justify-content:center; }
+  .car-ctrl .car-arrow{ width:44px; height:44px; font-size:16px; }
+  .car-dots button{ width:26px; height:44px; }
 }
 
-/* audit form modal */
+/* demo form modal */
 .modal{ position:fixed; inset:0; background:rgba(0,0,0,.5); backdrop-filter:blur(5px); -webkit-backdrop-filter:blur(5px); display:none; align-items:center; justify-content:center; z-index:50; padding:20px; }
 :root[data-theme="dark"] .modal{ background:rgba(0,0,0,.6); }
 .modal.open{ display:flex; }
@@ -224,17 +270,15 @@ footer a{ text-decoration:underline; }
   <div class="topbar bleed">
   <nav class="nav">
     <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></a>
-    <div class="nav-links"><a href="#assistants" data-i18n="n1">Assistants</a><a href="#automation" data-i18n="n2">Automation</a><a href="#languages" data-i18n="n3">Languages</a><a href="#how" data-i18n="n4">How it works</a><a href="#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html" data-i18n="npl">Plans</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a free audit</a></div>
+    <div class="nav-links"><a href="fourmina-assistants.html" data-i18n="n1">Assistants</a><a href="fourmina-automation.html" data-i18n="n2">Automation</a><a href="#languages" data-i18n="n3">Languages</a><a href="#how" data-i18n="n4">How it works</a><a href="#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html" data-i18n="npl">Pricing</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="gs">Get started</a></div>
   </nav>
   </div>
 
   <section class="hero">
     <div>
-      <span class="eyebrow" data-i18n="hk">AI assistants · voice · automation · 10 languages</span>
       <h1 data-i18n="hh">Every customer answered. Day and night.</h1>
-      <p data-i18n="hp">AI assistants that answer your customers on the phone, in chat and email — and run the routine behind the desk: bookings, invoices, stock, alerts. Installed in weeks.</p>
-      <div class="hero-cta"><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="hsp">See plans →</a><a class="btn btn-ghost" href="#demo" data-i18n="hb2" onclick="fmPlayDemo()">Hear the voice demo</a></div>
-      <div class="trust" data-i18n="htr">A <b>Krok Group</b> company · senior developers · your data stays yours</div>
+      <p data-i18n="hp">AI assistants that answer your customers on the phone, in chat and email - and run the routine behind the desk: bookings, invoices, alerts.</p>
+      <div class="hero-cta"><a class="btn btn-primary" id="callMina" href="#" data-i18n="hcall">Call Mina</a><audio id="minaDemo" src="fourmina-assets/mina-demo.mp3" preload="none"></audio><a class="btn btn-ghost" href="fourmina-plans.html" data-i18n="hsp">Get started</a></div>
     </div>
     <div class="hviz" id="demo">
       <div class="callcard">
@@ -242,17 +286,11 @@ footer a{ text-decoration:underline; }
           <div class="who"><div class="ava">M</div><div><b data-i18n="cw">Mina · Fourmina voice agent</b><small data-i18n="cws">Incoming call · 21:47</small></div></div>
           <span class="live"><i></i><span data-i18n="clv">On call</span></span>
         </div>
-        <div class="wave">
-          <i style="height:12px;animation-delay:0s"></i><i style="height:22px;animation-delay:.1s"></i><i style="height:16px;animation-delay:.2s"></i><i style="height:28px;animation-delay:.3s"></i><i style="height:14px;animation-delay:.4s"></i><i style="height:24px;animation-delay:.5s"></i><i style="height:18px;animation-delay:.6s"></i><i style="height:26px;animation-delay:.7s"></i><i style="height:12px;animation-delay:.8s"></i><i style="height:20px;animation-delay:.9s"></i><i style="height:15px;animation-delay:.15s"></i><i style="height:27px;animation-delay:.35s"></i><i style="height:13px;animation-delay:.55s"></i><i style="height:23px;animation-delay:.75s"></i>
-        </div>
+        <div class="wave"><i style="height:12px;animation-delay:0.0s"></i><i style="height:16px;animation-delay:0.14s"></i><i style="height:14px;animation-delay:0.28s"></i><i style="height:10px;animation-delay:0.42s"></i><i style="height:8px;animation-delay:0.56s"></i><i style="height:26px;animation-delay:0.7s"></i><i style="height:9px;animation-delay:0.84s"></i><i style="height:17px;animation-delay:0.98s"></i><i style="height:11px;animation-delay:1.12s"></i><i style="height:25px;animation-delay:1.26s"></i><i style="height:21px;animation-delay:1.4s"></i><i style="height:28px;animation-delay:1.54s"></i><i style="height:18px;animation-delay:1.68s"></i><i style="height:10px;animation-delay:1.82s"></i><i style="height:14px;animation-delay:1.96s"></i><i style="height:9px;animation-delay:2.1s"></i><i style="height:15px;animation-delay:2.24s"></i><i style="height:11px;animation-delay:2.38s"></i><i style="height:17px;animation-delay:2.52s"></i><i style="height:13px;animation-delay:2.66s"></i><i style="height:21px;animation-delay:2.8s"></i><i style="height:24px;animation-delay:2.94s"></i></div>
         <div class="line" data-i18n="cln">"I can move your appointment to <b>Thursday at 10:30</b>. You will get a confirmation by SMS. Anything else?"</div>
-        <div class="meta"><span data-i18n="cm1">Answered in 2 sec</span><span data-i18n="cm2">Booking updated in CRM</span><span data-i18n="cm3">After hours</span></div>
-        <button class="playdemo" id="playBtn" onclick="fmPlayDemo()" data-i18n="pdm">▶&nbsp; Play the call · 0:16</button>
-        <audio id="minaDemo" src="fourmina-assets/mina-demo.mp3" preload="none"></audio>
-        <style>.playdemo{ margin-top:12px; width:100%; padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-weight:600; font-size:13.5px; cursor:pointer; font-family:inherit; } .playdemo:hover{ border-color:var(--muted); }</style>
       </div>
-      <div class="chatcard">
-        <div class="t"><span data-i18n="cht">Website chat</span><span data-i18n="chn">now</span></div>
+      <div class="chatcard wa">
+        <div class="t"><span data-i18n="cht">WhatsApp</span><span data-i18n="chn">now</span></div>
         <div class="msg in" data-i18n="chi">Hi, where is my order #4482?</div>
         <div class="msg out" data-i18n="cho">It left our warehouse today and arrives Tuesday. Here is the tracking link.<small>AI assistant · 4 sec</small></div>
       </div>
@@ -262,101 +300,18 @@ footer a{ text-decoration:underline; }
   <div class="stats">
     <div class="stat"><b>0</b><span data-i18n="s1">missed calls, including nights and holidays</span></div>
     <div class="stat"><b data-i18n="s2b">&lt;5 sec</b><span data-i18n="s2">first reply on chat, email and phone</span></div>
-    <div class="stat"><b>70–80%</b><span data-i18n="s3">of routine questions solved without your team</span></div>
+    <div class="stat"><b>up to 80%</b><span data-i18n="s3">of routine questions solved for your team</span></div>
     <div class="stat"><b>10</b><span data-i18n="s4">languages in every assistant, matched to the customer</span></div>
   </div>
 
-  <section class="sec" id="assistants">
-    <div class="sec-head"><div class="kick" data-i18n="pk">What we build</div><h2 data-i18n="ph">AI staff for the front line. And the back office.</h2><p data-i18n="pp">Not a chatbot from a template. Trained on your products, prices and rules, connected to the tools you already use.</p></div>
-    <div class="glabel" data-i18n="gl1">For your customers</div>
-    <div class="prods">
-      <div class="prod">
-        <span class="tag" data-i18n="ptag">Most requested</span>
-        <div class="ico">◉</div>
-        <h3 data-i18n="p1h">Voice agent</h3>
-        <p data-i18n="p1p">Picks up every call in a natural voice — books, answers, hands over. Day and night.</p>
-      </div>
-      <div class="prod" onclick="location.href='fourmina-assistants.html'" style="cursor:pointer">
-        <div class="ico">◒</div>
-        <h3 data-i18n="p2h">Chat assistant</h3>
-        <p data-i18n="p2p">One assistant on your website, WhatsApp and Instagram, selling and helping instantly.</p>
-      </div>
-      <div class="prod" onclick="location.href='fourmina-assistants.html'" style="cursor:pointer">
-        <div class="ico">✉</div>
-        <h3 data-i18n="p3h">Support automation</h3>
-        <p data-i18n="p3p">Your inbox and helpdesk, sorted and answered before your team sits down.</p>
-      </div>
-    </div>
-    <div class="glabel" data-i18n="gl2">Behind the desk</div>
-    <div class="prods">
-      <div class="prod" onclick="location.href='fourmina-automation.html'" style="cursor:pointer">
-        <div class="ico">⧉</div>
-        <h3 data-i18n="p4h">Process automation</h3>
-        <p data-i18n="p4p">Invoices, reminders, stock and rotas — the routine runs on schedule.</p>
-      </div>
-      <div class="prod" onclick="location.href='fourmina-automation.html'" style="cursor:pointer">
-        <div class="ico">◍</div>
-        <h3 data-i18n="p5h">Alerts &amp; monitoring</h3>
-        <p data-i18n="p5p">Pings you about the unpaid invoice or the angry customer while it's still small.</p>
-      </div>
-      <div class="prod" onclick="location.href='fourmina-automation.html'" style="cursor:pointer">
-        <div class="ico">▣</div>
-        <h3 data-i18n="p6h">Internal assistant &amp; search</h3>
-        <p data-i18n="p6p">Everything your company knows, found in seconds by your whole team.</p>
-      </div>
-    </div>
-    <div class="glabel" data-i18n="gl3">Found by AI</div>
-    <div class="prods">
-      <div class="prod" onclick="location.href='fourmina-geo.html'" style="cursor:pointer">
-        <div class="ico">◈</div>
-        <h3 data-i18n="p7h">AI visibility (GEO)</h3>
-        <p data-i18n="p7p">When customers ask ChatGPT or Gemini who to buy from, your business is the answer. Free visibility report included.</p>
-        <p style="margin-top:10px;font-weight:600;color:var(--acc,#6ea8fe)">Learn more →</p>
-      </div>
-      <div class="prod" onclick="location.href='fourmina-geo.html#ai-agents'" style="cursor:pointer">
-        <div class="ico">⬡</div>
-        <h3 data-i18n="p8h">Agent-ready website</h3>
-        <p data-i18n="p8p">AI agents now browse and buy for their owners. We make sure yours is a site they can actually use.</p>
-        <p style="margin-top:10px;font-weight:600;color:var(--acc,#6ea8fe)">Learn more →</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" style="padding-top:0" id="automation">
-    <div class="langsec">
-      <div class="daycard">
-        <div class="t"><span data-i18n="dt1">Today · run by Mina</span><span data-i18n="dt2">Tuesday</span></div>
-        <div class="drow"><span class="tm">07:30</span><div class="tx" data-i18n="dr1">Sort overnight emails and tickets<small>14 sorted · 2 flagged for you</small></div><span class="dst done" data-i18n="dsd">Done</span></div>
-        <div class="drow"><span class="tm">08:00</span><div class="tx" data-i18n="dr2">Send today's booking reminders<small>11 SMS sent · 1 reschedule handled</small></div><span class="dst done" data-i18n="dsd">Done</span></div>
-        <div class="drow"><span class="tm">09:15</span><div class="tx" data-i18n="dr3">Chase unpaid invoices<small>3 reminders sent · 1 payment received</small></div><span class="dst done" data-i18n="dsd">Done</span></div>
-        <div class="drow"><span class="tm">11:00</span><div class="tx" data-i18n="dr4">Stock check and reorder draft<small>4 items below minimum · draft ready to approve</small></div><span class="dst done" data-i18n="dsd">Done</span></div>
-        <div class="drow"><span class="tm">15:00</span><div class="tx" data-i18n="dr5">Draft next week's staff rota</div><span class="dst prog" data-i18n="dsp">In progress</span></div>
-        <div class="drow"><span class="tm">18:00</span><div class="tx" data-i18n="dr6">Daily summary to you</div><span class="dst next" data-i18n="dsn">Scheduled</span></div>
-        <div class="dsum" data-i18n="dsum">Today: 34 calls answered, 12 bookings, €1,840 invoiced. One thing needs you: the reorder draft.<small>Daily summary · 18:00</small></div>
-      </div>
-      <div>
-        <div class="kick" style="font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:12px;" data-i18n="ak">Process automation</div>
-        <h2 style="font-size:42px; letter-spacing:-.03em; font-weight:700; margin-bottom:14px;" data-i18n="ah">A to-do list that does itself.</h2>
-        <p style="font-size:17px; color:var(--muted); max-width:520px; margin-bottom:16px;" data-i18n="ap">Give the assistant your recurring routine — reminders, invoices, stock checks, rotas. It runs on schedule and reports back.</p>
-        <ul class="feats">
-          <li data-i18n="af1">Daily and weekly tasks run on time, without being asked</li>
-          <li data-i18n="af2">Invoices drafted and chased, reminders sent, reorders prepared</li>
-          <li data-i18n="af3">Anything unusual is flagged to you — never guessed</li>
-          <li data-i18n="af4">One evening message: what's done, what needs you</li>
-        </ul>
-        <div class="payoff" data-i18n="apay">You read one message a day instead of doing twenty tasks.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" style="padding-top:0" id="languages">
+  <section class="sec" id="languages">
     <div class="langsec">
       <div>
         <div class="kick" style="font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:12px;" data-i18n="lk">Languages</div>
         <h2 style="font-size:42px; letter-spacing:-.03em; font-weight:700; margin-bottom:14px;" data-i18n="lh">Your business speaks one language. Your assistant speaks ten.</h2>
-        <p style="font-size:17px; color:var(--muted); max-width:520px;" data-i18n="lp">The assistant detects the customer's language and answers in it. Customers you used to lose to the language barrier now book like locals — no new hires.</p>
+        <p style="font-size:17px; color:var(--muted); max-width:520px;" data-i18n="lp">The assistant detects the customer's language and answers in it. Customers you used to lose to the language barrier now book like locals - no new hires.</p>
         <div class="langchips">
-          <span class="chip"><b>EN</b>English</span><span class="chip"><b>DE</b>Deutsch</span><span class="chip"><b>FR</b>Français</span><span class="chip"><b>ES</b>Español</span><span class="chip"><b>IT</b>Italiano</span><span class="chip"><b>PL</b>Polski</span><span class="chip"><b>UA</b>Українська</span><span class="chip"><b>TR</b>Türkçe</span><span class="chip"><b>PT</b>Português</span><span class="chip"><b>AR</b>العربية</span>
+          <span class="chip"><b>EN</b>English</span><span class="chip"><b>DE</b>Deutsch</span><span class="chip"><b>FR</b>Français</span><span class="chip"><b>ES</b>Español</span><span class="chip"><b>IT</b>Italiano</span><span class="chip"><b>PL</b>Polski</span><span class="chip"><b>UA</b>Українська</span><span class="chip"><b>TR</b>Türkçe</span><span class="chip"><b>PT</b>Português</span><span class="chip"><b>RU</b>Русский</span>
         </div>
       </div>
       <div class="chatcard">
@@ -372,249 +327,232 @@ footer a{ text-decoration:underline; }
   </section>
 
   <section class="sec steps bleed" id="how">
-    <div class="sec-head"><div class="kick" data-i18n="sk">How it works</div><h2 data-i18n="sh">Four steps. Weeks, not months.</h2></div>
+    <div class="sec-head"><div class="kick" data-i18n="sk">How it works</div><h2 data-i18n="sh">Set up in minutes. Live today.</h2></div>
     <div class="steprow">
-      <div class="step"><span class="wk" data-i18n="sw1">Week 1</span><div class="n">1</div><h4 data-i18n="st1h">Audit</h4><p data-i18n="st1p">We look at your calls, chats and paperwork. We pick what the assistant takes over first.</p></div>
-      <div class="step"><span class="wk" data-i18n="sw2">Weeks 2–3</span><div class="n">2</div><h4 data-i18n="st2h">Build &amp; train</h4><p data-i18n="st2p">Trained on your documents, prices and tone. You test it before anyone else sees it.</p></div>
-      <div class="step"><span class="wk" data-i18n="sw3">Week 4</span><div class="n">3</div><h4 data-i18n="st3h">Connect</h4><p data-i18n="st3p">Your number, website, messengers and CRM. Nothing changes for your team.</p></div>
-      <div class="step"><span class="wk" data-i18n="sw4">Ongoing</span><div class="n">4</div><h4 data-i18n="st4h">Improve</h4><p data-i18n="st4p">We read conversations, fix weak answers, add skills. Better every month.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw1">2 min</span><div class="n">1</div><h4 data-i18n="st1h">Create your assistant</h4><p data-i18n="st1p">Paste your website link. Mina drafts her answers from it.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw2">3 min</span><div class="n">2</div><h4 data-i18n="st2h">Make her yours</h4><p data-i18n="st2p">Set your hours, rules and tone.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw3">1 call</span><div class="n">3</div><h4 data-i18n="st3h">Hear her live</h4><p data-i18n="st3p">Call your test number and hear her.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw4">Ongoing</span><div class="n">4</div><h4 data-i18n="st4h">Go live &amp; improve</h4><p data-i18n="st4p">Connect your channels. She gets better every week.</p></div>
     </div>
   </section>
 
-  <section class="sec" id="cases">
-    <div class="sec-head"><div class="kick" data-i18n="ck">Use cases</div><h2 data-i18n="chh">What it looks like in a real business.</h2><p data-i18n="cp">Pick your business. What we set up for you — and a live example of the assistant at work.</p></div>
-    <div class="tabbar" role="tablist">
-      <button class="tab active" onclick="fmCase(0,this)"><i>✚</i><span data-i18n="t0">Clinic</span></button>
-      <button class="tab" onclick="fmCase(1,this)"><i>§</i><span data-i18n="t1">Consulting &amp; law</span></button>
-      <button class="tab" onclick="fmCase(2,this)"><i>⚙</i><span data-i18n="t2">Repair &amp; trades</span></button>
-      <button class="tab" onclick="fmCase(3,this)"><i>♨</i><span data-i18n="t3">Restaurants</span></button>
-      <button class="tab" onclick="fmCase(4,this)"><i>✂</i><span data-i18n="t4">Beauty &amp; salons</span></button>
-      <button class="tab" onclick="fmCase(5,this)"><i>❋</i><span data-i18n="t5">Agro &amp; farm supply</span></button>
-      <button class="tab" onclick="fmCase(6,this)"><i>▤</i><span data-i18n="t6">E-commerce</span></button>
-      <button class="tab" onclick="fmCase(7,this)"><i>⌂</i><span data-i18n="t7">Real estate</span></button>
-      <button class="tab" onclick="fmCase(8,this)"><i>➤</i><span data-i18n="t8">Logistics</span></button>
-    </div>
-    <div class="tabpanels">
+  <section class="sec" id="integrations">
+    <div class="sec-head"><div class="kick" data-i18n="ik">Integrations</div><h2 data-i18n="ih">Works with your tools</h2><p data-i18n="ip">Calendars, CRMs and messengers - connected through native links, Make, Zapier and an open API.</p></div>
+    <div class="mq bleed"><div class="mq-track"><div class="mq-group"><div class="mpill"><span class="tile" style="color:#4285F4"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z"/></svg></span><span class="nm">Google Calendar</span></div><div class="mpill"><span class="tile" style="color:#0F6CBD"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.88 12.04q0 .45-.11.87-.1.41-.33.74-.22.33-.58.52-.37.2-.87.2t-.85-.2q-.35-.21-.57-.55-.22-.33-.33-.75-.1-.42-.1-.86t.1-.87q.1-.43.34-.76.22-.34.59-.54.36-.2.87-.2t.86.2q.35.21.57.55.22.34.31.77.1.43.1.88zM24 12v9.38q0 .46-.33.8-.33.32-.8.32H7.13q-.46 0-.8-.33-.32-.33-.32-.8V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h6.5V2.55q0-.44.3-.75.3-.3.75-.3h12.9q.44 0 .75.3.3.3.3.75V10.85l1.24.72h.01q.1.07.18.18.07.12.07.25zm-6-8.25v3h3v-3zm0 4.5v3h3v-3zm0 4.5v1.83l3.05-1.83zm-5.25-9v3h3.75v-3zm0 4.5v3h3.75v-3zm0 4.5v2.03l2.41 1.5 1.34-.8v-2.73zM9 3.75V6h2l.13.01.12.04v-2.3zM5.98 15.98q.9 0 1.6-.3.7-.32 1.19-.86.48-.55.73-1.28.25-.74.25-1.61 0-.83-.25-1.55-.24-.71-.71-1.24t-1.15-.83q-.68-.3-1.55-.3-.92 0-1.64.3-.71.3-1.2.85-.5.54-.75 1.3-.25.74-.25 1.63 0 .85.26 1.56.26.72.74 1.23.48.52 1.17.81.69.3 1.56.3zM7.5 21h12.39L12 16.08V17q0 .41-.3.7-.29.3-.7.3H7.5zm15-.13v-7.24l-5.9 3.54Z"/></svg></span><span class="nm">Outlook</span></div><div class="mpill"><span class="tile" style="color:#006BFF"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19.655 14.262c.281 0 .557.023.828.064 0 .005-.005.01-.005.014-.105.267-.234.534-.381.786l-1.219 2.106c-1.112 1.936-3.177 3.127-5.411 3.127h-2.432c-2.23 0-4.294-1.191-5.412-3.127l-1.218-2.106a6.251 6.251 0 0 1 0-6.252l1.218-2.106C6.736 4.832 8.8 3.641 11.035 3.641h2.432c2.23 0 4.294 1.191 5.411 3.127l1.219 2.106c.147.252.271.519.381.786 0 .004.005.009.005.014-.267.041-.543.064-.828.064-1.816 0-2.501-.607-3.291-1.306-.764-.676-1.711-1.517-3.44-1.517h-1.029c-1.251 0-2.387.455-3.2 1.278-.796.805-1.233 1.904-1.233 3.099v1.411c0 1.196.437 2.295 1.233 3.099.813.823 1.949 1.278 3.2 1.278h1.034c1.729 0 2.676-.841 3.439-1.517.791-.703 1.471-1.306 3.287-1.301Zm.005-3.237c.399 0 .794-.036 1.179-.11-.002-.004-.002-.01-.002-.014-.073-.414-.193-.823-.349-1.218.731-.12 1.407-.396 1.986-.819 0-.004-.005-.013-.005-.018-.331-1.085-.832-2.101-1.489-3.03-.649-.915-1.435-1.719-2.331-2.395-1.867-1.398-4.088-2.138-6.428-2.138-1.448 0-2.855.28-4.175.841-1.273.543-2.423 1.315-3.407 2.299S2.878 6.552 2.341 7.83c-.557 1.324-.842 2.726-.842 4.175 0 1.448.281 2.855.842 4.174.542 1.274 1.314 2.423 2.298 3.407s2.129 1.761 3.407 2.299c1.324.556 2.727.841 4.175.841 2.34 0 4.561-.74 6.428-2.137a10.815 10.815 0 0 0 2.331-2.396c.652-.929 1.158-1.949 1.489-3.03 0-.004.005-.014.005-.018-.579-.423-1.255-.699-1.986-.819.161-.395.276-.804.349-1.218.005-.009.005-.014.005-.023.869.166 1.692.506 2.404 1.035.685.505.552 1.075.446 1.416C22.184 20.437 17.619 24 12.221 24c-6.625 0-12-5.375-12-12s5.37-12 12-12c5.398 0 9.963 3.563 11.471 8.464.106.341.239.915-.446 1.421-.717.529-1.535.873-2.404 1.034.128.716.128 1.45 0 2.166-.387-.074-.782-.11-1.182-.11-4.184 0-3.968 2.823-6.736 2.823h-1.029c-1.899 0-3.15-1.357-3.15-3.095v-1.411c0-1.738 1.251-3.094 3.15-3.094h1.034c2.768 0 2.552 2.823 6.731 2.827Z"/></svg></span><span class="nm">Calendly</span></div><div class="mpill"><span class="tile" style="color:#4285F4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAUVBMVEVHcEwhISFDQ0NNTU0kJCQ5OTk3NzdKSkojIyM8PDw6OjpISEgtLS0zMzMnJyc/Pz/9/f3r6+u6uroWFhalpaUEBARLS0vZ2dnKysqDg4NtbW0mmUDdAAAACnRSTlMA////sZZitN0f66SVdgAAAyhJREFUWIXdl9F6oyAQhSGkNVUkgQFB3v9Bd2ZAoqm7m+pe7dFGGeb8DmDyFSGaPrtuUu+o6z7FN3112POen7O6r63/4y3rRh9r/8/tpLP+J+GofyEcGP8inocvVSd2mvBctARLSD2D5aLqJ61FNx0VUjoEDNMwtL+1Xtt7mvD9eyPtD/oU3Sk/jkENl+P+y3AVl+FyQjgJZ+ykfwC4X+g8Drif1BFAj/o9oO/HUetxxJT+ta8k8FekIUS/1WiG2Xvn58mM/a7G+fF4WLM0BT6nHX1v5vioillSaNNPZwHIkVsIWMP11Owkp/eK0A3QvwJ0fmwV+x0CAyIBuFPgdNVDq2KzzvtkuYTaWc56v1SAoqjAYJVmk50lgAQzW+uDrj3GGL7S8pQKYKxGwST6kJ7s8Q6UNWqpZih+vPPeK6lVxmMBVHYBlMeQ305St8fyjRlSGVkyxYkXuwegOFYNi79K4sRaOuwjUUYCSZcdgHQEuBsELCXggX7bFDcAmg4C6CqImJKC0VuxM805+wJJoQGKBD2RARi1jgEc4ALAU7LHZZHhHjEhVkACU/NaBZK63UsFYGPEoDQYlpeSgYAYGaDXAFNzNwBzwdyYwXA0OMu0GS/PsQpcLTp0wFQCG/08cAoxKGUBsNMFqAB2IcBUgY8pRQVmJZltSgkBurUQwEEaFku0pymK4xieNZgSu0uOGXz0LmBRwF4X59YDRkptnUtLKERM4CFgcAcAKjom4JpJCWG2ChiaesBsGcjouAIGyC0A28HTE2LKPcCYk3Uxh0zQpEII4NlPgFgqkCwhq7AdXMKvnYuRXzm6yxzCiEv4CiTnCwBDoXjME8BleyI0OXoF0UW3+Olmdq4AmwpYITvX7C4H+mVZIm5WfwcAQPY8VOez5OmEUCM5KOIggC6wD2BD6Kepx1mDFpHDpKmaQJO5XH4HkEB10M/iprDahiWn6Tvgh/ofAOac34jbOcBNXM8BruLzHAC3X+cA+N/6qTFcacNxBsCbv4/j/rr1O7ySt2XbdvBlMs+N46EabmKlA/Ow2friWvxwNa8vm2/e/l9vb02GuV1X2/9fM6uEuPNN53EAAAAASUVORK5CYII=" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">cal.com</span></div><div class="mpill"><span class="tile" style="color:#25D366"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span class="nm">WhatsApp</span></div><div class="mpill"><span class="tile" style="color:#26A5E4"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></span><span class="nm">Telegram</span></div><div class="mpill"><span class="tile" style="color:#E4405F"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span><span class="nm">Instagram</span></div><div class="mpill"><span class="tile slack" style="color:#4A154B"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg></span><span class="nm">Slack</span></div></div><div class="mq-group" aria-hidden="true"><div class="mpill"><span class="tile" style="color:#4285F4"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z"/></svg></span><span class="nm">Google Calendar</span></div><div class="mpill"><span class="tile" style="color:#0F6CBD"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.88 12.04q0 .45-.11.87-.1.41-.33.74-.22.33-.58.52-.37.2-.87.2t-.85-.2q-.35-.21-.57-.55-.22-.33-.33-.75-.1-.42-.1-.86t.1-.87q.1-.43.34-.76.22-.34.59-.54.36-.2.87-.2t.86.2q.35.21.57.55.22.34.31.77.1.43.1.88zM24 12v9.38q0 .46-.33.8-.33.32-.8.32H7.13q-.46 0-.8-.33-.32-.33-.32-.8V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h6.5V2.55q0-.44.3-.75.3-.3.75-.3h12.9q.44 0 .75.3.3.3.3.75V10.85l1.24.72h.01q.1.07.18.18.07.12.07.25zm-6-8.25v3h3v-3zm0 4.5v3h3v-3zm0 4.5v1.83l3.05-1.83zm-5.25-9v3h3.75v-3zm0 4.5v3h3.75v-3zm0 4.5v2.03l2.41 1.5 1.34-.8v-2.73zM9 3.75V6h2l.13.01.12.04v-2.3zM5.98 15.98q.9 0 1.6-.3.7-.32 1.19-.86.48-.55.73-1.28.25-.74.25-1.61 0-.83-.25-1.55-.24-.71-.71-1.24t-1.15-.83q-.68-.3-1.55-.3-.92 0-1.64.3-.71.3-1.2.85-.5.54-.75 1.3-.25.74-.25 1.63 0 .85.26 1.56.26.72.74 1.23.48.52 1.17.81.69.3 1.56.3zM7.5 21h12.39L12 16.08V17q0 .41-.3.7-.29.3-.7.3H7.5zm15-.13v-7.24l-5.9 3.54Z"/></svg></span><span class="nm">Outlook</span></div><div class="mpill"><span class="tile" style="color:#006BFF"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19.655 14.262c.281 0 .557.023.828.064 0 .005-.005.01-.005.014-.105.267-.234.534-.381.786l-1.219 2.106c-1.112 1.936-3.177 3.127-5.411 3.127h-2.432c-2.23 0-4.294-1.191-5.412-3.127l-1.218-2.106a6.251 6.251 0 0 1 0-6.252l1.218-2.106C6.736 4.832 8.8 3.641 11.035 3.641h2.432c2.23 0 4.294 1.191 5.411 3.127l1.219 2.106c.147.252.271.519.381.786 0 .004.005.009.005.014-.267.041-.543.064-.828.064-1.816 0-2.501-.607-3.291-1.306-.764-.676-1.711-1.517-3.44-1.517h-1.029c-1.251 0-2.387.455-3.2 1.278-.796.805-1.233 1.904-1.233 3.099v1.411c0 1.196.437 2.295 1.233 3.099.813.823 1.949 1.278 3.2 1.278h1.034c1.729 0 2.676-.841 3.439-1.517.791-.703 1.471-1.306 3.287-1.301Zm.005-3.237c.399 0 .794-.036 1.179-.11-.002-.004-.002-.01-.002-.014-.073-.414-.193-.823-.349-1.218.731-.12 1.407-.396 1.986-.819 0-.004-.005-.013-.005-.018-.331-1.085-.832-2.101-1.489-3.03-.649-.915-1.435-1.719-2.331-2.395-1.867-1.398-4.088-2.138-6.428-2.138-1.448 0-2.855.28-4.175.841-1.273.543-2.423 1.315-3.407 2.299S2.878 6.552 2.341 7.83c-.557 1.324-.842 2.726-.842 4.175 0 1.448.281 2.855.842 4.174.542 1.274 1.314 2.423 2.298 3.407s2.129 1.761 3.407 2.299c1.324.556 2.727.841 4.175.841 2.34 0 4.561-.74 6.428-2.137a10.815 10.815 0 0 0 2.331-2.396c.652-.929 1.158-1.949 1.489-3.03 0-.004.005-.014.005-.018-.579-.423-1.255-.699-1.986-.819.161-.395.276-.804.349-1.218.005-.009.005-.014.005-.023.869.166 1.692.506 2.404 1.035.685.505.552 1.075.446 1.416C22.184 20.437 17.619 24 12.221 24c-6.625 0-12-5.375-12-12s5.37-12 12-12c5.398 0 9.963 3.563 11.471 8.464.106.341.239.915-.446 1.421-.717.529-1.535.873-2.404 1.034.128.716.128 1.45 0 2.166-.387-.074-.782-.11-1.182-.11-4.184 0-3.968 2.823-6.736 2.823h-1.029c-1.899 0-3.15-1.357-3.15-3.095v-1.411c0-1.738 1.251-3.094 3.15-3.094h1.034c2.768 0 2.552 2.823 6.731 2.827Z"/></svg></span><span class="nm">Calendly</span></div><div class="mpill"><span class="tile" style="color:#4285F4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAUVBMVEVHcEwhISFDQ0NNTU0kJCQ5OTk3NzdKSkojIyM8PDw6OjpISEgtLS0zMzMnJyc/Pz/9/f3r6+u6uroWFhalpaUEBARLS0vZ2dnKysqDg4NtbW0mmUDdAAAACnRSTlMA////sZZitN0f66SVdgAAAyhJREFUWIXdl9F6oyAQhSGkNVUkgQFB3v9Bd2ZAoqm7m+pe7dFGGeb8DmDyFSGaPrtuUu+o6z7FN3112POen7O6r63/4y3rRh9r/8/tpLP+J+GofyEcGP8inocvVSd2mvBctARLSD2D5aLqJ61FNx0VUjoEDNMwtL+1Xtt7mvD9eyPtD/oU3Sk/jkENl+P+y3AVl+FyQjgJZ+ykfwC4X+g8Drif1BFAj/o9oO/HUetxxJT+ta8k8FekIUS/1WiG2Xvn58mM/a7G+fF4WLM0BT6nHX1v5vioillSaNNPZwHIkVsIWMP11Owkp/eK0A3QvwJ0fmwV+x0CAyIBuFPgdNVDq2KzzvtkuYTaWc56v1SAoqjAYJVmk50lgAQzW+uDrj3GGL7S8pQKYKxGwST6kJ7s8Q6UNWqpZih+vPPeK6lVxmMBVHYBlMeQ305St8fyjRlSGVkyxYkXuwegOFYNi79K4sRaOuwjUUYCSZcdgHQEuBsELCXggX7bFDcAmg4C6CqImJKC0VuxM805+wJJoQGKBD2RARi1jgEc4ALAU7LHZZHhHjEhVkACU/NaBZK63UsFYGPEoDQYlpeSgYAYGaDXAFNzNwBzwdyYwXA0OMu0GS/PsQpcLTp0wFQCG/08cAoxKGUBsNMFqAB2IcBUgY8pRQVmJZltSgkBurUQwEEaFku0pymK4xieNZgSu0uOGXz0LmBRwF4X59YDRkptnUtLKERM4CFgcAcAKjom4JpJCWG2ChiaesBsGcjouAIGyC0A28HTE2LKPcCYk3Uxh0zQpEII4NlPgFgqkCwhq7AdXMKvnYuRXzm6yxzCiEv4CiTnCwBDoXjME8BleyI0OXoF0UW3+Olmdq4AmwpYITvX7C4H+mVZIm5WfwcAQPY8VOez5OmEUCM5KOIggC6wD2BD6Kepx1mDFpHDpKmaQJO5XH4HkEB10M/iprDahiWn6Tvgh/ofAOac34jbOcBNXM8BruLzHAC3X+cA+N/6qTFcacNxBsCbv4/j/rr1O7ySt2XbdvBlMs+N46EabmKlA/Ow2friWvxwNa8vm2/e/l9vb02GuV1X2/9fM6uEuPNN53EAAAAASUVORK5CYII=" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">cal.com</span></div><div class="mpill"><span class="tile" style="color:#25D366"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><span class="nm">WhatsApp</span></div><div class="mpill"><span class="tile" style="color:#26A5E4"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></span><span class="nm">Telegram</span></div><div class="mpill"><span class="tile" style="color:#E4405F"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span><span class="nm">Instagram</span></div><div class="mpill"><span class="tile slack" style="color:#4A154B"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg></span><span class="nm">Slack</span></div></div></div></div><div class="mq bleed rev"><div class="mq-track"><div class="mq-group"><div class="mpill"><span class="tile" style="color:#FF7A59"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></svg></span><span class="nm">HubSpot</span></div><div class="mpill"><span class="tile" style="color:#00A1E0"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.006 5.415a4.195 4.195 0 013.045-1.306c1.56 0 2.954.9 3.69 2.205.63-.3 1.35-.45 2.1-.45 2.85 0 5.159 2.34 5.159 5.22s-2.31 5.22-5.176 5.22c-.345 0-.69-.044-1.02-.104a3.75 3.75 0 01-3.3 1.95c-.6 0-1.155-.15-1.65-.375A4.314 4.314 0 018.88 20.4a4.302 4.302 0 01-4.05-2.82c-.27.062-.54.076-.825.076-2.204 0-4.005-1.8-4.005-4.05 0-1.5.811-2.805 2.01-3.51-.255-.57-.39-1.2-.39-1.846 0-2.58 2.1-4.65 4.65-4.65 1.53 0 2.85.705 3.72 1.8"/></svg></span><span class="nm">Salesforce</span></div><div class="mpill"><span class="tile mono"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg></span><span class="nm">Notion</span></div><div class="mpill"><span class="tile make" style="color:#6D00CC"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13.38 3.498c-.27 0-.511.19-.566.465L9.85 18.986a.578.578 0 0 0 .453.678l4.095.826a.58.58 0 0 0 .682-.455l2.963-15.021a.578.578 0 0 0-.453-.678l-4.096-.826a.589.589 0 0 0-.113-.012zm-5.876.098a.576.576 0 0 0-.516.318L.062 17.697a.575.575 0 0 0 .256.774l3.733 1.877a.578.578 0 0 0 .775-.258l6.926-13.781a.577.577 0 0 0-.256-.776L7.762 3.658a.571.571 0 0 0-.258-.062zm11.74.115a.576.576 0 0 0-.576.576v15.426c0 .318.258.578.576.578h4.178a.58.58 0 0 0 .578-.578V4.287a.578.578 0 0 0-.578-.576Z"/></svg></span><span class="nm">Make</span></div><div class="mpill"><span class="tile" style="color:#FF4F00"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.157 0A4.151 4.151 0 0 0 0 4.161v15.678A4.151 4.151 0 0 0 4.157 24h15.682A4.152 4.152 0 0 0 24 19.839V4.161A4.152 4.152 0 0 0 19.839 0H4.157Zm10.61 8.761h.03a.577.577 0 0 1 .23.038.585.585 0 0 1 .201.124.63.63 0 0 1 .162.431.612.612 0 0 1-.162.435.58.58 0 0 1-.201.128.58.58 0 0 1-.23.042.529.529 0 0 1-.235-.042.585.585 0 0 1-.332-.328.559.559 0 0 1-.038-.235.613.613 0 0 1 .17-.431.59.59 0 0 1 .405-.162Zm2.853 1.572c.03.004.061.004.095.004.325-.011.646.064.937.219.238.144.431.355.552.609.128.279.189.582.185.888v.193a2 2 0 0 1 0 .219h-2.498c.003.227.075.45.204.642a.78.78 0 0 0 .646.265.714.714 0 0 0 .484-.136.642.642 0 0 0 .23-.318l.915.257a1.398 1.398 0 0 1-.28.537c-.14.159-.321.284-.521.355a2.234 2.234 0 0 1-.836.136 1.923 1.923 0 0 1-1.001-.245 1.618 1.618 0 0 1-.665-.703 2.221 2.221 0 0 1-.227-1.036 1.95 1.95 0 0 1 .48-1.398 1.9 1.9 0 0 1 1.3-.488Zm-9.607.023c.162.004.325.026.48.079.207.065.4.174.563.314.26.302.393.692.366 1.088v2.276H8.53l-.109-.711h-.065c-.064.163-.155.31-.272.439a1.122 1.122 0 0 1-.374.264 1.023 1.023 0 0 1-.453.083 1.334 1.334 0 0 1-.866-.264.965.965 0 0 1-.329-.801.993.993 0 0 1 .076-.431 1.02 1.02 0 0 1 .242-.363 1.478 1.478 0 0 1 1.043-.303h.952v-.181a.696.696 0 0 0-.136-.454.553.553 0 0 0-.438-.154.695.695 0 0 0-.378.086.48.48 0 0 0-.193.254l-.99-.144a1.26 1.26 0 0 1 .257-.563c.14-.174.321-.302.533-.378.261-.091.54-.136.82-.129.053-.003.106-.007.163-.007Zm4.384.007c.174 0 .347.038.506.114.182.083.34.211.458.374.257.423.377.911.351 1.406a2.53 2.53 0 0 1-.355 1.448 1.148 1.148 0 0 1-1.009.517c-.204 0-.401-.045-.582-.136a1.052 1.052 0 0 1-.48-.457 1.298 1.298 0 0 1-.114-.234h-.045l.004 1.784h-1.059v-4.713h.904l.117.805h.057c.068-.208.177-.401.328-.56a1.129 1.129 0 0 1 .843-.344h.076v-.004Zm7.559.084h.903l.113.805h.053a1.37 1.37 0 0 1 .235-.484.813.813 0 0 1 .313-.242.82.82 0 0 1 .39-.076h.234v1.051h-.401a.662.662 0 0 0-.313.008.623.623 0 0 0-.272.155.663.663 0 0 0-.174.26.683.683 0 0 0-.027.314v1.875h-1.054v-3.666Zm-17.515.003h3.262v.896L3.73 13.104l.034.113h1.973l.042.9H2.4v-.9l1.931-1.754-.045-.117H2.441v-.896Zm11.815 0h1.055v3.659h-1.055V10.45Zm3.443.684.019.016a.69.69 0 0 0-.351.045.756.756 0 0 0-.287.204c-.11.155-.174.336-.189.522h1.545c-.034-.526-.257-.787-.74-.787h.003Zm-5.718.163c-.026 0-.057 0-.083.004a.78.78 0 0 0-.31.053.746.746 0 0 0-.257.189 1.016 1.016 0 0 0-.204.695v.064c-.015.257.057.507.204.711a.634.634 0 0 0 .253.196.638.638 0 0 0 .314.061.644.644 0 0 0 .578-.265c.14-.223.204-.48.189-.74a1.216 1.216 0 0 0-.181-.711.677.677 0 0 0-.503-.257Zm-4.509 1.266a.464.464 0 0 0-.268.102.373.373 0 0 0-.114.276c0 .053.008.106.027.155a.375.375 0 0 0 .087.132.576.576 0 0 0 .397.11v.004a.863.863 0 0 0 .563-.182.573.573 0 0 0 .211-.457v-.14h-.903Z"/></svg></span><span class="nm">Zapier</span></div><div class="mpill"><span class="tile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAtFBMVEX/////zAD7J10AynL/yAD/ygD7AE77AEn7EFP///v7HVj7AEz/7r0AxWL7I1sAyW3/6ar/7LH/++78g5z/44//+OP8YIL/0Cb9uMb/5Zf/+vz8bIr+5Or+w878d5T/1k/7MmX/7/P9rr3+z9j/89D9jKP9prj/3G/8Vnv/5p79nbD/1ET+1t7/4IH/2V7/3nnd9ulx2qIu0IKg5sCS47j7SHJS1ZPq+vKs6cjM8d667dKB361ZnNNCAAAB+ElEQVRYhe2VW1PCMBCFm17T0jRQQBGoAoIgKiLeQP///7JpS7u7SETfnOl5PDN7ul+S3RpGrVq1aunUTyaTa2r6YbM5Pa1+1uCcu/wGlc9tJxVrnfD5ETczuWeVGTOHZbLnPwYsArMQb5cmK2Xf/lA/cc1S3rAwO06V4Ph6AFBv8mVudm0GAkJtwFkAAoLL3DxnMKCjq+/BBvYBF87JAX0emQcICCAN0N3kAALsDxEBpNegOcSkYR4S3Dq4gQtNAwECiALlxRiAnWvqLzFAI1HmHQHoHq+/JgADZTYJgO4KIgzA+woA1zOmqW9z1IDbU+YVAdDM872HAbJRbBGAB00DZoQbGKee/wuAGQGYKHP1d4CFMkPyhh+VuX6SQmyeacAIAzSOArwIaaWS1juqX2KAfB3OcYAdZvVWIQkThhggelXmlACoZbgu6y35BgLoECoAOoRMDeGnLAMsAVrADXy7BTIAwwKS24oAraFolJkhPoFVZgoY8HIkoFjFU7zH8i0iYQC4SrSJZ7mH9oBdrLE3eAa7KqAdUAADL4KrwvuADOAWwC4t/yXwFJ14b27KFsQHCDDu3byHwEsqs3zJTjUDvlUkCPKYxwMv/SN7iyE0u3fqj2yvYmh+Ciml2OwMqn7SS8bUjMNWGBPP322364PyWrVq/Xt9AYWQH20Wa7NBAAAAAElFTkSuQmCC" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">monday.com</span></div><div class="mpill"><span class="tile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEVHcEz///8BAiYAABIVFjEFEjMUFTEVFjEVFjEZGjTAwMQwMUSIiI9gYGz09PV8fIXb291/f4ikpKrcyZ25AAAACnRSTlMA////wv//MM79dM23xgAAAbNJREFUWIXtl9uSgyAMQCUptnIz8v8fu0HdlW0VAn3pziwPLYOcMyEg4DAUy/12u5d7lPHHyOXRq9jwbsWBdym+cUCADsWBLyE4bFXkuOLSqHjCjWlTPOMW0TYoXnE9jlqsOMVTkSkucZmiiNcVVbysEOHXCjF+pWjATxXDtLYK8RNFEmgrxzOF8rALwCtFYjwVWBVLLlhAjq+KRak5F7hWgfsXfLQAEPkwwFSDEdPBAFs9PdB1AXgimmfCVEOaQ4yRYRcxPbBQFaAC1B55oWNYUBnelpXWqKxXiJPCuoDIeQRH6AMyx8MwEaNBQxzL9gKVc4DekUkozcC/ml9Wxf9ojOUy1ZMYAefAIYSA4yrgEIJB7uRxivUcjJHIMJaywOOxqckSN4A3PDqBgGcLuLsLKV9bzvQ6fev8CtbB3sH44tKqr0QoL82Pfhf+rODtbb3tYOGziZ4OlreOthEmI1d842bbXIa9Uao48L3nzwVDpHjB8ztKPYpzPL8lFRXX+CCJooxXo6jjxShk+GUUcvw8iib8LIpG/CSKVvxF0Y7/UtguPFeMfXim6MUPRTe+Kqqf/1+740ok/VuGcAAAAABJRU5ErkJggg==" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">Syrve</span></div><div class="mpill"><span class="tile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAALVBMVEVHcEzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBwnxlLzAAAADnRSTlMAGvSlLOTRCWk+U3yMu/C5uWwAAAIaSURBVFiFtVfr1q0gCMxbVhbv/7jfpiToZIm2Dr/Ya21QZmCkYfjPlsy3eAPbtwQOYP4S7wFg/JJg+yWAqT9+wXiwsTtB2BOA741PRzz0MhlzvOu9gDvibe8FfL5AQr8Hx+2ID+iH1B4/5wssP3/qqWM84nEUou1AcgLugRWdxpHAQ9HWgdBsHIkVuIu3jn40uQCcowU6EuRD92sHaC+BKETgJuGrTVII7KuNDsXmcdJfdPEx/Esh+UocChTu/qhUtxKF5KvUzZUpPApb6/FUNdKWhL9q2ylTiNNnrPC1dFLVNwpB2VC56jRcKaTezAr1bEn8KxcTIvvEyKNR1Yso5tA0tld1ExRGSaEVCd7Ujar2XAxrGtszldudNifyulCh0osiJYU5L1S1ITHMRFsaLgORyXhqaHenEP3A/vwOo+MKCDZfHIinBIkxIuK2yxDI97ZkRpx1vkwlNB9bSUoBoQCMGyH73EnUyZKHnCcymm+9nFGwg7jvbnIg3naFkiBTUYRreNXFkp7A0f30s/I4CEWLZ7wciNrbIDX1VAHDmeuqWlB1ORD1VYe6iUUJUSN0NVsrySKCjb1vxRBoHpbzsJ3uOU1GXOudQrLCTkMFKD8dMuCWMhhiQLvmnGOw7tdPpyar1xzuwTCG02/YVq/vAFnLp48vJWhaFP3tDrbxy8mM1/ixfd+fBHyh79txceFXiQ3a/bBosQb9H0GGPY5oV3VsAAAAAElFTkSuQmCC" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">Lightspeed</span></div></div><div class="mq-group" aria-hidden="true"><div class="mpill"><span class="tile" style="color:#FF7A59"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></svg></span><span class="nm">HubSpot</span></div><div class="mpill"><span class="tile" style="color:#00A1E0"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.006 5.415a4.195 4.195 0 013.045-1.306c1.56 0 2.954.9 3.69 2.205.63-.3 1.35-.45 2.1-.45 2.85 0 5.159 2.34 5.159 5.22s-2.31 5.22-5.176 5.22c-.345 0-.69-.044-1.02-.104a3.75 3.75 0 01-3.3 1.95c-.6 0-1.155-.15-1.65-.375A4.314 4.314 0 018.88 20.4a4.302 4.302 0 01-4.05-2.82c-.27.062-.54.076-.825.076-2.204 0-4.005-1.8-4.005-4.05 0-1.5.811-2.805 2.01-3.51-.255-.57-.39-1.2-.39-1.846 0-2.58 2.1-4.65 4.65-4.65 1.53 0 2.85.705 3.72 1.8"/></svg></span><span class="nm">Salesforce</span></div><div class="mpill"><span class="tile mono"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg></span><span class="nm">Notion</span></div><div class="mpill"><span class="tile make" style="color:#6D00CC"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13.38 3.498c-.27 0-.511.19-.566.465L9.85 18.986a.578.578 0 0 0 .453.678l4.095.826a.58.58 0 0 0 .682-.455l2.963-15.021a.578.578 0 0 0-.453-.678l-4.096-.826a.589.589 0 0 0-.113-.012zm-5.876.098a.576.576 0 0 0-.516.318L.062 17.697a.575.575 0 0 0 .256.774l3.733 1.877a.578.578 0 0 0 .775-.258l6.926-13.781a.577.577 0 0 0-.256-.776L7.762 3.658a.571.571 0 0 0-.258-.062zm11.74.115a.576.576 0 0 0-.576.576v15.426c0 .318.258.578.576.578h4.178a.58.58 0 0 0 .578-.578V4.287a.578.578 0 0 0-.578-.576Z"/></svg></span><span class="nm">Make</span></div><div class="mpill"><span class="tile" style="color:#FF4F00"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.157 0A4.151 4.151 0 0 0 0 4.161v15.678A4.151 4.151 0 0 0 4.157 24h15.682A4.152 4.152 0 0 0 24 19.839V4.161A4.152 4.152 0 0 0 19.839 0H4.157Zm10.61 8.761h.03a.577.577 0 0 1 .23.038.585.585 0 0 1 .201.124.63.63 0 0 1 .162.431.612.612 0 0 1-.162.435.58.58 0 0 1-.201.128.58.58 0 0 1-.23.042.529.529 0 0 1-.235-.042.585.585 0 0 1-.332-.328.559.559 0 0 1-.038-.235.613.613 0 0 1 .17-.431.59.59 0 0 1 .405-.162Zm2.853 1.572c.03.004.061.004.095.004.325-.011.646.064.937.219.238.144.431.355.552.609.128.279.189.582.185.888v.193a2 2 0 0 1 0 .219h-2.498c.003.227.075.45.204.642a.78.78 0 0 0 .646.265.714.714 0 0 0 .484-.136.642.642 0 0 0 .23-.318l.915.257a1.398 1.398 0 0 1-.28.537c-.14.159-.321.284-.521.355a2.234 2.234 0 0 1-.836.136 1.923 1.923 0 0 1-1.001-.245 1.618 1.618 0 0 1-.665-.703 2.221 2.221 0 0 1-.227-1.036 1.95 1.95 0 0 1 .48-1.398 1.9 1.9 0 0 1 1.3-.488Zm-9.607.023c.162.004.325.026.48.079.207.065.4.174.563.314.26.302.393.692.366 1.088v2.276H8.53l-.109-.711h-.065c-.064.163-.155.31-.272.439a1.122 1.122 0 0 1-.374.264 1.023 1.023 0 0 1-.453.083 1.334 1.334 0 0 1-.866-.264.965.965 0 0 1-.329-.801.993.993 0 0 1 .076-.431 1.02 1.02 0 0 1 .242-.363 1.478 1.478 0 0 1 1.043-.303h.952v-.181a.696.696 0 0 0-.136-.454.553.553 0 0 0-.438-.154.695.695 0 0 0-.378.086.48.48 0 0 0-.193.254l-.99-.144a1.26 1.26 0 0 1 .257-.563c.14-.174.321-.302.533-.378.261-.091.54-.136.82-.129.053-.003.106-.007.163-.007Zm4.384.007c.174 0 .347.038.506.114.182.083.34.211.458.374.257.423.377.911.351 1.406a2.53 2.53 0 0 1-.355 1.448 1.148 1.148 0 0 1-1.009.517c-.204 0-.401-.045-.582-.136a1.052 1.052 0 0 1-.48-.457 1.298 1.298 0 0 1-.114-.234h-.045l.004 1.784h-1.059v-4.713h.904l.117.805h.057c.068-.208.177-.401.328-.56a1.129 1.129 0 0 1 .843-.344h.076v-.004Zm7.559.084h.903l.113.805h.053a1.37 1.37 0 0 1 .235-.484.813.813 0 0 1 .313-.242.82.82 0 0 1 .39-.076h.234v1.051h-.401a.662.662 0 0 0-.313.008.623.623 0 0 0-.272.155.663.663 0 0 0-.174.26.683.683 0 0 0-.027.314v1.875h-1.054v-3.666Zm-17.515.003h3.262v.896L3.73 13.104l.034.113h1.973l.042.9H2.4v-.9l1.931-1.754-.045-.117H2.441v-.896Zm11.815 0h1.055v3.659h-1.055V10.45Zm3.443.684.019.016a.69.69 0 0 0-.351.045.756.756 0 0 0-.287.204c-.11.155-.174.336-.189.522h1.545c-.034-.526-.257-.787-.74-.787h.003Zm-5.718.163c-.026 0-.057 0-.083.004a.78.78 0 0 0-.31.053.746.746 0 0 0-.257.189 1.016 1.016 0 0 0-.204.695v.064c-.015.257.057.507.204.711a.634.634 0 0 0 .253.196.638.638 0 0 0 .314.061.644.644 0 0 0 .578-.265c.14-.223.204-.48.189-.74a1.216 1.216 0 0 0-.181-.711.677.677 0 0 0-.503-.257Zm-4.509 1.266a.464.464 0 0 0-.268.102.373.373 0 0 0-.114.276c0 .053.008.106.027.155a.375.375 0 0 0 .087.132.576.576 0 0 0 .397.11v.004a.863.863 0 0 0 .563-.182.573.573 0 0 0 .211-.457v-.14h-.903Z"/></svg></span><span class="nm">Zapier</span></div><div class="mpill"><span class="tile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAtFBMVEX/////zAD7J10AynL/yAD/ygD7AE77AEn7EFP///v7HVj7AEz/7r0AxWL7I1sAyW3/6ar/7LH/++78g5z/44//+OP8YIL/0Cb9uMb/5Zf/+vz8bIr+5Or+w878d5T/1k/7MmX/7/P9rr3+z9j/89D9jKP9prj/3G/8Vnv/5p79nbD/1ET+1t7/4IH/2V7/3nnd9ulx2qIu0IKg5sCS47j7SHJS1ZPq+vKs6cjM8d667dKB361ZnNNCAAAB+ElEQVRYhe2VW1PCMBCFm17T0jRQQBGoAoIgKiLeQP///7JpS7u7SETfnOl5PDN7ul+S3RpGrVq1aunUTyaTa2r6YbM5Pa1+1uCcu/wGlc9tJxVrnfD5ETczuWeVGTOHZbLnPwYsArMQb5cmK2Xf/lA/cc1S3rAwO06V4Ph6AFBv8mVudm0GAkJtwFkAAoLL3DxnMKCjq+/BBvYBF87JAX0emQcICCAN0N3kAALsDxEBpNegOcSkYR4S3Dq4gQtNAwECiALlxRiAnWvqLzFAI1HmHQHoHq+/JgADZTYJgO4KIgzA+woA1zOmqW9z1IDbU+YVAdDM872HAbJRbBGAB00DZoQbGKee/wuAGQGYKHP1d4CFMkPyhh+VuX6SQmyeacAIAzSOArwIaaWS1juqX2KAfB3OcYAdZvVWIQkThhggelXmlACoZbgu6y35BgLoECoAOoRMDeGnLAMsAVrADXy7BTIAwwKS24oAraFolJkhPoFVZgoY8HIkoFjFU7zH8i0iYQC4SrSJZ7mH9oBdrLE3eAa7KqAdUAADL4KrwvuADOAWwC4t/yXwFJ14b27KFsQHCDDu3byHwEsqs3zJTjUDvlUkCPKYxwMv/SN7iyE0u3fqj2yvYmh+Ciml2OwMqn7SS8bUjMNWGBPP322364PyWrVq/Xt9AYWQH20Wa7NBAAAAAElFTkSuQmCC" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">monday.com</span></div><div class="mpill"><span class="tile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAOVBMVEVHcEz///8BAiYAABIVFjEFEjMUFTEVFjEVFjEZGjTAwMQwMUSIiI9gYGz09PV8fIXb291/f4ikpKrcyZ25AAAACnRSTlMA////wv//MM79dM23xgAAAbNJREFUWIXtl9uSgyAMQCUptnIz8v8fu0HdlW0VAn3pziwPLYOcMyEg4DAUy/12u5d7lPHHyOXRq9jwbsWBdym+cUCADsWBLyE4bFXkuOLSqHjCjWlTPOMW0TYoXnE9jlqsOMVTkSkucZmiiNcVVbysEOHXCjF+pWjATxXDtLYK8RNFEmgrxzOF8rALwCtFYjwVWBVLLlhAjq+KRak5F7hWgfsXfLQAEPkwwFSDEdPBAFs9PdB1AXgimmfCVEOaQ4yRYRcxPbBQFaAC1B55oWNYUBnelpXWqKxXiJPCuoDIeQRH6AMyx8MwEaNBQxzL9gKVc4DekUkozcC/ml9Wxf9ojOUy1ZMYAefAIYSA4yrgEIJB7uRxivUcjJHIMJaywOOxqckSN4A3PDqBgGcLuLsLKV9bzvQ6fev8CtbB3sH44tKqr0QoL82Pfhf+rODtbb3tYOGziZ4OlreOthEmI1d842bbXIa9Uao48L3nzwVDpHjB8ztKPYpzPL8lFRXX+CCJooxXo6jjxShk+GUUcvw8iib8LIpG/CSKVvxF0Y7/UtguPFeMfXim6MUPRTe+Kqqf/1+740ok/VuGcAAAAABJRU5ErkJggg==" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">Syrve</span></div><div class="mpill"><span class="tile"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAALVBMVEVHcEzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBzoHBwnxlLzAAAADnRSTlMAGvSlLOTRCWk+U3yMu/C5uWwAAAIaSURBVFiFtVfr1q0gCMxbVhbv/7jfpiToZIm2Dr/Ya21QZmCkYfjPlsy3eAPbtwQOYP4S7wFg/JJg+yWAqT9+wXiwsTtB2BOA741PRzz0MhlzvOu9gDvibe8FfL5AQr8Hx+2ID+iH1B4/5wssP3/qqWM84nEUou1AcgLugRWdxpHAQ9HWgdBsHIkVuIu3jn40uQCcowU6EuRD92sHaC+BKETgJuGrTVII7KuNDsXmcdJfdPEx/Esh+UocChTu/qhUtxKF5KvUzZUpPApb6/FUNdKWhL9q2ylTiNNnrPC1dFLVNwpB2VC56jRcKaTezAr1bEn8KxcTIvvEyKNR1Yso5tA0tld1ExRGSaEVCd7Ujar2XAxrGtszldudNifyulCh0osiJYU5L1S1ITHMRFsaLgORyXhqaHenEP3A/vwOo+MKCDZfHIinBIkxIuK2yxDI97ZkRpx1vkwlNB9bSUoBoQCMGyH73EnUyZKHnCcymm+9nFGwg7jvbnIg3naFkiBTUYRreNXFkp7A0f30s/I4CEWLZ7wciNrbIDX1VAHDmeuqWlB1ORD1VYe6iUUJUSN0NVsrySKCjb1vxRBoHpbzsJ3uOU1GXOudQrLCTkMFKD8dMuCWMhhiQLvmnGOw7tdPpyar1xzuwTCG02/YVq/vAFnLp48vJWhaFP3tDrbxy8mM1/ixfd+fBHyh79txceFXiQ3a/bBosQb9H0GGPY5oV3VsAAAAAElFTkSuQmCC" alt="" width="26" height="26" style="display:block;border-radius:6px"></span><span class="nm">Lightspeed</span></div></div></div></div>
+  <div style="text-align:left;margin-top:44px"><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="gs">Get started</a></div>
+  </section>
 
-      <div class="tpanel active">
-        <div data-i18n="c0L">
-          <h3>Clinic</h3>
-          <p class="desc">The front desk goes home at six. Patients don't.</p>
-          <ul class="feats">
-            <li>Books, moves and cancels appointments by phone and chat, 24/7</li>
-            <li>Answers prices, preparation and opening hours from your own lists</li>
-            <li>Reminds patients a day before — fewer no-shows</li>
-            <li>Writes every change straight into your calendar and CRM</li>
-          </ul>
-          <div class="payoff">Mornings start with a clean calendar.</div>
+  <section class="sec" id="cases" style="padding-top:56px">
+    <div class="sec-head"><div class="kick" data-i18n="ck">Use cases</div><h2 data-i18n="chh">What it looks like in a real business.</h2><p data-i18n="cp">Pick your business. What Mina takes over - and a live example of the assistant at work.</p></div>
+    <div class="car">
+      <div class="car-row">
+        <button class="car-arrow" onclick="fmCaseGo(-1)" aria-label="Previous">←</button>
+        <div class="car-vp">
+          <div class="car-track" id="carTrack">
+
+            <article class="ccard on">
+              <div class="cc-biz"><i>✚</i><span data-i18n="t0">Clinic</span></div>
+              <p class="cc-pain" data-i18n="u0p">The front desk goes home at six. Patients don't.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u0f1">Books and moves appointments 24/7</li>
+                <li data-i18n="u0f2">Answers prices and hours from your lists</li>
+                <li data-i18n="u0f3">Reminds patients a day before</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u0y">Mornings start with a clean calendar.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u0ct">Phone · after hours</span><span>21:40</span></div>
+                <div class="msg in" data-i18n="u0m1">I need to move my Wednesday appointment.</div>
+                <div class="msg out" data-i18n="u0m2">Thursday at 10:30 is free - shall I book it?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>§</i><span data-i18n="t1">Consulting &amp; law</span></div>
+              <p class="cc-pain" data-i18n="u1p">New clients describe their case once - and arrive prepared.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u1f1">Collects case details in chat, day or night</li>
+                <li data-i18n="u1f2">Books the consultation with the right partner</li>
+                <li data-i18n="u1f3">Finds any contract or client history in seconds</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u1y">A ready intake form, not a missed call.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u1ct">Website chat</span><span>00:12</span></div>
+                <div class="msg in" data-i18n="u1m1">I have a dispute over a commercial lease. Can you help?</div>
+                <div class="msg out" data-i18n="u1m2">We can. Which city is the property in, and do you have the lease at hand?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>⚙</i><span data-i18n="t2">Repair &amp; trades</span></div>
+              <p class="cc-pain" data-i18n="u2p">You fix. It dispatches, quotes and chases paperwork.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u2f1">Gives a price range from a photo and your list</li>
+                <li data-i18n="u2f2">Books the visit and reminds the technician</li>
+                <li data-i18n="u2f3">Sends invoices and chases unpaid ones</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u2y">The master fixes. The agent dispatches.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u2ct">WhatsApp</span><span>22:03</span></div>
+                <div class="msg in" data-i18n="u2m1">📷 Boiler leaking from the bottom. How much to fix?</div>
+                <div class="msg out" data-i18n="u2m2">Looks like a valve issue - jobs like this run €90-140. Tomorrow 9:00 or 13:00?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>♨</i><span data-i18n="t3">Restaurants</span></div>
+              <p class="cc-pain" data-i18n="u3p">Friday rush on the floor. Silence on the missed-calls list.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u3f1">Takes reservations while staff serve tables</li>
+                <li data-i18n="u3f2">Answers menu questions, incl. allergens</li>
+                <li data-i18n="u3f3">Passes large groups to the manager</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u3y">No lost tables at peak hours.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u3ct">Phone · Friday</span><span>19:22</span></div>
+                <div class="msg in" data-i18n="u3m1">Table for six tonight around eight?</div>
+                <div class="msg out" data-i18n="u3m2">8:30 is free - the round table by the window. Book it?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>✂</i><span data-i18n="t4">Beauty &amp; salons</span></div>
+              <p class="cc-pain" data-i18n="u4p">Every missed call used to book the salon next door.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u4f1">Catches every call, even mid-blow-dry</li>
+                <li data-i18n="u4f2">Refills cancelled slots from the waiting list</li>
+                <li data-i18n="u4f3">Reminds clients a day before</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u4y">Chairs don't sit empty.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u4ct">Instagram DM</span><span>13:47</span></div>
+                <div class="msg in" data-i18n="u4m1">Any slot for a haircut tomorrow?</div>
+                <div class="msg out" data-i18n="u4m2">Yes - 11:00 with Olha or 16:30 with Marta. Which works?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>❋</i><span data-i18n="t5">Agro &amp; farm supply</span></div>
+              <p class="cc-pain" data-i18n="u5p">In season the phone never stops. Now it never goes unanswered.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u5f1">Takes seed, feed and parts orders in any language</li>
+                <li data-i18n="u5f2">Checks stock live and confirms delivery windows</li>
+                <li data-i18n="u5f3">Flags weather-critical deliveries</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u5y">Season peaks without seasonal hires.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u5ct">Phone · season</span><span>07:15</span></div>
+                <div class="msg in" data-i18n="u5m1">Need two tonnes of feed delivered Friday.</div>
+                <div class="msg out" data-i18n="u5m2">In stock. Friday morning is free - the usual farm address?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>▤</i><span data-i18n="t6">E-commerce</span></div>
+              <p class="cc-pain" data-i18n="u6p">"Where is my order?" is 40% of tickets. It's now 0% of your team's day.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u6f1">Answers order status with live tracking</li>
+                <li data-i18n="u6f2">Starts returns and exchanges in the chat</li>
+                <li data-i18n="u6f3">Recommends products and checks stock</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u6y">Your team handles real problems.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u6ct">Website chat</span><span data-i18n="chn">now</span></div>
+                <div class="msg in" data-i18n="u6m1">Hi, where is my order #4482?</div>
+                <div class="msg out" data-i18n="u6m2">It left our warehouse today and arrives Tuesday. Here is the tracking link.</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>⌂</i><span data-i18n="t7">Real estate</span></div>
+              <p class="cc-pain" data-i18n="u7p">Listings get enquiries at 23:00. Your agents don't.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u7f1">Answers listing questions at any hour</li>
+                <li data-i18n="u7f2">Qualifies the lead: budget, dates, financing</li>
+                <li data-i18n="u7f3">Books viewings into the agent's calendar</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u7y">Wake up to a booked viewing.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u7ct">Portal enquiry</span><span>23:04</span></div>
+                <div class="msg in" data-i18n="u7m1">Is the 2-bed on Harju Street still available?</div>
+                <div class="msg out" data-i18n="u7m2">Yes. Viewings run Thursday 17:00-19:00 - shall I book you a slot?</div>
+              </div>
+            </article>
+
+            <article class="ccard">
+              <div class="cc-biz"><i>➤</i><span data-i18n="t8">Logistics</span></div>
+              <p class="cc-pain" data-i18n="u8p">Dispatchers should dispatch, not repeat the same answer.</p>
+              <ul class="cc-feats">
+                <li data-i18n="u8f1">Answers "where is the truck?" from live GPS</li>
+                <li data-i18n="u8f2">Books dock slots and confirms delivery windows</li>
+                <li data-i18n="u8f3">Sends PODs and invoices on request</li>
+              </ul>
+              <div class="cc-payoff" data-i18n="u8y">Dispatchers dispatch.</div>
+              <div class="cc-chat">
+                <div class="t"><span data-i18n="u8ct">Phone</span><span>13:12</span></div>
+                <div class="msg in" data-i18n="u8m1">Where is the truck for order 7731?</div>
+                <div class="msg out" data-i18n="u8m2">On the A2, 40 km out - ETA 14:20. I'll message you if it slips.</div>
+              </div>
+            </article>
+
+          </div>
         </div>
-        <div class="chatcard" data-i18n="c0R">
-          <div class="t"><span>Phone · after hours</span><span>21:40</span></div>
-          <div class="msg in">Good evening, I need to move my Wednesday appointment.</div>
-          <div class="msg out">Of course. Thursday at 10:30 is free — shall I book it?<small>Booking updated in CRM · 21:41</small></div>
-          <div class="msg in">Yes, please.</div>
-          <div class="msg out">Done. You'll get an SMS confirmation now. Anything else?<small>SMS sent · after hours</small></div>
-        </div>
+        <button class="car-arrow" onclick="fmCaseGo(1)" aria-label="Next">→</button>
       </div>
 
-      <div class="tpanel">
-        <div data-i18n="c1L">
-          <h3>Consulting &amp; law</h3>
-          <p class="desc">New clients describe their case once — and arrive prepared.</p>
-          <ul class="feats">
-            <li>Collects the case details in chat, day or night</li>
-            <li>Books the consultation into the right partner's calendar</li>
-            <li>Finds any contract or client history in seconds</li>
-            <li>Drafts engagement letters and follow-ups in your style</li>
-          </ul>
-          <div class="payoff">A ready intake form, not a missed call.</div>
+      <div class="car-ctrl">
+        <button class="car-arrow" onclick="fmCaseGo(-1)" aria-label="Previous">←</button>
+        <div class="car-dots" id="carDots">
+          <button onclick="fmCaseTo(0)" aria-label="Clinic"><i></i></button>
+          <button onclick="fmCaseTo(1)" aria-label="Consulting and law"><i></i></button>
+          <button onclick="fmCaseTo(2)" aria-label="Repair and trades"><i></i></button>
+          <button onclick="fmCaseTo(3)" aria-label="Restaurants"><i></i></button>
+          <button onclick="fmCaseTo(4)" aria-label="Beauty and salons"><i></i></button>
+          <button onclick="fmCaseTo(5)" aria-label="Agro and farm supply"><i></i></button>
+          <button onclick="fmCaseTo(6)" aria-label="E-commerce"><i></i></button>
+          <button onclick="fmCaseTo(7)" aria-label="Real estate"><i></i></button>
+          <button onclick="fmCaseTo(8)" aria-label="Logistics"><i></i></button>
         </div>
-        <div class="chatcard" data-i18n="c1R">
-          <div class="t"><span>Website chat</span><span>00:12</span></div>
-          <div class="msg in">I have a dispute over a commercial lease. Can you help?</div>
-          <div class="msg out">We can. Two questions to prepare your consultation: which city is the property in, and do you have the lease at hand?<small>Intake started · 00:12</small></div>
-          <div class="msg in">Manchester. Yes, I have it.</div>
-          <div class="msg out">Thank you. Thursday 15:00 with our property partner is free — shall I book it and send a document checklist?<small>Conflict check passed · 00:14</small></div>
-        </div>
+        <button class="car-arrow" onclick="fmCaseGo(1)" aria-label="Next">→</button>
       </div>
-
-      <div class="tpanel">
-        <div data-i18n="c2L">
-          <h3>Repair &amp; trades</h3>
-          <p class="desc">You fix. It dispatches, quotes and chases paperwork.</p>
-          <ul class="feats">
-            <li>Takes a photo of the problem, gives a price range from your list</li>
-            <li>Books the visit and reminds the technician in the morning</li>
-            <li>Sends the invoice after the job and chases unpaid ones</li>
-            <li>Keeps customers updated: on the way, delayed, done</li>
-          </ul>
-          <div class="payoff">The master fixes. The agent dispatches.</div>
-        </div>
-        <div class="chatcard" data-i18n="c2R">
-          <div class="t"><span>WhatsApp</span><span>22:03</span></div>
-          <div class="msg in">📷 Boiler leaking from the bottom. How much to fix?</div>
-          <div class="msg out">Thanks — from the photo it looks like a valve issue. Jobs like this run €90–140. Tomorrow 9:00 or 13:00?<small>Price from your list · 22:03</small></div>
-          <div class="msg in">9:00 works.</div>
-          <div class="msg out">Booked. Tomas will call 20 minutes before arriving.<small>Technician notified · 22:04</small></div>
-        </div>
-      </div>
-
-      <div class="tpanel">
-        <div data-i18n="c3L">
-          <h3>Restaurants</h3>
-          <p class="desc">Friday rush on the floor. Silence on the missed-calls list.</p>
-          <ul class="feats">
-            <li>Takes reservations and pre-orders while staff serve tables</li>
-            <li>Answers menu questions, including allergens, from your menu</li>
-            <li>Passes large groups and events to the manager with details</li>
-            <li>One evening summary: covers, no-shows, tomorrow's bookings</li>
-          </ul>
-          <div class="payoff">No lost tables at peak hours.</div>
-        </div>
-        <div class="chatcard" data-i18n="c3R">
-          <div class="t"><span>Phone · Friday</span><span>19:22</span></div>
-          <div class="msg in">Table for six tonight around eight?</div>
-          <div class="msg out">8:00 is full, but 8:30 is free — the round table by the window. Book it?<small>Live floor plan · 19:22</small></div>
-          <div class="msg in">Yes. One of us is gluten-free.</div>
-          <div class="msg out">Noted for the kitchen. See you at 8:30.<small>Note added to booking · 19:23</small></div>
-        </div>
-      </div>
-
-      <div class="tpanel">
-        <div data-i18n="c4L">
-          <h3>Beauty &amp; salons</h3>
-          <p class="desc">Every missed call used to book the salon next door.</p>
-          <ul class="feats">
-            <li>Catches every call and message, even mid-blow-dry</li>
-            <li>Refills cancelled slots from the waiting list automatically</li>
-            <li>Reminds clients a day before — no-shows drop</li>
-            <li>Invites back clients who haven't visited in two months</li>
-          </ul>
-          <div class="payoff">Chairs don't sit empty.</div>
-        </div>
-        <div class="chatcard" data-i18n="c4R">
-          <div class="t"><span>Instagram DM</span><span>13:47</span></div>
-          <div class="msg in">Any slot for a haircut tomorrow?</div>
-          <div class="msg out">Yes — 11:00 with Olha or 16:30 with Marta. Which works?<small>Live calendar · 13:47</small></div>
-          <div class="msg in">16:30.</div>
-          <div class="msg out">Booked with Marta. Want to add a manicure at 17:15? The chair next door is free.<small>Upsell from schedule · 13:48</small></div>
-        </div>
-      </div>
-
-      <div class="tpanel">
-        <div data-i18n="c5L">
-          <h3>Agro &amp; farm supply</h3>
-          <p class="desc">In season the phone never stops. Now it never goes unanswered.</p>
-          <ul class="feats">
-            <li>Takes orders for seed, feed and parts in any language</li>
-            <li>Checks stock live and confirms delivery windows</li>
-            <li>Flags weather-critical deliveries to the dispatcher</li>
-            <li>Knows the season: who bought seed in March gets a call in February</li>
-          </ul>
-          <div class="payoff">Season peaks without seasonal hires.</div>
-        </div>
-        <div class="chatcard" data-i18n="c5R">
-          <div class="t"><span>Phone · season</span><span>07:15</span></div>
-          <div class="msg in">Need two tonnes of feed delivered Friday.</div>
-          <div class="msg out">In stock. Friday morning slot is free — deliver to the farm on the usual address?<small>Stock checked · 07:15</small></div>
-          <div class="msg in">Yes, before noon.</div>
-          <div class="msg out">Confirmed, Friday 8:00–12:00. Heads up: rain is forecast Thursday night — I'll alert you if the route slips.<small>Weather watch on · 07:16</small></div>
-        </div>
-      </div>
-
-      <div class="tpanel">
-        <div data-i18n="c6L">
-          <h3>E-commerce</h3>
-          <p class="desc">"Where is my order?" is 40% of tickets. It's now 0% of your team's day.</p>
-          <ul class="feats">
-            <li>Answers order status instantly with live tracking</li>
-            <li>Starts returns and exchanges right in the chat</li>
-            <li>Recommends products from your catalogue and checks stock</li>
-            <li>Asks for a review after delivery — at the right moment</li>
-          </ul>
-          <div class="payoff">Your team handles real problems.</div>
-        </div>
-        <div class="chatcard" data-i18n="c6R">
-          <div class="t"><span>Website chat</span><span>now</span></div>
-          <div class="msg in">Hi, where is my order #4482?</div>
-          <div class="msg out">It left our warehouse today and arrives Tuesday. Here is the tracking link.<small>Live tracking · 4 sec</small></div>
-          <div class="msg in">Can I add another item to it?</div>
-          <div class="msg out">It's already packed — but I can place a second order with free shipping. Want me to?<small>Rules from your policy · 6 sec</small></div>
-        </div>
-      </div>
-
-      <div class="tpanel">
-        <div data-i18n="c7L">
-          <h3>Real estate</h3>
-          <p class="desc">Listings get enquiries at 23:00. Your agents don't.</p>
-          <ul class="feats">
-            <li>Answers listing questions at any hour, in any language</li>
-            <li>Qualifies the lead: budget, dates, financing</li>
-            <li>Books viewings straight into the agent's calendar</li>
-            <li>Follows up after the viewing and offers similar properties</li>
-          </ul>
-          <div class="payoff">Wake up to a booked viewing.</div>
-        </div>
-        <div class="chatcard" data-i18n="c7R">
-          <div class="t"><span>Portal enquiry</span><span>23:04</span></div>
-          <div class="msg in">Is the 2-bed on Harju Street still available?</div>
-          <div class="msg out">Yes. Viewings run Thursday 17:00–19:00 — shall I book you a slot?<small>Agent's calendar · 23:04</small></div>
-          <div class="msg in">Thursday 18:00, please.</div>
-          <div class="msg out">Booked. I've also sent two similar flats nearby, both in your budget.<small>Matched from listings · 23:05</small></div>
-        </div>
-      </div>
-
-      <div class="tpanel">
-        <div data-i18n="c8L">
-          <h3>Logistics</h3>
-          <p class="desc">Dispatchers should dispatch, not repeat the same answer.</p>
-          <ul class="feats">
-            <li>Answers "where is the truck?" from live GPS data</li>
-            <li>Books dock slots and confirms delivery windows</li>
-            <li>Sends PODs and invoices the moment they're requested</li>
-            <li>Alerts clients about delays before they call you</li>
-          </ul>
-          <div class="payoff">Dispatchers dispatch.</div>
-        </div>
-        <div class="chatcard" data-i18n="c8R">
-          <div class="t"><span>Phone</span><span>13:12</span></div>
-          <div class="msg in">Where is the truck for order 7731?</div>
-          <div class="msg out">On the A2, 40 km out — ETA 14:20. I'll message you if it slips.<small>Live GPS · 13:12</small></div>
-          <div class="msg in">Send me the POD from yesterday too.</div>
-          <div class="msg out">Sent to your email just now.<small>Document from TMS · 13:13</small></div>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <section class="sec" style="padding-top:0" id="faq">
     <div class="sec-head"><div class="kick" data-i18n="fqk">Honest answers</div><h2 data-i18n="fqh">The questions everyone asks.</h2></div>
-    <div class="faq">
-      <div class="qa"><h4 data-i18n="q1">Will it sound like a robot?</h4><p data-i18n="a1">No. Modern voices are natural, and the agent says it is an assistant. Customers care about being helped in two seconds, not about who picked up.</p></div>
-      <div class="qa"><h4 data-i18n="q2">What happens with hard questions?</h4><p data-i18n="a2">The assistant passes the conversation to your team with a full summary. It never guesses on things it does not know.</p></div>
-      <div class="qa"><h4 data-i18n="q3">What about our data?</h4><p data-i18n="a3">It stays yours. We build private setups where your documents and customer data never train public models.</p></div>
-      <div class="qa"><h4 data-i18n="q4">Which languages?</h4><p data-i18n="a4">Ten, in the same assistant: English, German, French, Spanish, Italian, Polish, Ukrainian, Turkish, Portuguese and Arabic. It detects the customer's language and answers in it — even if your business works in one.</p></div>
-      <div class="qa"><h4 data-i18n="q5">We are not a tech company. Will we manage?</h4><p data-i18n="a5">That is exactly who we build for. We install, connect and run everything; your team keeps working the way they know. You get results and one number to call.</p></div>
-      <div class="qa"><h4 data-i18n="q6">Will it replace my people?</h4><p data-i18n="a6">No. It takes the routine — the same ten questions, the missed calls, the paperwork — so your people do the work only people can do.</p></div>
-      <div class="qa"><h4 data-i18n="q7">What does it cost?</h4><p data-i18n="a7">We price on outcome, starting from the audit. Most assistants cost less per month than one part-time employee, and you pay for results, not software licences.</p></div>
-      <div class="qa"><h4 data-i18n="q8">How fast can we start?</h4><p data-i18n="a8">The audit takes 30 minutes. The first working assistant answers real customers within weeks — the four steps above are the whole path.</p></div>
+    <div class="accwrap">
+      <details class="acc"><summary data-i18n="q1">Will it sound like a robot?</summary><p data-i18n="a1">No. Modern voices are natural, and the agent says it is an assistant. Customers care about being helped in two seconds, not about who picked up.</p></details>
+      <details class="acc"><summary data-i18n="q2">What happens with hard questions?</summary><p data-i18n="a2">The assistant passes the conversation to your team with a full summary. It never guesses on things it does not know.</p></details>
+      <details class="acc"><summary data-i18n="q3">What about our data?</summary><p data-i18n="a3">It stays yours. Your documents and customer data live in a private setup and never train public models.</p></details>
+      <details class="acc"><summary data-i18n="q4">Which languages?</summary><p data-i18n="a4">Ten, in the same assistant: English, German, French, Spanish, Italian, Polish, Ukrainian, Turkish, Portuguese and Russian. It detects the customer's language and answers in it - even if your business works in one.</p></details>
+      <details class="acc"><summary data-i18n="q5">We are not a tech company. Will we manage?</summary><p data-i18n="a5">That is exactly who this is built for. Setup is a guided flow - paste a link, answer a few questions, done. No code, no IT project, and support is one message away.</p></details>
+      <details class="acc"><summary data-i18n="q6">Will it replace my people?</summary><p data-i18n="a6">No. It takes the routine - the same ten questions, the missed calls, the paperwork - so your people do the work only people can do.</p></details>
+      <details class="acc"><summary data-i18n="q7">What does it cost?</summary><p data-i18n="a7">Plans start at €79 a month. No setup fees, cancel monthly, 30-day money-back guarantee. All prices are on the plans page - nothing hidden behind a call.</p></details>
+      <details class="acc"><summary data-i18n="q8">How fast can we start?</summary><p data-i18n="a8">Talk to Mina today - the live demo takes minutes. Your own assistant can be answering real customers the same day.</p></details>
     </div>
   </section>
 
   <div class="ctaband">
-    <div><h2 data-i18n="cth">Hear it answer before you decide.</h2><p data-i18n="ctp">A free 30-minute audit. We show the top opportunities and let you talk to a live voice demo.</p></div>
-    <div class="cta-btns"><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="ctb1">Contact us →</a><a class="btn btn-ghost" href="mailto:hello@fourmina.com">hello@fourmina.com</a></div>
+    <div><h2 data-i18n="cth">Hear it answer before you decide.</h2><p data-i18n="ctp">Call Mina right now, or book a 30-minute live demo. You talk to the product before you pay a cent.</p></div>
+    <div class="cta-btns"><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="gs">Get started</a><a class="btn btn-ghost" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a live demo</a></div>
   </div>
 
-  <footer><div class="brand" style="font-size:16px"><span class="mark" style="width:28px;height:28px"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></div><div class="langsw" id="langSw"><button onclick="fmLang('en')">EN</button><button onclick="fmLang('de')">DE</button><button onclick="fmLang('fr')">FR</button></div><div>© 2026 Fourmina · A Krok Group company · <a href="mailto:hello@fourmina.com">hello@fourmina.com</a> · <a href="fourmina-terms.html" data-i18n="ft1">Terms</a> · <a href="fourmina-privacy.html" data-i18n="ft2">Privacy</a></div></footer>
+  <footer><div class="brand" style="font-size:16px"><span class="mark" style="width:28px;height:28px"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></div><div class="langsw" id="langSw"><button onclick="fmLang('en')">EN</button><button onclick="fmLang('de')">DE</button><button onclick="fmLang('fr')">FR</button></div><div>© 2026 Fourmina · <a href="mailto:hello@fourmina.com">hello@fourmina.com</a> · <a href="fourmina-terms-v2.html" data-i18n="ft1">Terms</a> · <a href="fourmina-privacy-v2.html" data-i18n="ft2">Privacy</a> · <a href="fourmina-impressum.html">Impressum</a> · <a href="fourmina-dpa.html">DPA</a> · <a href="fourmina-verschwiegenheit-de.html">Verschwiegenheit</a></div></footer>
+<script>
+/* Mina demo line: set the number once the line is live - hero CTA flips from modal to tel: automatically */
+const MINA_NUMBER = "";
+const MINA_DEMO_URL = ""; // ElevenLabs agent share link - paste to route Call Mina buttons there
+(function(){['callMina','callMina2'].forEach(function(id){var b=document.getElementById(id);if(!b)return;
+if(MINA_DEMO_URL){b.href=MINA_DEMO_URL;b.target='_blank';b.rel='noopener';}
+else if(MINA_NUMBER){b.href='tel:'+MINA_NUMBER;}
+else{b.addEventListener('click',function(e){e.preventDefault();var a=document.getElementById('minaDemo');if(a){if(a.paused){a.play();}else{a.pause();a.currentTime=0;}}else{fmModal(true);}});}});})();
+</script>
 </div>
 
-<div class="modal" id="auditModal" onclick="if(event.target===this)fmModal(false)">
+<div class="modal" id="demoModal" onclick="if(event.target===this)fmModal(false)">
   <div class="mbox">
     <button class="mclose" onclick="fmModal(false)" aria-label="Close">✕</button>
-    <h3 data-i18n="mh">Book a free audit</h3>
-    <div class="msub" data-i18n="msub">30 minutes. We look at your calls, chats and routine — and show what an assistant takes over first.</div>
+    <h3 data-i18n="mh">Book a live demo</h3>
+    <div class="msub" data-i18n="msub">30 minutes. You talk to Mina live and see it on your own use case.</div>
     <form onsubmit="return fmSubmit(event)">
       <div class="field"><label for="f-name" data-i18n="ml1">Your name</label><input id="f-name" required placeholder="John Smith"></div>
       <div class="field"><label for="f-biz" data-i18n="ml2">Business</label><input id="f-biz" required placeholder="Riverside Dental, Manchester"></div>
@@ -632,151 +570,133 @@ footer a{ text-decoration:underline; }
 <script>
 var I18N = {
 de: {
-hsp:`Preise ansehen →`,
+hsp:`Jetzt starten`,
+gs:`Jetzt starten`,
 fqk:`Ehrliche Antworten`, fqh:`Die Fragen, die alle stellen.`,
-pdm:`▶&nbsp; Anruf abspielen · 0:16`,
-npl:`Preise`, ck1:`Wir nutzen lokalen Speicher und Cookies, um Ihre Einstellungen zu merken — Theme und Sprache. Kein Tracking, keine Werbung. <a href="fourmina-privacy.html">Datenschutz</a>`, ck2:`Akzeptieren`, ck3:`Nur notwendige`,
-n1:`Assistenten`, n2:`Automatisierung`, n3:`Sprachen`, n4:`So funktioniert's`, n5:`Anwendungsfälle`, nbtn:`Audit buchen`,
-hk:`KI-Assistenten · Voice · Automatisierung · 10 Sprachen`, hh:`Jeder Kunde bekommt eine Antwort. Tag und Nacht.`,
-hp:`KI-Assistenten, die Ihre Kunden am Telefon, im Chat und per E-Mail beantworten — und die Routine im Hintergrund erledigen: Termine, Rechnungen, Lager, Alarme. Einsatzbereit in Wochen.`,
-hb1:`Kostenloses Audit buchen →`, hb2:`Sprachdemo anhören`, htr:`Ein Unternehmen der <b>Krok Group</b> · erfahrene Entwickler · Ihre Daten bleiben Ihre`,
+npl:`Preise`, ck1:`Wir nutzen lokalen Speicher und Cookies, um Ihre Einstellungen zu merken - Theme und Sprache. Kein Tracking, keine Werbung. <a href="fourmina-privacy-v2.html">Datenschutz</a>`, ck2:`Akzeptieren`, ck3:`Nur notwendige`,
+n1:`Assistenten`, n2:`Automatisierung`, n3:`Sprachen`, n4:`So funktioniert's`, n5:`Anwendungsfälle`, nbtn:`Live-Demo buchen`,
+hh:`Jeder Kunde bekommt eine Antwort. Tag und Nacht.`,
+hp:`KI-Assistenten, die Ihre Kunden am Telefon, im Chat und per E-Mail beantworten - und die Routine im Hintergrund erledigen: Termine, Rechnungen, Alarme.`,
+hcall:`Mina anrufen`, hb2:`Sprachdemo anhören`,
 cw:`Mina · Fourmina Voice-Agent`, cws:`Eingehender Anruf · 21:47`, clv:`Im Gespräch`,
 cln:`„Ich kann Ihren Termin auf <b>Donnerstag, 10:30</b> verschieben. Sie erhalten eine Bestätigung per SMS. Sonst noch etwas?"`,
-cm1:`Beantwortet in 2 Sek.`, cm2:`Termin im CRM aktualisiert`, cm3:`Nach Feierabend`,
-cht:`Website-Chat`, chn:`jetzt`, chi:`Hallo, wo ist meine Bestellung #4482?`, cho:`Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.<small>KI-Assistent · 4 Sek.</small>`,
-s1:`verpasste Anrufe, auch nachts und an Feiertagen`, s2b:`&lt;5 Sek.`, s2:`erste Antwort in Chat, E-Mail und Telefon`, s3:`der Routinefragen ohne Ihr Team gelöst`, s4:`Sprachen in jedem Assistenten, passend zum Kunden`,
-pk:`Was wir bauen`, ph:`KI-Personal für den Empfang. Und fürs Backoffice.`, pp:`Kein Chatbot von der Stange. Trainiert auf Ihre Produkte, Preise und Regeln, verbunden mit Ihren Tools.`,
+cht:`WhatsApp`, chn:`jetzt`, chi:`Hallo, wo ist meine Bestellung #4482?`, cho:`Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.<small>KI-Assistent · 4 Sek.</small>`,
+s1:`verpasste Anrufe, auch nachts und an Feiertagen`, s2b:`&lt;5 Sek.`, s2:`erste Antwort in Chat, E-Mail und Telefon`, s3:`der Routinefragen für Ihr Team gelöst`, s4:`Sprachen in jedem Assistenten, passend zum Kunden`,
+pk:`Was Sie bekommen`, ph:`KI-Personal für den Empfang. Und fürs Backoffice.`, pp:`Kein Chatbot von der Stange. Trainiert auf Ihre Produkte, Preise und Regeln, verbunden mit Ihren Tools.`,
 gl1:`Für Ihre Kunden`, gl2:`Hinter den Kulissen`, gl3:`Von KI gefunden`, ptag:`Am gefragtesten`,
-p1h:`Voice-Agent`, p1p:`Nimmt jeden Anruf mit natürlicher Stimme an — bucht, antwortet, übergibt. Tag und Nacht.`,
-p2h:`Chat-Assistent`, p2p:`Ein Assistent auf Website, WhatsApp und Instagram — verkauft und hilft sofort.`,
-p3h:`Support-Automatisierung`, p3p:`Posteingang und Helpdesk — sortiert und beantwortet, bevor Ihr Team am Platz sitzt.`,
-p4h:`Prozess-Automatisierung`, p4p:`Rechnungen, Erinnerungen, Lager und Dienstpläne — die Routine läuft nach Plan.`,
+p1h:`Voice-Agent`, p1p:`Nimmt jeden Anruf mit natürlicher Stimme an - bucht, antwortet, übergibt. Tag und Nacht.`,
+p2h:`Chat-Assistent`, p2p:`Ein Assistent auf Website, WhatsApp und Instagram - verkauft und hilft sofort.`,
+p3h:`Support-Automatisierung`, p3p:`Posteingang und Helpdesk - sortiert und beantwortet, bevor Ihr Team am Platz sitzt.`,
+p4h:`Prozess-Automatisierung`, p4p:`Rechnungen, Erinnerungen, Lager und Dienstpläne - die Routine läuft nach Plan.`,
 p5h:`Alarme &amp; Monitoring`, p5p:`Meldet die unbezahlte Rechnung oder den verärgerten Kunden, solange es noch klein ist.`,
-p6h:`Interner Assistent &amp; Suche`, p6p:`Alles, was Ihr Unternehmen weiß — in Sekunden gefunden, für Ihr ganzes Team.`,
+p6h:`Interner Assistent &amp; Suche`, p6p:`Alles, was Ihr Unternehmen weiß - in Sekunden gefunden, für Ihr ganzes Team.`,
 p7h:`KI-Sichtbarkeit (GEO)`, p7p:`Wenn Kunden ChatGPT oder Gemini fragen, wo sie kaufen sollen, ist Ihr Unternehmen die Antwort. Kostenloser Sichtbarkeits-Report inklusive.`,
-p8h:`Agent-taugliche Website`, p8p:`KI-Agenten surfen und kaufen bereits für ihre Besitzer. Wir sorgen dafür, dass Ihre Website eine ist, die sie bedienen können.`,
+p8h:`Agent-taugliche Website`, p8p:`KI-Agenten surfen und kaufen bereits für ihre Besitzer. Machen Sie Ihre Website zu einer, die sie bedienen können.`,
 dt1:`Heute · erledigt von Mina`, dt2:`Dienstag`,
 dr1:`Nächtliche E-Mails und Tickets sortieren<small>14 sortiert · 2 für Sie markiert</small>`, dr2:`Terminerinnerungen für heute senden<small>11 SMS gesendet · 1 Verschiebung erledigt</small>`,
 dr3:`Offene Rechnungen anmahnen<small>3 Erinnerungen · 1 Zahlung eingegangen</small>`, dr4:`Lager prüfen, Nachbestellung entwerfen<small>4 Artikel unter Minimum · Entwurf zur Freigabe</small>`,
 dr5:`Dienstplan für nächste Woche entwerfen`, dr6:`Tagesbericht an Sie`, dsd:`Erledigt`, dsp:`Läuft`, dsn:`Geplant`,
 dsum:`Heute: 34 Anrufe beantwortet, 12 Buchungen, 1.840 € in Rechnung gestellt. Eine Sache braucht Sie: der Nachbestellungs-Entwurf.<small>Tagesbericht · 18:00</small>`,
-ak:`Prozess-Automatisierung`, ah:`Eine To-do-Liste, die sich selbst erledigt.`, ap:`Geben Sie dem Assistenten Ihre wiederkehrende Routine — Erinnerungen, Rechnungen, Lager, Dienstpläne. Sie läuft nach Plan und berichtet.`,
-af1:`Tages- und Wochenaufgaben laufen pünktlich, ganz von allein`, af2:`Rechnungen erstellt und angemahnt, Erinnerungen gesendet, Nachschub vorbereitet`, af3:`Alles Ungewöhnliche wird Ihnen gemeldet — nie geraten`, af4:`Eine Abendnachricht: was erledigt ist, was Sie braucht`,
+ak:`Prozess-Automatisierung`, ah:`Eine To-do-Liste, die sich selbst erledigt.`, ap:`Geben Sie dem Assistenten Ihre wiederkehrende Routine - Erinnerungen, Rechnungen, Lager, Dienstpläne. Sie läuft nach Plan und berichtet.`,
+af1:`Tages- und Wochenaufgaben laufen pünktlich, ganz von allein`, af2:`Rechnungen erstellt und angemahnt, Erinnerungen gesendet, Nachschub vorbereitet`, af3:`Alles Ungewöhnliche wird Ihnen gemeldet - nie geraten`, af4:`Eine Abendnachricht: was erledigt ist, was Sie braucht`,
 apay:`Sie lesen eine Nachricht am Tag, statt zwanzig Aufgaben zu erledigen.`,
-lk:`Sprachen`, lh:`Ihr Unternehmen spricht eine Sprache. Ihr Assistent spricht zehn.`, lp:`Der Assistent erkennt die Sprache des Kunden und antwortet darin. Kunden, die früher an der Sprachbarriere verloren gingen, buchen jetzt wie Einheimische — ohne neue Mitarbeiter.`,
+lk:`Sprachen`, lh:`Ihr Unternehmen spricht eine Sprache. Ihr Assistent spricht zehn.`, lp:`Der Assistent erkennt die Sprache des Kunden und antwortet darin. Kunden, die früher an der Sprachbarriere verloren gingen, buchen jetzt wie Einheimische - ohne neue Mitarbeiter.`,
 lct:`Ein Assistent · Sprache automatisch erkannt`, llv:`live`,
-sk:`So funktioniert's`, sh:`Vier Schritte. Wochen, nicht Monate.`,
-sw1:`Woche 1`, sw2:`Wochen 2–3`, sw3:`Woche 4`, sw4:`Laufend`,
-st1h:`Audit`, st1p:`Wir sehen uns Ihre Anrufe, Chats und Papierarbeit an und wählen, was der Assistent zuerst übernimmt.`,
-st2h:`Aufbau &amp; Training`, st2p:`Trainiert auf Ihre Dokumente, Preise und Ihren Ton. Sie testen zuerst.`,
-st3h:`Anbindung`, st3p:`Ihre Nummer, Website, Messenger und CRM. Für Ihr Team ändert sich nichts.`,
-st4h:`Verbesserung`, st4p:`Wir lesen die Gespräche, beheben schwache Antworten, ergänzen Fähigkeiten. Jeden Monat besser.`,
-ck:`Anwendungsfälle`, chh:`So sieht es im echten Geschäft aus.`, cp:`Wählen Sie Ihr Geschäft. Was wir für Sie einrichten — und ein Live-Beispiel des Assistenten.`,
+sk:`So funktioniert's`, sh:`In Minuten eingerichtet. Heute live.`,
+sw1:`2 Min.`, sw2:`3 Min.`, sw3:`1 Anruf`, sw4:`Laufend`,
+st1h:`Assistentin erstellen`, st1p:`Fügen Sie Ihren Website-Link ein. Mina entwirft daraus ihre Antworten.`,
+st2h:`Mina anpassen`, st2p:`Öffnungszeiten, Regeln und Ton festlegen.`,
+st3h:`Live anhören`, st3p:`Rufen Sie Ihre Testnummer an und hören Sie Mina.`,
+st4h:`Live gehen &amp; verbessern`, st4p:`Verbinden Sie Ihre Kanäle. Mina wird jede Woche besser.`,
+ik:`Integrationen`, ih:`Funktioniert mit Ihren Tools`, ip:`Kalender, CRMs und Messenger - verbunden über native Anbindungen, Make, Zapier und eine offene API.`,
+ck:`Anwendungsfälle`, chh:`So sieht es im echten Geschäft aus.`, cp:`Wählen Sie Ihr Geschäft. Was Mina übernimmt - und ein Live-Beispiel des Assistenten.`,
 t0:`Praxis`, t1:`Beratung &amp; Recht`, t2:`Handwerk &amp; Service`, t3:`Restaurants`, t4:`Beauty &amp; Salons`, t5:`Agrar &amp; Landhandel`, t6:`E-Commerce`, t7:`Immobilien`, t8:`Logistik`,
-c0L:`<h3>Praxis</h3><p class="desc">Der Empfang geht um sechs nach Hause. Die Patienten nicht.</p><ul class="feats"><li>Bucht, verschiebt und storniert Termine per Telefon und Chat, 24/7</li><li>Beantwortet Preise, Vorbereitung und Öffnungszeiten aus Ihren Listen</li><li>Erinnert Patienten am Vortag — weniger No-Shows</li><li>Schreibt jede Änderung direkt in Kalender und CRM</li></ul><div class="payoff">Der Morgen beginnt mit einem sauberen Kalender.</div>`,
-c0R:`<div class="t"><span>Telefon · nach Feierabend</span><span>21:40</span></div><div class="msg in">Guten Abend, ich muss meinen Mittwochstermin verschieben.</div><div class="msg out">Gern. Donnerstag um 10:30 ist frei — soll ich buchen?<small>Im CRM aktualisiert · 21:41</small></div><div class="msg in">Ja, bitte.</div><div class="msg out">Erledigt. Die SMS-Bestätigung kommt sofort. Sonst noch etwas?<small>SMS gesendet · nach Feierabend</small></div>`,
-c1L:`<h3>Beratung &amp; Recht</h3><p class="desc">Neue Mandanten schildern ihren Fall einmal — und kommen vorbereitet.</p><ul class="feats"><li>Erfasst die Falldetails im Chat, Tag und Nacht</li><li>Bucht die Beratung in den Kalender des richtigen Partners</li><li>Findet jeden Vertrag und jede Mandantenhistorie in Sekunden</li><li>Entwirft Mandatsschreiben und Follow-ups in Ihrem Stil</li></ul><div class="payoff">Ein fertiges Aufnahmeformular statt eines verpassten Anrufs.</div>`,
-c1R:`<div class="t"><span>Website-Chat</span><span>00:12</span></div><div class="msg in">Ich habe einen Streit um einen Gewerbemietvertrag. Können Sie helfen?</div><div class="msg out">Ja. Zwei Fragen zur Vorbereitung: In welcher Stadt liegt die Immobilie, und haben Sie den Vertrag zur Hand?<small>Aufnahme gestartet · 00:12</small></div><div class="msg in">München. Ja, habe ich.</div><div class="msg out">Danke. Donnerstag 15:00 bei unserem Immobilienpartner ist frei — buchen und Checkliste senden?<small>Konfliktprüfung bestanden · 00:14</small></div>`,
-c2L:`<h3>Handwerk &amp; Service</h3><p class="desc">Sie reparieren. Er disponiert, kalkuliert und macht den Papierkram.</p><ul class="feats"><li>Nimmt ein Foto des Problems an, nennt eine Preisspanne aus Ihrer Liste</li><li>Bucht den Termin und erinnert den Techniker am Morgen</li><li>Sendet die Rechnung nach dem Auftrag und mahnt offene an</li><li>Hält Kunden auf dem Laufenden: unterwegs, verspätet, fertig</li></ul><div class="payoff">Der Meister repariert. Der Assistent disponiert.</div>`,
-c2R:`<div class="t"><span>WhatsApp</span><span>22:03</span></div><div class="msg in">📷 Heizkessel undicht. Was kostet die Reparatur?</div><div class="msg out">Danke — auf dem Foto sieht das nach einem Ventil aus. Solche Aufträge liegen bei 90–140 €. Morgen 9:00 oder 13:00?<small>Preis aus Ihrer Liste · 22:03</small></div><div class="msg in">9:00 passt.</div><div class="msg out">Gebucht. Tomas ruft 20 Minuten vor Ankunft an.<small>Techniker benachrichtigt · 22:04</small></div>`,
-c3L:`<h3>Restaurants</h3><p class="desc">Freitagabend voll — die Liste verpasster Anrufe leer.</p><ul class="feats"><li>Nimmt Reservierungen und Vorbestellungen an, während das Team serviert</li><li>Beantwortet Menüfragen inkl. Allergene aus Ihrer Karte</li><li>Übergibt große Gruppen und Events mit Details an den Manager</li><li>Ein Abendbericht: Gäste, No-Shows, Buchungen für morgen</li></ul><div class="payoff">Keine verlorenen Tische zur Stoßzeit.</div>`,
-c3R:`<div class="t"><span>Telefon · Freitag</span><span>19:22</span></div><div class="msg in">Ein Tisch für sechs, heute gegen acht?</div><div class="msg out">20:00 ist voll, aber 20:30 ist frei — der runde Tisch am Fenster. Buchen?<small>Live-Tischplan · 19:22</small></div><div class="msg in">Ja. Einer von uns isst glutenfrei.</div><div class="msg out">Notiert für die Küche. Bis 20:30.<small>Notiz zur Buchung · 19:23</small></div>`,
-c4L:`<h3>Beauty &amp; Salons</h3><p class="desc">Jeder verpasste Anruf buchte früher den Salon nebenan.</p><ul class="feats"><li>Fängt jeden Anruf und jede Nachricht ab — auch mitten im Föhnen</li><li>Füllt stornierte Slots automatisch aus der Warteliste</li><li>Erinnert Kundinnen am Vortag — No-Shows sinken</li><li>Lädt Kundinnen ein, die zwei Monate nicht da waren</li></ul><div class="payoff">Die Stühle bleiben nicht leer.</div>`,
-c4R:`<div class="t"><span>Instagram DM</span><span>13:47</span></div><div class="msg in">Gibt es morgen einen Termin für einen Haarschnitt?</div><div class="msg out">Ja — 11:00 bei Olha oder 16:30 bei Marta. Was passt?<small>Live-Kalender · 13:47</small></div><div class="msg in">16:30.</div><div class="msg out">Gebucht bei Marta. Noch eine Maniküre um 17:15 dazu? Der Platz nebenan ist frei.<small>Upsell aus dem Plan · 13:48</small></div>`,
-c5L:`<h3>Agrar &amp; Landhandel</h3><p class="desc">In der Saison steht das Telefon nicht still. Jetzt bleibt es nie unbeantwortet.</p><ul class="feats"><li>Nimmt Bestellungen für Saatgut, Futter und Teile in jeder Sprache an</li><li>Prüft den Bestand live und bestätigt Lieferfenster</li><li>Meldet wetterkritische Lieferungen an den Disponenten</li><li>Kennt die Saison: Wer im März Saatgut kaufte, bekommt im Februar einen Anruf</li></ul><div class="payoff">Saisonspitzen ohne Saisonkräfte.</div>`,
-c5R:`<div class="t"><span>Telefon · Saison</span><span>07:15</span></div><div class="msg in">Ich brauche zwei Tonnen Futter, Lieferung Freitag.</div><div class="msg out">Auf Lager. Freitagvormittag ist frei — Lieferung an die übliche Hofadresse?<small>Bestand geprüft · 07:15</small></div><div class="msg in">Ja, vor zwölf.</div><div class="msg out">Bestätigt, Freitag 8:00–12:00. Hinweis: Für Donnerstagnacht ist Regen gemeldet — ich warne Sie, falls sich die Route verschiebt.<small>Wetterwarnung aktiv · 07:16</small></div>`,
-c6L:`<h3>E-Commerce</h3><p class="desc">„Wo ist meine Bestellung?" sind 40 % der Tickets. Jetzt 0 % des Arbeitstags Ihres Teams.</p><ul class="feats"><li>Beantwortet den Bestellstatus sofort mit Live-Tracking</li><li>Startet Retouren und Umtausch direkt im Chat</li><li>Empfiehlt Produkte aus Ihrem Katalog und prüft den Bestand</li><li>Bittet nach der Lieferung um eine Bewertung — im richtigen Moment</li></ul><div class="payoff">Ihr Team kümmert sich um echte Probleme.</div>`,
-c6R:`<div class="t"><span>Website-Chat</span><span>jetzt</span></div><div class="msg in">Hallo, wo ist meine Bestellung #4482?</div><div class="msg out">Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.<small>Live-Tracking · 4 Sek.</small></div><div class="msg in">Kann ich noch einen Artikel dazulegen?</div><div class="msg out">Sie ist schon verpackt — aber ich lege eine zweite Bestellung mit Gratisversand an. Soll ich?<small>Regeln aus Ihrer Policy · 6 Sek.</small></div>`,
-c7L:`<h3>Immobilien</h3><p class="desc">Inserate bekommen Anfragen um 23:00. Ihre Makler nicht.</p><ul class="feats"><li>Beantwortet Fragen zu Inseraten rund um die Uhr, in jeder Sprache</li><li>Qualifiziert den Lead: Budget, Termine, Finanzierung</li><li>Bucht Besichtigungen direkt in den Kalender des Maklers</li><li>Fasst nach der Besichtigung nach und schlägt ähnliche Objekte vor</li></ul><div class="payoff">Aufwachen mit gebuchter Besichtigung.</div>`,
-c7R:`<div class="t"><span>Portal-Anfrage</span><span>23:04</span></div><div class="msg in">Ist die 2-Zimmer-Wohnung in der Harju-Straße noch frei?</div><div class="msg out">Ja. Besichtigungen Donnerstag 17:00–19:00 — soll ich einen Slot buchen?<small>Kalender des Maklers · 23:04</small></div><div class="msg in">Donnerstag 18:00, bitte.</div><div class="msg out">Gebucht. Ich habe außerdem zwei ähnliche Wohnungen in Ihrer Nähe gesendet, beide im Budget.<small>Aus den Inseraten gematcht · 23:05</small></div>`,
-c8L:`<h3>Logistik</h3><p class="desc">Disponenten sollen disponieren, nicht dieselbe Antwort wiederholen.</p><ul class="feats"><li>Beantwortet „Wo ist der Lkw?" aus Live-GPS-Daten</li><li>Bucht Rampenzeiten und bestätigt Lieferfenster</li><li>Sendet PODs und Rechnungen im Moment der Anfrage</li><li>Warnt Kunden vor Verspätungen, bevor sie anrufen</li></ul><div class="payoff">Disponenten disponieren.</div>`,
-c8R:`<div class="t"><span>Telefon</span><span>13:12</span></div><div class="msg in">Wo ist der Lkw für Auftrag 7731?</div><div class="msg out">Auf der A2, noch 40 km — ETA 14:20. Ich melde mich, falls es sich verschiebt.<small>Live-GPS · 13:12</small></div><div class="msg in">Schicken Sie mir auch den POD von gestern.</div><div class="msg out">Gerade an Ihre E-Mail gesendet.<small>Dokument aus dem TMS · 13:13</small></div>`,
-q1:`Klingt das wie ein Roboter?`, a1:`Nein. Moderne Stimmen sind natürlich, und der Agent sagt, dass er ein Assistent ist. Kunden wollen in zwei Sekunden Hilfe — egal, wer abnimmt.`,
+u0p:`Der Empfang geht um sechs nach Hause. Die Patienten nicht.`, u0f1:`Bucht und verschiebt Termine 24/7`, u0f2:`Beantwortet Preise und Öffnungszeiten aus Ihren Listen`, u0f3:`Erinnert Patienten am Vortag`, u0y:`Der Morgen beginnt mit einem sauberen Kalender.`, u0ct:`Telefon · nach Feierabend`, u0m1:`Ich muss meinen Mittwochstermin verschieben.`, u0m2:`Donnerstag um 10:30 ist frei - soll ich buchen?`,
+u1p:`Neue Mandanten schildern ihren Fall einmal - und kommen vorbereitet.`, u1f1:`Erfasst Falldetails im Chat, Tag und Nacht`, u1f2:`Bucht die Beratung beim richtigen Partner`, u1f3:`Findet jeden Vertrag und jede Historie in Sekunden`, u1y:`Ein fertiges Aufnahmeformular statt eines verpassten Anrufs.`, u1ct:`Website-Chat`, u1m1:`Ich habe einen Streit um einen Gewerbemietvertrag. Können Sie helfen?`, u1m2:`Ja. In welcher Stadt liegt die Immobilie, und haben Sie den Vertrag zur Hand?`,
+u2p:`Sie reparieren. Er disponiert, kalkuliert und macht den Papierkram.`, u2f1:`Nennt eine Preisspanne nach Foto aus Ihrer Liste`, u2f2:`Bucht den Termin und erinnert den Techniker`, u2f3:`Sendet Rechnungen und mahnt offene an`, u2y:`Der Meister repariert. Der Assistent disponiert.`, u2ct:`WhatsApp`, u2m1:`📷 Heizkessel undicht. Was kostet die Reparatur?`, u2m2:`Sieht nach einem Ventil aus - solche Aufträge liegen bei 90-140 €. Morgen 9:00 oder 13:00?`,
+u3p:`Freitagabend voll - die Liste verpasster Anrufe leer.`, u3f1:`Nimmt Reservierungen an, während das Team serviert`, u3f2:`Beantwortet Menüfragen inkl. Allergene`, u3f3:`Übergibt große Gruppen an den Manager`, u3y:`Keine verlorenen Tische zur Stoßzeit.`, u3ct:`Telefon · Freitag`, u3m1:`Ein Tisch für sechs, heute gegen acht?`, u3m2:`20:30 ist frei - der runde Tisch am Fenster. Buchen?`,
+u4p:`Jeder verpasste Anruf buchte früher den Salon nebenan.`, u4f1:`Fängt jeden Anruf ab, auch mitten im Föhnen`, u4f2:`Füllt stornierte Slots aus der Warteliste`, u4f3:`Erinnert Kundinnen am Vortag`, u4y:`Die Stühle bleiben nicht leer.`, u4ct:`Instagram DM`, u4m1:`Gibt es morgen einen Termin für einen Haarschnitt?`, u4m2:`Ja - 11:00 bei Olha oder 16:30 bei Marta. Was passt?`,
+u5p:`In der Saison steht das Telefon nicht still. Jetzt bleibt es nie unbeantwortet.`, u5f1:`Nimmt Saatgut-, Futter- und Teilebestellungen in jeder Sprache an`, u5f2:`Prüft den Bestand live und bestätigt Lieferfenster`, u5f3:`Meldet wetterkritische Lieferungen`, u5y:`Saisonspitzen ohne Saisonkräfte.`, u5ct:`Telefon · Saison`, u5m1:`Ich brauche zwei Tonnen Futter, Lieferung Freitag.`, u5m2:`Auf Lager. Freitagvormittag ist frei - an die übliche Hofadresse?`,
+u6p:`„Wo ist meine Bestellung?" sind 40 % der Tickets. Jetzt 0 % des Arbeitstags Ihres Teams.`, u6f1:`Beantwortet den Bestellstatus mit Live-Tracking`, u6f2:`Startet Retouren und Umtausch im Chat`, u6f3:`Empfiehlt Produkte und prüft den Bestand`, u6y:`Ihr Team kümmert sich um echte Probleme.`, u6ct:`Website-Chat`, u6m1:`Hallo, wo ist meine Bestellung #4482?`, u6m2:`Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.`,
+u7p:`Inserate bekommen Anfragen um 23:00. Ihre Makler nicht.`, u7f1:`Beantwortet Fragen zu Inseraten rund um die Uhr`, u7f2:`Qualifiziert den Lead: Budget, Termine, Finanzierung`, u7f3:`Bucht Besichtigungen in den Maklerkalender`, u7y:`Aufwachen mit gebuchter Besichtigung.`, u7ct:`Portal-Anfrage`, u7m1:`Ist die 2-Zimmer-Wohnung in der Harju-Straße noch frei?`, u7m2:`Ja. Besichtigungen Donnerstag 17:00-19:00 - soll ich einen Slot buchen?`,
+u8p:`Disponenten sollen disponieren, nicht dieselbe Antwort wiederholen.`, u8f1:`Beantwortet „Wo ist der Lkw?" aus Live-GPS`, u8f2:`Bucht Rampenzeiten und bestätigt Lieferfenster`, u8f3:`Sendet PODs und Rechnungen auf Anfrage`, u8y:`Disponenten disponieren.`, u8ct:`Telefon`, u8m1:`Wo ist der Lkw für Auftrag 7731?`, u8m2:`Auf der A2, noch 40 km - ETA 14:20. Ich melde mich, falls es sich verschiebt.`,
+q1:`Klingt das wie ein Roboter?`, a1:`Nein. Moderne Stimmen sind natürlich, und der Agent sagt, dass er ein Assistent ist. Kunden wollen in zwei Sekunden Hilfe - egal, wer abnimmt.`,
 q2:`Was passiert bei schwierigen Fragen?`, a2:`Der Assistent übergibt das Gespräch mit einer vollständigen Zusammenfassung an Ihr Team. Er rät nie bei Dingen, die er nicht weiß.`,
-q3:`Was ist mit unseren Daten?`, a3:`Sie bleiben Ihre. Wir bauen private Setups, in denen Ihre Dokumente und Kundendaten nie öffentliche Modelle trainieren.`,
-q4:`Welche Sprachen?`, a4:`Zehn, im selben Assistenten: Englisch, Deutsch, Französisch, Spanisch, Italienisch, Polnisch, Ukrainisch, Türkisch, Portugiesisch und Arabisch. Er erkennt die Sprache des Kunden und antwortet darin — auch wenn Ihr Betrieb nur eine spricht.`,
-q5:`Wir sind kein Tech-Unternehmen. Schaffen wir das?`, a5:`Genau dafür bauen wir. Wir installieren, verbinden und betreiben alles; Ihr Team arbeitet wie gewohnt weiter. Sie bekommen Ergebnisse und eine Nummer zum Anrufen.`,
-q6:`Ersetzt das meine Leute?`, a6:`Nein. Es übernimmt die Routine — dieselben zehn Fragen, die verpassten Anrufe, den Papierkram — damit Ihre Leute die Arbeit machen, die nur Menschen können.`,
-q7:`Was kostet das?`, a7:`Wir kalkulieren nach Ergebnis, beginnend mit dem Audit. Die meisten Assistenten kosten im Monat weniger als eine Teilzeitkraft — Sie zahlen für Resultate, nicht für Lizenzen.`,
-q8:`Wie schnell geht der Start?`, a8:`Das Audit dauert 30 Minuten. Der erste Assistent beantwortet echte Kunden innerhalb von Wochen — die vier Schritte oben sind der ganze Weg.`,
-cth:`Hören Sie es antworten, bevor Sie entscheiden.`, ctp:`Ein kostenloses 30-Minuten-Audit. Wir zeigen die größten Chancen und lassen Sie mit einer Live-Sprachdemo sprechen.`, ctb1:`Kontakt aufnehmen →`,
+q3:`Was ist mit unseren Daten?`, a3:`Sie bleiben Ihre. Ihre Dokumente und Kundendaten liegen in einer privaten Umgebung und trainieren nie öffentliche Modelle.`,
+q4:`Welche Sprachen?`, a4:`Zehn, im selben Assistenten: Englisch, Deutsch, Französisch, Spanisch, Italienisch, Polnisch, Ukrainisch, Türkisch, Portugiesisch und Russisch. Er erkennt die Sprache des Kunden und antwortet darin - auch wenn Ihr Betrieb nur eine spricht.`,
+q5:`Wir sind kein Tech-Unternehmen. Schaffen wir das?`, a5:`Genau dafür ist es gebaut. Die Einrichtung ist ein geführter Ablauf - Link einfügen, ein paar Fragen beantworten, fertig. Kein Code, kein IT-Projekt, und der Support ist eine Nachricht entfernt.`,
+q6:`Ersetzt das meine Leute?`, a6:`Nein. Es übernimmt die Routine - dieselben zehn Fragen, die verpassten Anrufe, den Papierkram - damit Ihre Leute die Arbeit machen, die nur Menschen können.`,
+q7:`Was kostet das?`, a7:`Pläne ab 79 € im Monat. Keine Einrichtungsgebühr, monatlich kündbar, 30 Tage Geld-zurück-Garantie. Alle Preise stehen offen auf der Preisseite.`,
+q8:`Wie schnell geht der Start?`, a8:`Sprechen Sie noch heute mit Mina - die Live-Demo dauert Minuten. Ihr eigener Assistent kann noch am selben Tag echte Kunden beantworten.`,
+cth:`Hören Sie es antworten, bevor Sie entscheiden.`, ctp:`Rufen Sie Mina jetzt an oder buchen Sie eine 30-minütige Live-Demo. Sie sprechen mit dem Produkt, bevor Sie einen Cent zahlen.`, ctb1:`Mina anrufen`,
 ft1:`AGB`, ft2:`Datenschutz`,
-mh:`Kostenloses Audit buchen`, msub:`30 Minuten. Wir sehen uns Anrufe, Chats und Routine an — und zeigen, was ein Assistent zuerst übernimmt.`,
+mh:`Live-Demo buchen`, msub:`30 Minuten. Sie sprechen live mit Mina - an Ihrem eigenen Anwendungsfall.`,
 ml1:`Ihr Name`, ml2:`Unternehmen`, ml3:`Was betreiben Sie?`, ml4:`E-Mail`, ml5:`Telefon (optional)`,
 o1:`Praxis`, o2:`Beratung &amp; Recht`, o3:`Handwerk &amp; Service`, o4:`Restaurant`, o5:`Beauty &amp; Salon`, o6:`Agrar &amp; Landhandel`, o7:`E-Commerce`, o8:`Immobilien`, o9:`Logistik`, o10:`Anderes`,
 mbtn:`Anfrage senden →`, mnote:`Wir antworten innerhalb eines Werktags. Oder schreiben Sie an <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>`
 },
 fr: {
-hsp:`Voir les tarifs →`,
+hsp:`Commencer`,
+gs:`Commencer`,
 fqk:`Réponses honnêtes`, fqh:`Les questions que tout le monde pose.`,
-pdm:`▶&nbsp; Écouter l'appel · 0:16`,
-npl:`Tarifs`, ck1:`Nous utilisons le stockage local et des cookies pour retenir vos préférences — thème et langue. Pas de traçage, pas de publicité. <a href="fourmina-privacy.html">Confidentialité</a>`, ck2:`Accepter`, ck3:`Essentiels uniquement`,
-n1:`Assistants`, n2:`Automatisation`, n3:`Langues`, n4:`Comment ça marche`, n5:`Cas d'usage`, nbtn:`Audit gratuit`,
-hk:`Assistants IA · voix · automatisation · 10 langues`, hh:`Chaque client obtient une réponse. Jour et nuit.`,
-hp:`Des assistants IA qui répondent à vos clients au téléphone, par chat et par e-mail — et gèrent la routine en coulisses : rendez-vous, factures, stocks, alertes. Installés en quelques semaines.`,
-hb1:`Réserver un audit gratuit →`, hb2:`Écouter la démo vocale`, htr:`Une société <b>Krok Group</b> · développeurs seniors · vos données restent les vôtres`,
+npl:`Tarifs`, ck1:`Nous utilisons le stockage local et des cookies pour retenir vos préférences - thème et langue. Pas de traçage, pas de publicité. <a href="fourmina-privacy-v2.html">Confidentialité</a>`, ck2:`Accepter`, ck3:`Essentiels uniquement`,
+n1:`Assistants`, n2:`Automatisation`, n3:`Langues`, n4:`Comment ça marche`, n5:`Cas d'usage`, nbtn:`Démo live`,
+hh:`Chaque client obtient une réponse. Jour et nuit.`,
+hp:`Des assistants IA qui répondent à vos clients au téléphone, par chat et par e-mail - et gèrent la routine en coulisses : rendez-vous, factures, alertes.`,
+hcall:`Appeler Mina`, hb2:`Écouter la démo vocale`,
 cw:`Mina · agent vocal Fourmina`, cws:`Appel entrant · 21:47`, clv:`En ligne`,
 cln:`« Je peux déplacer votre rendez-vous à <b>jeudi 10 h 30</b>. Vous recevrez une confirmation par SMS. Autre chose ? »`,
-cm1:`Répondu en 2 s`, cm2:`Réservation mise à jour dans le CRM`, cm3:`Hors horaires`,
-cht:`Chat du site`, chn:`maintenant`, chi:`Bonjour, où est ma commande #4482 ?`, cho:`Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.<small>Assistant IA · 4 s</small>`,
-s1:`appel manqué, nuits et jours fériés compris`, s2b:`&lt;5 s`, s2:`première réponse par chat, e-mail et téléphone`, s3:`des questions courantes résolues sans votre équipe`, s4:`langues dans chaque assistant, adaptées au client`,
-pk:`Ce que nous construisons`, ph:`Du personnel IA pour l'accueil. Et pour le back-office.`, pp:`Pas un chatbot sur étagère. Entraîné sur vos produits, prix et règles, connecté à vos outils.`,
+cht:`WhatsApp`, chn:`maintenant`, chi:`Bonjour, où est ma commande #4482 ?`, cho:`Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.<small>Assistant IA · 4 s</small>`,
+s1:`appel manqué, nuits et jours fériés compris`, s2b:`&lt;5 s`, s2:`première réponse par chat, e-mail et téléphone`, s3:`des questions courantes résolues pour votre équipe`, s4:`langues dans chaque assistant, adaptées au client`,
+pk:`Ce que vous obtenez`, ph:`Du personnel IA pour l'accueil. Et pour le back-office.`, pp:`Pas un chatbot sur étagère. Entraîné sur vos produits, prix et règles, connecté à vos outils.`,
 gl1:`Pour vos clients`, gl2:`En coulisses`, gl3:`Trouvé par l'IA`, ptag:`Le plus demandé`,
-p1h:`Agent vocal`, p1p:`Décroche chaque appel d'une voix naturelle — réserve, répond, transmet. Jour et nuit.`,
-p2h:`Assistant de chat`, p2p:`Un assistant sur votre site, WhatsApp et Instagram — il vend et aide instantanément.`,
+p1h:`Agent vocal`, p1p:`Décroche chaque appel d'une voix naturelle - réserve, répond, transmet. Jour et nuit.`,
+p2h:`Assistant de chat`, p2p:`Un assistant sur votre site, WhatsApp et Instagram - il vend et aide instantanément.`,
 p3h:`Automatisation du support`, p3p:`Votre boîte mail et votre helpdesk, triés et traités avant l'arrivée de l'équipe.`,
-p4h:`Automatisation des processus`, p4p:`Factures, rappels, stocks et plannings — la routine tourne toute seule.`,
+p4h:`Automatisation des processus`, p4p:`Factures, rappels, stocks et plannings - la routine tourne toute seule.`,
 p5h:`Alertes &amp; suivi`, p5p:`Vous prévient de la facture impayée ou du client mécontent quand c'est encore petit.`,
 p6h:`Assistant interne &amp; recherche`, p6p:`Tout ce que sait votre entreprise, trouvé en secondes par toute l'équipe.`,
 p7h:`Visibilité IA (GEO)`, p7p:`Quand vos clients demandent à ChatGPT ou Gemini où acheter, votre entreprise est la réponse. Rapport de visibilité gratuit inclus.`,
-p8h:`Site prêt pour les agents IA`, p8p:`Les agents IA naviguent et achètent déjà pour leurs propriétaires. Nous faisons de votre site un site qu'ils savent utiliser.`,
+p8h:`Site prêt pour les agents IA`, p8p:`Les agents IA naviguent et achètent déjà pour leurs propriétaires. Faites de votre site un site qu'ils savent utiliser.`,
 dt1:`Aujourd'hui · géré par Mina`, dt2:`Mardi`,
 dr1:`Trier les e-mails et tickets de la nuit<small>14 triés · 2 signalés pour vous</small>`, dr2:`Envoyer les rappels de rendez-vous<small>11 SMS envoyés · 1 report géré</small>`,
 dr3:`Relancer les factures impayées<small>3 relances · 1 paiement reçu</small>`, dr4:`Vérifier le stock, préparer la commande<small>4 articles sous le minimum · brouillon à valider</small>`,
 dr5:`Préparer le planning de la semaine prochaine`, dr6:`Rapport du jour pour vous`, dsd:`Fait`, dsp:`En cours`, dsn:`Prévu`,
 dsum:`Aujourd'hui : 34 appels traités, 12 réservations, 1 840 € facturés. Une chose vous attend : le brouillon de commande.<small>Rapport du jour · 18:00</small>`,
-ak:`Automatisation des processus`, ah:`Une to-do list qui se fait toute seule.`, ap:`Confiez à l'assistant votre routine récurrente — rappels, factures, stocks, plannings. Elle tourne à l'heure et vous rend compte.`,
-af1:`Les tâches du jour et de la semaine s'exécutent à l'heure, sans qu'on le demande`, af2:`Factures créées et relancées, rappels envoyés, réapprovisionnements préparés`, af3:`Tout ce qui sort de l'ordinaire vous est signalé — jamais deviné`, af4:`Un message le soir : ce qui est fait, ce qui vous attend`,
+ak:`Automatisation des processus`, ah:`Une to-do list qui se fait toute seule.`, ap:`Confiez à l'assistant votre routine récurrente - rappels, factures, stocks, plannings. Elle tourne à l'heure et vous rend compte.`,
+af1:`Les tâches du jour et de la semaine s'exécutent à l'heure, sans qu'on le demande`, af2:`Factures créées et relancées, rappels envoyés, réapprovisionnements préparés`, af3:`Tout ce qui sort de l'ordinaire vous est signalé - jamais deviné`, af4:`Un message le soir : ce qui est fait, ce qui vous attend`,
 apay:`Vous lisez un message par jour au lieu de faire vingt tâches.`,
-lk:`Langues`, lh:`Votre entreprise parle une langue. Votre assistant en parle dix.`, lp:`L'assistant détecte la langue du client et répond dans celle-ci. Les clients perdus à cause de la barrière de la langue réservent désormais comme des locaux — sans embaucher.`,
+lk:`Langues`, lh:`Votre entreprise parle une langue. Votre assistant en parle dix.`, lp:`L'assistant détecte la langue du client et répond dans celle-ci. Les clients perdus à cause de la barrière de la langue réservent désormais comme des locaux - sans embaucher.`,
 lct:`Un assistant · langue détectée automatiquement`, llv:`en direct`,
-sk:`Comment ça marche`, sh:`Quatre étapes. Des semaines, pas des mois.`,
-sw1:`Semaine 1`, sw2:`Semaines 2–3`, sw3:`Semaine 4`, sw4:`En continu`,
-st1h:`Audit`, st1p:`Nous examinons vos appels, chats et paperasse, et choisissons ce que l'assistant reprend en premier.`,
-st2h:`Construction &amp; entraînement`, st2p:`Entraîné sur vos documents, prix et ton. Vous le testez avant tout le monde.`,
-st3h:`Connexion`, st3p:`Votre numéro, site, messageries et CRM. Rien ne change pour votre équipe.`,
-st4h:`Amélioration`, st4p:`Nous lisons les conversations, corrigeons les réponses faibles, ajoutons des compétences. Meilleur chaque mois.`,
-ck:`Cas d'usage`, chh:`À quoi ça ressemble dans une vraie entreprise.`, cp:`Choisissez votre activité. Ce que nous mettons en place — et un exemple en direct.`,
+sk:`Comment ça marche`, sh:`Configuré en quelques minutes. En ligne aujourd'hui.`,
+sw1:`2 min`, sw2:`3 min`, sw3:`1 appel`, sw4:`en continu`,
+st1h:`Créez votre assistante`, st1p:`Collez le lien de votre site. Mina en rédige ses réponses.`,
+st2h:`Personnalisez-la`, st2p:`Définissez vos horaires, vos règles et votre ton.`,
+st3h:`Écoutez-la en direct`, st3p:`Appelez votre numéro de test et écoutez Mina.`,
+st4h:`Lancez et améliorez`, st4p:`Connectez vos canaux. Mina s'améliore chaque semaine.`,
+ik:`Intégrations`, ih:`Compatible avec vos outils`, ip:`Agendas, CRM et messageries - connectés via des liens natifs, Make, Zapier et une API ouverte.`,
+ck:`Cas d'usage`, chh:`À quoi ça ressemble dans une vraie entreprise.`, cp:`Choisissez votre activité. Ce que Mina prend en charge - et un exemple en direct.`,
 t0:`Cabinet médical`, t1:`Conseil &amp; droit`, t2:`Artisans &amp; dépannage`, t3:`Restaurants`, t4:`Beauté &amp; salons`, t5:`Agro &amp; agrofourniture`, t6:`E-commerce`, t7:`Immobilier`, t8:`Logistique`,
-c0L:`<h3>Cabinet médical</h3><p class="desc">L'accueil rentre à 18 h. Pas les patients.</p><ul class="feats"><li>Prend, déplace et annule les rendez-vous par téléphone et chat, 24h/24</li><li>Répond sur les tarifs, la préparation et les horaires depuis vos listes</li><li>Rappelle les patients la veille — moins de rendez-vous manqués</li><li>Inscrit chaque changement dans votre agenda et votre CRM</li></ul><div class="payoff">Le matin commence avec un agenda propre.</div>`,
-c0R:`<div class="t"><span>Téléphone · hors horaires</span><span>21:40</span></div><div class="msg in">Bonsoir, je dois déplacer mon rendez-vous de mercredi.</div><div class="msg out">Bien sûr. Jeudi 10 h 30 est libre — je réserve ?<small>CRM mis à jour · 21:41</small></div><div class="msg in">Oui, merci.</div><div class="msg out">C'est fait. La confirmation SMS arrive tout de suite. Autre chose ?<small>SMS envoyé · hors horaires</small></div>`,
-c1L:`<h3>Conseil &amp; droit</h3><p class="desc">Les nouveaux clients racontent leur dossier une fois — et arrivent préparés.</p><ul class="feats"><li>Recueille les détails du dossier par chat, jour et nuit</li><li>Réserve la consultation dans l'agenda du bon associé</li><li>Retrouve tout contrat ou historique client en secondes</li><li>Rédige lettres de mission et relances dans votre style</li></ul><div class="payoff">Un dossier d'admission prêt, pas un appel manqué.</div>`,
-c1R:`<div class="t"><span>Chat du site</span><span>00:12</span></div><div class="msg in">J'ai un litige sur un bail commercial. Pouvez-vous aider ?</div><div class="msg out">Oui. Deux questions pour préparer votre consultation : dans quelle ville se trouve le bien, et avez-vous le bail sous la main ?<small>Admission lancée · 00:12</small></div><div class="msg in">Lyon. Oui, je l'ai.</div><div class="msg out">Merci. Jeudi 15 h avec notre associé immobilier est libre — je réserve et j'envoie la liste des documents ?<small>Contrôle de conflit passé · 00:14</small></div>`,
-c2L:`<h3>Artisans &amp; dépannage</h3><p class="desc">Vous réparez. Il planifie, chiffre et gère la paperasse.</p><ul class="feats"><li>Reçoit une photo du problème, donne une fourchette de prix depuis votre grille</li><li>Réserve l'intervention et rappelle le technicien le matin</li><li>Envoie la facture après le chantier et relance les impayées</li><li>Tient le client informé : en route, retardé, terminé</li></ul><div class="payoff">L'artisan répare. L'assistant planifie.</div>`,
-c2R:`<div class="t"><span>WhatsApp</span><span>22:03</span></div><div class="msg in">📷 Chaudière qui fuit par le bas. Combien pour réparer ?</div><div class="msg out">Merci — sur la photo, cela ressemble à une vanne. Ce type d'intervention va de 90 à 140 €. Demain 9 h ou 13 h ?<small>Prix de votre grille · 22:03</small></div><div class="msg in">9 h, parfait.</div><div class="msg out">Réservé. Tomas appellera 20 minutes avant d'arriver.<small>Technicien prévenu · 22:04</small></div>`,
-c3L:`<h3>Restaurants</h3><p class="desc">Coup de feu du vendredi en salle. Silence sur la liste des appels manqués.</p><ul class="feats"><li>Prend réservations et précommandes pendant que l'équipe sert</li><li>Répond aux questions sur la carte, allergènes compris</li><li>Transmet les grands groupes et événements au responsable avec les détails</li><li>Un rapport le soir : couverts, absences, réservations de demain</li></ul><div class="payoff">Aucune table perdue aux heures de pointe.</div>`,
-c3R:`<div class="t"><span>Téléphone · vendredi</span><span>19:22</span></div><div class="msg in">Une table pour six ce soir vers 20 h ?</div><div class="msg out">20 h est complet, mais 20 h 30 est libre — la table ronde près de la fenêtre. Je réserve ?<small>Plan de salle en direct · 19:22</small></div><div class="msg in">Oui. L'un de nous est sans gluten.</div><div class="msg out">Noté pour la cuisine. À 20 h 30.<small>Note ajoutée · 19:23</small></div>`,
-c4L:`<h3>Beauté &amp; salons</h3><p class="desc">Chaque appel manqué réservait le salon d'à côté.</p><ul class="feats"><li>Capte chaque appel et message, même en plein brushing</li><li>Remplit les créneaux annulés depuis la liste d'attente</li><li>Rappelle les clientes la veille — les absences chutent</li><li>Réinvite les clientes absentes depuis deux mois</li></ul><div class="payoff">Les fauteuils ne restent pas vides.</div>`,
-c4R:`<div class="t"><span>DM Instagram</span><span>13:47</span></div><div class="msg in">Un créneau pour une coupe demain ?</div><div class="msg out">Oui — 11 h avec Olha ou 16 h 30 avec Marta. Lequel vous va ?<small>Agenda en direct · 13:47</small></div><div class="msg in">16 h 30.</div><div class="msg out">Réservé avec Marta. Une manucure à 17 h 15 en plus ? Le poste d'à côté est libre.<small>Suggestion du planning · 13:48</small></div>`,
-c5L:`<h3>Agro &amp; agrofourniture</h3><p class="desc">En saison, le téléphone ne s'arrête jamais. Désormais, il ne reste jamais sans réponse.</p><ul class="feats"><li>Prend les commandes de semences, d'aliments et de pièces dans toutes les langues</li><li>Vérifie le stock en direct et confirme les créneaux de livraison</li><li>Signale au répartiteur les livraisons sensibles à la météo</li><li>Connaît la saison : qui a acheté des semences en mars reçoit un appel en février</li></ul><div class="payoff">Les pics de saison sans saisonniers.</div>`,
-c5R:`<div class="t"><span>Téléphone · saison</span><span>07:15</span></div><div class="msg in">Il me faut deux tonnes d'aliment, livraison vendredi.</div><div class="msg out">En stock. Vendredi matin est libre — livraison à l'adresse habituelle de la ferme ?<small>Stock vérifié · 07:15</small></div><div class="msg in">Oui, avant midi.</div><div class="msg out">Confirmé, vendredi 8 h–12 h. À noter : pluie prévue jeudi soir — je vous préviens si la tournée glisse.<small>Veille météo active · 07:16</small></div>`,
-c6L:`<h3>E-commerce</h3><p class="desc">« Où est ma commande ? » représente 40 % des tickets. Désormais 0 % de la journée de votre équipe.</p><ul class="feats"><li>Répond sur le statut de commande avec suivi en direct</li><li>Lance retours et échanges directement dans le chat</li><li>Recommande des produits de votre catalogue et vérifie le stock</li><li>Demande un avis après la livraison — au bon moment</li></ul><div class="payoff">Votre équipe gère les vrais problèmes.</div>`,
-c6R:`<div class="t"><span>Chat du site</span><span>maintenant</span></div><div class="msg in">Bonjour, où est ma commande #4482 ?</div><div class="msg out">Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.<small>Suivi en direct · 4 s</small></div><div class="msg in">Puis-je y ajouter un article ?</div><div class="msg out">Elle est déjà emballée — mais je peux créer une seconde commande avec livraison offerte. Je le fais ?<small>Règles de votre politique · 6 s</small></div>`,
-c7L:`<h3>Immobilier</h3><p class="desc">Les annonces reçoivent des demandes à 23 h. Pas vos agents.</p><ul class="feats"><li>Répond aux questions sur les annonces à toute heure, dans toutes les langues</li><li>Qualifie le prospect : budget, dates, financement</li><li>Réserve les visites directement dans l'agenda de l'agent</li><li>Relance après la visite et propose des biens similaires</li></ul><div class="payoff">Réveillez-vous avec une visite réservée.</div>`,
-c7R:`<div class="t"><span>Demande du portail</span><span>23:04</span></div><div class="msg in">Le deux-pièces rue Harju est-il toujours disponible ?</div><div class="msg out">Oui. Visites jeudi de 17 h à 19 h — je vous réserve un créneau ?<small>Agenda de l'agent · 23:04</small></div><div class="msg in">Jeudi 18 h, s'il vous plaît.</div><div class="msg out">Réservé. Je vous ai aussi envoyé deux appartements similaires à proximité, dans votre budget.<small>Sélection des annonces · 23:05</small></div>`,
-c8L:`<h3>Logistique</h3><p class="desc">Les répartiteurs devraient répartir, pas répéter la même réponse.</p><ul class="feats"><li>Répond « où est le camion ? » à partir du GPS en direct</li><li>Réserve les créneaux de quai et confirme les fenêtres de livraison</li><li>Envoie preuves de livraison et factures à la demande</li><li>Prévient les clients des retards avant qu'ils n'appellent</li></ul><div class="payoff">Les répartiteurs répartissent.</div>`,
-c8R:`<div class="t"><span>Téléphone</span><span>13:12</span></div><div class="msg in">Où est le camion de la commande 7731 ?</div><div class="msg out">Sur l'A2, à 40 km — arrivée prévue 14 h 20. Je vous préviens si ça glisse.<small>GPS en direct · 13:12</small></div><div class="msg in">Envoyez-moi aussi le bon de livraison d'hier.</div><div class="msg out">Envoyé à votre e-mail à l'instant.<small>Document du TMS · 13:13</small></div>`,
+u0p:`L'accueil rentre à 18 h. Pas les patients.`, u0f1:`Prend et déplace les rendez-vous 24h/24`, u0f2:`Répond sur les tarifs et les horaires depuis vos listes`, u0f3:`Rappelle les patients la veille`, u0y:`Le matin commence avec un agenda propre.`, u0ct:`Téléphone · hors horaires`, u0m1:`Je dois déplacer mon rendez-vous de mercredi.`, u0m2:`Jeudi 10 h 30 est libre - je réserve ?`,
+u1p:`Les nouveaux clients racontent leur dossier une fois - et arrivent préparés.`, u1f1:`Recueille les détails du dossier par chat, jour et nuit`, u1f2:`Réserve la consultation avec le bon associé`, u1f3:`Retrouve tout contrat ou historique en secondes`, u1y:`Un dossier d'admission prêt, pas un appel manqué.`, u1ct:`Chat du site`, u1m1:`J'ai un litige sur un bail commercial. Pouvez-vous aider ?`, u1m2:`Oui. Dans quelle ville se trouve le bien, et avez-vous le bail sous la main ?`,
+u2p:`Vous réparez. Il planifie, chiffre et gère la paperasse.`, u2f1:`Donne une fourchette de prix d'après une photo`, u2f2:`Réserve l'intervention et rappelle le technicien`, u2f3:`Envoie les factures et relance les impayées`, u2y:`L'artisan répare. L'assistant planifie.`, u2ct:`WhatsApp`, u2m1:`📷 Chaudière qui fuit par le bas. Combien pour réparer ?`, u2m2:`On dirait une vanne - ce type d'intervention va de 90 à 140 €. Demain 9 h ou 13 h ?`,
+u3p:`Coup de feu du vendredi en salle. Silence sur la liste des appels manqués.`, u3f1:`Prend les réservations pendant que l'équipe sert`, u3f2:`Répond sur la carte, allergènes compris`, u3f3:`Transmet les grands groupes au responsable`, u3y:`Aucune table perdue aux heures de pointe.`, u3ct:`Téléphone · vendredi`, u3m1:`Une table pour six ce soir vers 20 h ?`, u3m2:`20 h 30 est libre - la table ronde près de la fenêtre. Je réserve ?`,
+u4p:`Chaque appel manqué réservait le salon d'à côté.`, u4f1:`Capte chaque appel, même en plein brushing`, u4f2:`Remplit les créneaux annulés depuis la liste d'attente`, u4f3:`Rappelle les clientes la veille`, u4y:`Les fauteuils ne restent pas vides.`, u4ct:`DM Instagram`, u4m1:`Un créneau pour une coupe demain ?`, u4m2:`Oui - 11 h avec Olha ou 16 h 30 avec Marta. Lequel vous va ?`,
+u5p:`En saison, le téléphone ne s'arrête jamais. Désormais, il ne reste jamais sans réponse.`, u5f1:`Prend les commandes de semences, d'aliments et de pièces dans toutes les langues`, u5f2:`Vérifie le stock en direct et confirme la livraison`, u5f3:`Signale les livraisons sensibles à la météo`, u5y:`Les pics de saison sans saisonniers.`, u5ct:`Téléphone · saison`, u5m1:`Il me faut deux tonnes d'aliment, livraison vendredi.`, u5m2:`En stock. Vendredi matin est libre - à l'adresse habituelle de la ferme ?`,
+u6p:`« Où est ma commande ? » représente 40 % des tickets. Désormais 0 % de la journée de votre équipe.`, u6f1:`Répond sur le statut de commande avec suivi en direct`, u6f2:`Lance retours et échanges dans le chat`, u6f3:`Recommande des produits et vérifie le stock`, u6y:`Votre équipe gère les vrais problèmes.`, u6ct:`Chat du site`, u6m1:`Bonjour, où est ma commande #4482 ?`, u6m2:`Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.`,
+u7p:`Les annonces reçoivent des demandes à 23 h. Pas vos agents.`, u7f1:`Répond sur les annonces à toute heure`, u7f2:`Qualifie le prospect : budget, dates, financement`, u7f3:`Réserve les visites dans l'agenda de l'agent`, u7y:`Réveillez-vous avec une visite réservée.`, u7ct:`Demande du portail`, u7m1:`Le deux-pièces rue Harju est-il toujours disponible ?`, u7m2:`Oui. Visites jeudi de 17 h à 19 h - je vous réserve un créneau ?`,
+u8p:`Les répartiteurs devraient répartir, pas répéter la même réponse.`, u8f1:`Répond « où est le camion ? » depuis le GPS en direct`, u8f2:`Réserve les créneaux de quai et confirme les fenêtres`, u8f3:`Envoie preuves de livraison et factures à la demande`, u8y:`Les répartiteurs répartissent.`, u8ct:`Téléphone`, u8m1:`Où est le camion de la commande 7731 ?`, u8m2:`Sur l'A2, à 40 km - arrivée prévue 14 h 20. Je vous préviens si ça glisse.`,
 q1:`Ça va sonner comme un robot ?`, a1:`Non. Les voix modernes sont naturelles, et l'agent dit qu'il est un assistant. Les clients veulent être aidés en deux secondes, peu importe qui décroche.`,
 q2:`Et les questions difficiles ?`, a2:`L'assistant transmet la conversation à votre équipe avec un résumé complet. Il ne devine jamais ce qu'il ne sait pas.`,
-q3:`Et nos données ?`, a3:`Elles restent les vôtres. Nous construisons des configurations privées où vos documents et données clients n'entraînent jamais de modèles publics.`,
-q4:`Quelles langues ?`, a4:`Dix, dans le même assistant : anglais, allemand, français, espagnol, italien, polonais, ukrainien, turc, portugais et arabe. Il détecte la langue du client et répond dans celle-ci — même si votre entreprise n'en parle qu'une.`,
-q5:`Nous ne sommes pas une entreprise tech. On y arrivera ?`, a5:`C'est exactement pour vous que nous construisons. Nous installons, connectons et gérons tout ; votre équipe travaille comme avant. Vous obtenez des résultats et un numéro à appeler.`,
-q6:`Ça va remplacer mes employés ?`, a6:`Non. Il prend la routine — les dix mêmes questions, les appels manqués, la paperasse — pour que vos employés fassent le travail que seuls des humains peuvent faire.`,
-q7:`Combien ça coûte ?`, a7:`Nous facturons au résultat, à partir de l'audit. La plupart des assistants coûtent moins par mois qu'un employé à temps partiel — vous payez des résultats, pas des licences.`,
-q8:`En combien de temps peut-on démarrer ?`, a8:`L'audit dure 30 minutes. Le premier assistant répond à de vrais clients en quelques semaines — les quatre étapes ci-dessus sont tout le chemin.`,
-cth:`Écoutez-le répondre avant de décider.`, ctp:`Un audit gratuit de 30 minutes. Nous montrons les meilleures opportunités et vous faisons parler à une démo vocale en direct.`, ctb1:`Nous contacter →`,
+q3:`Et nos données ?`, a3:`Elles restent les vôtres. Vos documents et données clients vivent dans une configuration privée et n'entraînent jamais de modèles publics.`,
+q4:`Quelles langues ?`, a4:`Dix, dans le même assistant : anglais, allemand, français, espagnol, italien, polonais, ukrainien, turc, portugais et russe. Il détecte la langue du client et répond dans celle-ci - même si votre entreprise n'en parle qu'une.`,
+q5:`Nous ne sommes pas une entreprise tech. On y arrivera ?`, a5:`C'est exactement pour vous que c'est conçu. La configuration est guidée - collez un lien, répondez à quelques questions, c'est prêt. Pas de code, pas de projet informatique, et le support est à un message.`,
+q6:`Ça va remplacer mes employés ?`, a6:`Non. Il prend la routine - les dix mêmes questions, les appels manqués, la paperasse - pour que vos employés fassent le travail que seuls des humains peuvent faire.`,
+q7:`Combien ça coûte ?`, a7:`Les forfaits commencent à 79 €/mois. Pas de frais d'installation, résiliable chaque mois, garantie satisfait ou remboursé 30 jours. Tous les prix sont publics sur la page des forfaits.`,
+q8:`En combien de temps peut-on démarrer ?`, a8:`Parlez à Mina dès aujourd'hui - la démo live prend quelques minutes. Votre assistant peut répondre à de vrais clients le jour même.`,
+cth:`Écoutez-le répondre avant de décider.`, ctp:`Appelez Mina maintenant ou réservez une démo live de 30 minutes. Vous parlez au produit avant de payer quoi que ce soit.`, ctb1:`Appeler Mina`,
 ft1:`Conditions`, ft2:`Confidentialité`,
-mh:`Réserver un audit gratuit`, msub:`30 minutes. Nous examinons vos appels, chats et routine — et montrons ce qu'un assistant reprend en premier.`,
+mh:`Réserver une démo live`, msub:`30 minutes. Vous parlez à Mina en direct - sur votre propre cas d'usage.`,
 ml1:`Votre nom`, ml2:`Entreprise`, ml3:`Quelle est votre activité ?`, ml4:`E-mail`, ml5:`Téléphone (facultatif)`,
 o1:`Cabinet médical`, o2:`Conseil &amp; droit`, o3:`Artisans &amp; dépannage`, o4:`Restaurant`, o5:`Beauté &amp; salon`, o6:`Agro &amp; agrofourniture`, o7:`E-commerce`, o8:`Immobilier`, o9:`Logistique`, o10:`Autre`,
 mbtn:`Envoyer la demande →`, mnote:`Nous répondons sous un jour ouvré. Ou écrivez à <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>`
@@ -821,7 +741,7 @@ function fmLang(l){
   fmLang(lang);
 })();
 function fmModal(open){
-  document.getElementById('auditModal').classList.toggle('open', open);
+  document.getElementById('demoModal').classList.toggle('open', open);
   if(open){ setTimeout(function(){ document.getElementById('f-name').focus(); }, 50); }
 }
 document.addEventListener('keydown', function(e){ if(e.key==='Escape') fmModal(false); });
@@ -835,7 +755,7 @@ function fmSubmit(e){
     name: v('f-name'), business: v('f-biz'), type: v('f-type'),
     email: v('f-email'), phone: v('f-phone'),
     page: (location.pathname.split('/').pop() || 'index'),
-    _subject: 'Fourmina lead — ' + v('f-biz'),
+    _subject: 'Fourmina lead - ' + v('f-biz'),
     _replyto: v('f-email'), _template: 'table', _captcha: 'false'
   };
   btn.disabled = true; var btnOld = btn.textContent; btn.textContent = 'Sending…';
@@ -845,7 +765,7 @@ function fmSubmit(e){
     body: JSON.stringify(payload)
   }).then(function(r){ if(!r.ok) throw new Error('send failed'); return r.json(); })
     .then(function(){
-      btn.textContent = 'Sent ✓ — we reply within one business day';
+      btn.textContent = 'Sent ✓ - we reply within one business day';
       setTimeout(function(){ fmModal(false); btn.disabled = false; btn.textContent = btnOld; form.reset(); }, 2200);
     })
     .catch(function(){
@@ -857,19 +777,29 @@ function fmSubmit(e){
     });
   return false;
 }
-function fmCase(i, btn){
-  var panels = document.querySelectorAll('.tpanel');
-  var tabs = document.querySelectorAll('.tab');
-  for(var k=0;k<panels.length;k++){ panels[k].classList.toggle('active', k===i); }
-  for(var k=0;k<tabs.length;k++){ tabs[k].classList.toggle('active', tabs[k]===btn); }
+var FM_CASE = (window.innerWidth < 900) ? 0 : 1;
+function fmCaseRender(){
+  var track = document.getElementById('carTrack');
+  if(!track) return;
+  var cards = track.children;
+  if(!cards.length) return;
+  var vp = track.parentNode;
+  var w = cards[0].offsetWidth;
+  var gap = 20;
+  var off = vp.clientWidth/2 - w/2 - FM_CASE*(w+gap);
+  track.style.transform = 'translateX(' + off + 'px)';
+  for(var k=0;k<cards.length;k++){ cards[k].classList.toggle('on', k===FM_CASE); }
+  var dots = document.querySelectorAll('#carDots button');
+  for(var k=0;k<dots.length;k++){ dots[k].classList.toggle('on', k===FM_CASE); }
 }
-function fmPlayDemo(){
-  var a=document.getElementById('minaDemo'), b=document.getElementById('playBtn');
-  if(!a||!b) return;
-  if(a.paused){ a.play(); b.textContent='⏸  Playing… tap to pause'; }
-  else{ a.pause(); b.textContent='▶  Resume the call'; }
-  a.onended=function(){ b.textContent='▶  Replay the call · 0:16'; };
+function fmCaseTo(i){
+  var n = document.getElementById('carTrack').children.length;
+  FM_CASE = ((i % n) + n) % n;
+  fmCaseRender();
 }
+function fmCaseGo(d){ fmCaseTo(FM_CASE + d); }
+window.addEventListener('resize', fmCaseRender);
+fmCaseRender();
 function fmToggle(){
   var r = document.documentElement;
   r.dataset.theme = r.dataset.theme === 'dark' ? 'light' : 'dark';
@@ -879,7 +809,7 @@ function fmToggle(){
 </script>
 
 <div class="cookiebar" id="fmCookie" role="dialog" aria-label="Cookie consent">
-  <span data-i18n="ck1">We use local storage and cookies to remember your preferences — theme and language. No tracking, no ads. <a href="fourmina-privacy.html">Privacy</a></span>
+  <span data-i18n="ck1">We use local storage and cookies to remember your preferences - theme and language. No tracking, no ads. <a href="fourmina-privacy-v2.html">Privacy</a></span>
   <div class="cb-btns"><button class="btn btn-primary" onclick="fmCookieOk('all')" data-i18n="ck2">Accept</button><button class="btn btn-ghost" onclick="fmCookieOk('essential')" data-i18n="ck3">Essential only</button></div>
 </div>
 <style>
@@ -888,6 +818,7 @@ function fmToggle(){
 .cookiebar a{ color:var(--link); }
 .cb-btns{ display:flex; gap:10px; }
 .cb-btns .btn{ padding:9px 16px; font-size:13.5px; }
+@media(max-width:600px){ .sec{ padding-top:80px; padding-bottom:80px; } #integrations{ padding-top:80px; padding-bottom:44px; } .steps.sec{ padding-top:80px; padding-bottom:80px; } }
 @media(max-width:600px){ .cookiebar{ left:10px; right:10px; bottom:10px; } .cb-btns{ width:100%; } .cb-btns .btn{ flex:1; text-align:center; } }
 </style>
 <script>

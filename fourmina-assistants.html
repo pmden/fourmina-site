@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI assistants · Fourmina — AI assistants for your business</title>
+<title>AI assistants · Fourmina - AI assistants for your business</title>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231D1D1F'/%3E%3Cellipse cx='6.5' cy='14.2' rx='3.4' ry='2.6' fill='white'/%3E%3Cellipse cx='12.3' cy='12.4' rx='2.2' ry='1.9' fill='white'/%3E%3Ccircle cx='16.5' cy='11' r='2' fill='white'/%3E%3Cpath d='M17.5 9.4 C18 8 19 7 20.3 6.8' stroke='white' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3Cpath d='M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9' stroke='white' stroke-width='1.2' stroke-linecap='round' fill='none'/%3E%3Cpath d='M13.8 13.6 L15.6 17.2' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M12.3 14.2 L12.1 18' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M10.9 13.8 L8.9 17.4' stroke='white' stroke-width='1.2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -144,7 +148,7 @@ h1{ font-size:56px; line-height:1.05; letter-spacing:-.035em; font-weight:700; m
 .step .wk{ position:absolute; top:22px; right:20px; font-size:10.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--link); background:var(--tint); padding:4px 9px; border-radius:12px; }
 .step h4{ font-size:16px; font-weight:700; margin-bottom:7px; } .step p{ font-size:13.5px; color:var(--muted); }
 
-/* use cases — tabs */
+/* use cases - tabs */
 .tabbar{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px; }
 .tab{ display:inline-flex; align-items:center; gap:8px; font-family:inherit; font-size:14px; font-weight:600; color:var(--muted); background:var(--panel); border:none; border-radius:10px; padding:10px 16px; cursor:pointer; transition:background .15s, color .15s; }
 .tab i{ font-style:normal; font-size:14px; }
@@ -185,7 +189,7 @@ footer{ padding:40px 0; border-top:1px solid var(--line); margin-top:110px; disp
   .nav-links{ gap:10px; }
   .nav .btn{ white-space:nowrap; padding:9px 14px; font-size:13.5px; }
   h1{ font-size:38px; }
-  .sec{ padding:88px 0; }
+  .sec{ padding-top:88px; padding-bottom:88px; }
   .sec-head h2{ font-size:32px; }
   .langsec h2{ font-size:32px !important; }
   .stat b{ font-size:30px; }
@@ -197,9 +201,14 @@ footer{ padding:40px 0; border-top:1px solid var(--line); margin-top:110px; disp
   .steprow{ grid-template-columns:1fr; }
   .stats{ grid-template-columns:1fr 1fr; }
   .tpanel h3{ font-size:24px; }
+  .live{ white-space:nowrap; }
+  .wave{ justify-content:center; }
+  .hero-cta .btn{ flex:1 1 100%; justify-content:center; }
+  .ctaband .cta-btns{ width:100%; flex-direction:column; align-items:stretch; }
+  .ctaband .cta-btns .btn{ justify-content:center; }
 }
 
-/* audit form modal */
+/* demo form modal */
 .modal{ position:fixed; inset:0; background:rgba(0,0,0,.5); backdrop-filter:blur(5px); -webkit-backdrop-filter:blur(5px); display:none; align-items:center; justify-content:center; z-index:50; padding:20px; }
 :root[data-theme="dark"] .modal{ background:rgba(0,0,0,.6); }
 .modal.open{ display:flex; }
@@ -224,17 +233,15 @@ footer a{ text-decoration:underline; }
   <div class="topbar bleed">
   <nav class="nav">
     <a class="brand" href="index.html"><span class="mark"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></a>
-    <div class="nav-links"><a href="index.html#assistants" data-i18n="n1">Assistants</a><a href="index.html#automation" data-i18n="n2">Automation</a><a href="index.html#languages" data-i18n="n3">Languages</a><a href="index.html#how" data-i18n="n4">How it works</a><a href="index.html#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html" data-i18n="npl">Plans</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a free audit</a></div>
+    <div class="nav-links"><a href="fourmina-assistants.html" data-i18n="n1">Assistants</a><a href="fourmina-automation.html" data-i18n="n2">Automation</a><a href="index.html#languages" data-i18n="n3">Languages</a><a href="index.html#how" data-i18n="n4">How it works</a><a href="index.html#cases" data-i18n="n5">Use cases</a><a href="fourmina-plans.html" data-i18n="npl">Pricing</a><button class="theme-btn" id="themeBtn" onclick="fmToggle()" aria-label="Toggle theme">☾</button><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="gs">Get started</a></div>
   </nav>
   </div>
 
   <section class="hero">
     <div>
-      <span class="eyebrow" data-i18n="ashk">AI assistants · voice · chat · support</span>
-      <h1 data-i18n="hh">Every customer answered. Day and night.</h1>
-      <p data-i18n="ashp">One AI assistant on your phone line, website chat, WhatsApp and email. It books, answers and sells in seconds — in the customer's language — and hands the hard cases to your team.</p>
-      <div class="hero-cta"><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="hb1">Book a free audit →</a><a class="btn btn-ghost" href="#demo" onclick="fmPlayDemo()" data-i18n="hb2">Hear the voice demo</a></div>
-      <div class="trust" data-i18n="astr">A <b>Krok Group</b> company · installed in weeks · your data stays yours</div>
+      <h1 data-i18n="ph">AI staff for the front line. And the back office.</h1>
+      <p data-i18n="pp">Not a chatbot from a template. Trained on your products, prices and rules, connected to the tools you already use.</p>
+      <div class="hero-cta"><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="gs">Get started</a><a class="btn btn-ghost" href="#demo" onclick="fmPlayDemo()" data-i18n="hb2">Hear the voice demo</a></div>
     </div>
     <div class="hviz" id="demo">
       <div class="callcard">
@@ -246,15 +253,9 @@ footer a{ text-decoration:underline; }
           <i style="height:12px;animation-delay:0s"></i><i style="height:22px;animation-delay:.1s"></i><i style="height:16px;animation-delay:.2s"></i><i style="height:28px;animation-delay:.3s"></i><i style="height:14px;animation-delay:.4s"></i><i style="height:24px;animation-delay:.5s"></i><i style="height:18px;animation-delay:.6s"></i><i style="height:26px;animation-delay:.7s"></i><i style="height:12px;animation-delay:.8s"></i><i style="height:20px;animation-delay:.9s"></i><i style="height:15px;animation-delay:.15s"></i><i style="height:27px;animation-delay:.35s"></i><i style="height:13px;animation-delay:.55s"></i><i style="height:23px;animation-delay:.75s"></i>
         </div>
         <div class="line" data-i18n="cln">"I can move your appointment to <b>Thursday at 10:30</b>. You will get a confirmation by SMS. Anything else?"</div>
-        <div class="meta"><span data-i18n="cm1">Answered in 2 sec</span><span data-i18n="cm2">Booking updated in CRM</span><span data-i18n="cm3">After hours</span></div>
         <button class="playdemo" id="playBtn" onclick="fmPlayDemo()" data-i18n="pdm">▶&nbsp; Play the call · 0:16</button>
         <audio id="minaDemo" src="fourmina-assets/mina-demo.mp3" preload="none"></audio>
         <style>.playdemo{ margin-top:12px; width:100%; padding:10px 14px; border-radius:10px; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-weight:600; font-size:13.5px; cursor:pointer; font-family:inherit; } .playdemo:hover{ border-color:var(--muted); }</style>
-      </div>
-      <div class="chatcard">
-        <div class="t"><span data-i18n="cht">Website chat</span><span data-i18n="chn">now</span></div>
-        <div class="msg in" data-i18n="chi">Hi, where is my order #4482?</div>
-        <div class="msg out" data-i18n="cho">It left our warehouse today and arrives Tuesday. Here is the tracking link.<small>AI assistant · 4 sec</small></div>
       </div>
     </div>
   </section>
@@ -262,7 +263,7 @@ footer a{ text-decoration:underline; }
   <div class="stats">
     <div class="stat"><b>0</b><span data-i18n="s1">missed calls, including nights and holidays</span></div>
     <div class="stat"><b data-i18n="s2b">&lt;5 sec</b><span data-i18n="s2">first reply on chat, email and phone</span></div>
-    <div class="stat"><b>70–80%</b><span data-i18n="s3">of routine questions solved without your team</span></div>
+    <div class="stat"><b>70-80%</b><span data-i18n="s3">of routine questions solved for your team</span></div>
     <div class="stat"><b>10</b><span data-i18n="s4">languages in every assistant, matched to the customer</span></div>
   </div>
 
@@ -274,7 +275,7 @@ footer a{ text-decoration:underline; }
         <span class="tag" data-i18n="ptag">Most requested</span>
         <div class="ico">◉</div>
         <h3 data-i18n="p1h">Voice agent</h3>
-        <p data-i18n="p1p">Picks up every call in a natural voice — books, answers, hands over. Day and night.</p>
+        <p data-i18n="p1p">Picks up every call in a natural voice - books, answers, hands over. Day and night.</p>
       </div>
       <div class="prod">
         <div class="ico">◒</div>
@@ -294,9 +295,9 @@ footer a{ text-decoration:underline; }
       <div>
         <div class="kick" style="font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:12px;" data-i18n="lk">Languages</div>
         <h2 style="font-size:42px; letter-spacing:-.03em; font-weight:700; margin-bottom:14px;" data-i18n="lh">Your business speaks one language. Your assistant speaks ten.</h2>
-        <p style="font-size:17px; color:var(--muted); max-width:520px;" data-i18n="lp">The assistant detects the customer's language and answers in it. Customers you used to lose to the language barrier now book like locals — no new hires.</p>
+        <p style="font-size:17px; color:var(--muted); max-width:520px;" data-i18n="lp">The assistant detects the customer's language and answers in it. Customers you used to lose to the language barrier now book like locals - no new hires.</p>
         <div class="langchips">
-          <span class="chip"><b>EN</b>English</span><span class="chip"><b>DE</b>Deutsch</span><span class="chip"><b>FR</b>Français</span><span class="chip"><b>ES</b>Español</span><span class="chip"><b>IT</b>Italiano</span><span class="chip"><b>PL</b>Polski</span><span class="chip"><b>UA</b>Українська</span><span class="chip"><b>TR</b>Türkçe</span><span class="chip"><b>PT</b>Português</span><span class="chip"><b>AR</b>العربية</span>
+          <span class="chip"><b>EN</b>English</span><span class="chip"><b>DE</b>Deutsch</span><span class="chip"><b>FR</b>Français</span><span class="chip"><b>ES</b>Español</span><span class="chip"><b>IT</b>Italiano</span><span class="chip"><b>PL</b>Polski</span><span class="chip"><b>UA</b>Українська</span><span class="chip"><b>TR</b>Türkçe</span><span class="chip"><b>PT</b>Português</span><span class="chip"><b>RU</b>Русский</span>
         </div>
       </div>
       <div class="chatcard">
@@ -312,12 +313,12 @@ footer a{ text-decoration:underline; }
   </section>
 
   <section class="sec steps bleed" id="how">
-    <div class="sec-head"><div class="kick" data-i18n="sk">How it works</div><h2 data-i18n="sh">Four steps. Weeks, not months.</h2></div>
+    <div class="sec-head"><div class="kick" data-i18n="sk">How it works</div><h2 data-i18n="sh">Set up in minutes. Live today.</h2></div>
     <div class="steprow">
-      <div class="step"><span class="wk" data-i18n="sw1">Week 1</span><div class="n">1</div><h4 data-i18n="st1h">Audit</h4><p data-i18n="st1p">We look at your calls, chats and paperwork. We pick what the assistant takes over first.</p></div>
-      <div class="step"><span class="wk" data-i18n="sw2">Weeks 2–3</span><div class="n">2</div><h4 data-i18n="st2h">Build &amp; train</h4><p data-i18n="st2p">Trained on your documents, prices and tone. You test it before anyone else sees it.</p></div>
-      <div class="step"><span class="wk" data-i18n="sw3">Week 4</span><div class="n">3</div><h4 data-i18n="st3h">Connect</h4><p data-i18n="st3p">Your number, website, messengers and CRM. Nothing changes for your team.</p></div>
-      <div class="step"><span class="wk" data-i18n="sw4">Ongoing</span><div class="n">4</div><h4 data-i18n="st4h">Improve</h4><p data-i18n="st4p">We read conversations, fix weak answers, add skills. Better every month.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw1">2 min</span><div class="n">1</div><h4 data-i18n="st1h">Create your assistant</h4><p data-i18n="st1p">Paste your website link. Mina drafts her answers from it.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw2">3 min</span><div class="n">2</div><h4 data-i18n="st2h">Make her yours</h4><p data-i18n="st2p">Set your hours, rules and tone.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw3">1 call</span><div class="n">3</div><h4 data-i18n="st3h">Hear her live</h4><p data-i18n="st3p">Call your test number and hear her.</p></div>
+      <div class="step"><span class="wk" data-i18n="sw4">Ongoing</span><div class="n">4</div><h4 data-i18n="st4h">Go live &amp; improve</h4><p data-i18n="st4p">Connect your channels. She gets better every week.</p></div>
     </div>
   </section>
 
@@ -326,24 +327,24 @@ footer a{ text-decoration:underline; }
     <div class="faq">
       <div class="qa"><h4 data-i18n="q1">Will it sound like a robot?</h4><p data-i18n="a1">No. Modern voices are natural, and the agent says it is an assistant. Customers care about being helped in two seconds, not about who picked up.</p></div>
       <div class="qa"><h4 data-i18n="q2">What happens with hard questions?</h4><p data-i18n="a2">The assistant passes the conversation to your team with a full summary. It never guesses on things it does not know.</p></div>
-      <div class="qa"><h4 data-i18n="q4">Which languages?</h4><p data-i18n="a4">Ten, in the same assistant: English, German, French, Spanish, Italian, Polish, Ukrainian, Turkish, Portuguese and Arabic. It detects the customer's language and answers in it — even if your business works in one.</p></div>
-      <div class="qa"><h4 data-i18n="q6">Will it replace my people?</h4><p data-i18n="a6">No. It takes the routine — the same ten questions, the missed calls, the paperwork — so your people do the work only people can do.</p></div>
+      <div class="qa"><h4 data-i18n="q4">Which languages?</h4><p data-i18n="a4">Ten, in the same assistant: English, German, French, Spanish, Italian, Polish, Ukrainian, Turkish, Portuguese and Russian. It detects the customer's language and answers in it - even if your business works in one.</p></div>
+      <div class="qa"><h4 data-i18n="q6">Will it replace my people?</h4><p data-i18n="a6">No. It takes the routine - the same ten questions, the missed calls, the paperwork - so your people do the work only people can do.</p></div>
     </div>
   </section>
 
   <div class="ctaband">
-    <div><h2 data-i18n="cth">Hear it answer before you decide.</h2><p data-i18n="asct2">A free 30-minute audit. We show what the assistant takes over first — and you talk to a live voice demo.</p></div>
-    <div class="cta-btns"><a class="btn btn-primary" href="#" onclick="fmModal(true);return false;" data-i18n="hb1">Book a free audit →</a><a class="btn btn-ghost" href="mailto:hello@fourmina.com">hello@fourmina.com</a></div>
+    <div><h2 data-i18n="cth">Hear it answer before you decide.</h2><p data-i18n="asct2">Call Mina right now, or book a 30-minute live demo. You talk to the product before you pay a cent.</p></div>
+    <div class="cta-btns"><a class="btn btn-primary" href="fourmina-plans.html" data-i18n="gs">Get started</a><a class="btn btn-ghost" href="#" onclick="fmModal(true);return false;" data-i18n="nbtn">Book a live demo</a><a href="mailto:hello@fourmina.com" style="align-self:center; font-size:14px; color:var(--band-muted); text-decoration:underline">hello@fourmina.com</a></div>
   </div>
 
-  <footer><div class="brand" style="font-size:16px"><span class="mark" style="width:28px;height:28px"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></div><div class="langsw" id="langSw"><button onclick="fmLang('en')">EN</button><button onclick="fmLang('de')">DE</button><button onclick="fmLang('fr')">FR</button></div><div>© 2026 Fourmina · A Krok Group company · <a href="mailto:hello@fourmina.com">hello@fourmina.com</a> · <a href="fourmina-terms.html" data-i18n="ft1">Terms</a> · <a href="fourmina-privacy.html" data-i18n="ft2">Privacy</a></div></footer>
+  <footer><div class="brand" style="font-size:16px"><span class="mark" style="width:28px;height:28px"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="14.2" rx="3.4" ry="2.6" fill="currentColor"/><ellipse cx="12.3" cy="12.4" rx="2.2" ry="1.9" fill="currentColor"/><circle cx="16.5" cy="11" r="2" fill="currentColor"/><path d="M17.5 9.4 C18 8 19 7 20.3 6.8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.3 9.2 C16.4 7.8 17 6.6 18.2 5.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M13.8 13.6 L15.6 17.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M12.3 14.2 L12.1 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M10.9 13.8 L8.9 17.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span>Four<em>mina</em></span></div><div class="langsw" id="langSw"><button onclick="fmLang('en')">EN</button><button onclick="fmLang('de')">DE</button><button onclick="fmLang('fr')">FR</button></div><div>© 2026 Fourmina · <a href="mailto:hello@fourmina.com">hello@fourmina.com</a> · <a href="fourmina-terms-v2.html" data-i18n="ft1">Terms</a> · <a href="fourmina-privacy-v2.html" data-i18n="ft2">Privacy</a> · <a href="fourmina-impressum.html">Impressum</a> · <a href="fourmina-dpa.html">DPA</a> · <a href="fourmina-verschwiegenheit-de.html">Verschwiegenheit</a></div></footer>
 </div>
 
-<div class="modal" id="auditModal" onclick="if(event.target===this)fmModal(false)">
+<div class="modal" id="demoModal" onclick="if(event.target===this)fmModal(false)">
   <div class="mbox">
     <button class="mclose" onclick="fmModal(false)" aria-label="Close">✕</button>
-    <h3 data-i18n="mh">Book a free audit</h3>
-    <div class="msub" data-i18n="msub">30 minutes. We look at your calls, chats and routine — and show what an assistant takes over first.</div>
+    <h3 data-i18n="mh">Book a live demo</h3>
+    <div class="msub" data-i18n="msub">30 minutes. You talk to Mina live and see it on your own use case.</div>
     <form onsubmit="return fmSubmit(event)">
       <div class="field"><label for="f-name" data-i18n="ml1">Your name</label><input id="f-name" required placeholder="John Smith"></div>
       <div class="field"><label for="f-biz" data-i18n="ml2">Business</label><input id="f-biz" required placeholder="Riverside Dental, Manchester"></div>
@@ -361,159 +362,157 @@ footer a{ text-decoration:underline; }
 <script>
 var I18N = {
 de: {
-ashk:`KI-Assistenten · Voice · Chat · Support`,
-ashp:`Ein KI-Assistent auf Ihrer Telefonleitung, im Website-Chat, auf WhatsApp und per E-Mail. Er bucht, antwortet und verkauft in Sekunden — in der Sprache des Kunden — und übergibt die schwierigen Fälle an Ihr Team.`,
-astr:`Ein Unternehmen der <b>Krok Group</b> · einsatzbereit in Wochen · Ihre Daten bleiben Ihre`,
+gs:`Jetzt starten`,
+ashp:`Ein KI-Assistent auf Ihrer Telefonleitung, im Website-Chat, auf WhatsApp und per E-Mail. Er bucht, antwortet und verkauft in Sekunden - in der Sprache des Kunden - und übergibt die schwierigen Fälle an Ihr Team.`,
 aswk:`Was Sie bekommen`, aswh:`Drei Assistenten. Eine Nummer.`, aswp:`Trainiert auf Ihren Preisen, Leistungen und Ihrem Ton. Verbunden mit Kalender und CRM. Für Ihr Team ändert sich nichts.`,
-asct2:`Ein kostenloses 30-Minuten-Audit. Wir zeigen, was der Assistent zuerst übernimmt — und Sie sprechen mit einer Live-Sprachdemo.`,
+asct2:`Rufen Sie Mina jetzt an oder buchen Sie eine 30-minütige Live-Demo. Sie sprechen mit dem Produkt, bevor Sie einen Cent zahlen.`,
 fqk:`Ehrliche Antworten`, fqh:`Die Fragen, die alle stellen.`,
 pdm:`▶&nbsp; Anruf abspielen · 0:16`,
-npl:`Preise`, ck1:`Wir nutzen lokalen Speicher und Cookies, um Ihre Einstellungen zu merken — Theme und Sprache. Kein Tracking, keine Werbung. <a href="fourmina-privacy.html">Datenschutz</a>`, ck2:`Akzeptieren`, ck3:`Nur notwendige`,
-n1:`Assistenten`, n2:`Automatisierung`, n3:`Sprachen`, n4:`So funktioniert's`, n5:`Anwendungsfälle`, nbtn:`Audit buchen`,
-hk:`KI-Assistenten · Voice · Automatisierung · 10 Sprachen`, hh:`Jeder Kunde bekommt eine Antwort. Tag und Nacht.`,
-hp:`KI-Assistenten, die Ihre Kunden am Telefon, im Chat und per E-Mail beantworten — und die Routine im Hintergrund erledigen: Termine, Rechnungen, Lager, Alarme. Einsatzbereit in Wochen.`,
-hb1:`Kostenloses Audit buchen →`, hb2:`Sprachdemo anhören`, htr:`Ein Unternehmen der <b>Krok Group</b> · erfahrene Entwickler · Ihre Daten bleiben Ihre`,
+npl:`Preise`, ck1:`Wir nutzen lokalen Speicher und Cookies, um Ihre Einstellungen zu merken - Theme und Sprache. Kein Tracking, keine Werbung. <a href="fourmina-privacy-v2.html">Datenschutz</a>`, ck2:`Akzeptieren`, ck3:`Nur notwendige`,
+n1:`Assistenten`, n2:`Automatisierung`, n3:`Sprachen`, n4:`So funktioniert's`, n5:`Anwendungsfälle`, nbtn:`Live-Demo buchen`,
+hh:`Jeder Kunde bekommt eine Antwort. Tag und Nacht.`,
+hp:`KI-Assistenten, die Ihre Kunden am Telefon, im Chat und per E-Mail beantworten - und die Routine im Hintergrund erledigen: Termine, Rechnungen, Lager, Alarme. Heute live.`,
+hb1:`Live-Demo buchen →`, hb2:`Sprachdemo anhören`,
 cw:`Mina · Fourmina Voice-Agent`, cws:`Eingehender Anruf · 21:47`, clv:`Im Gespräch`,
 cln:`„Ich kann Ihren Termin auf <b>Donnerstag, 10:30</b> verschieben. Sie erhalten eine Bestätigung per SMS. Sonst noch etwas?"`,
 cm1:`Beantwortet in 2 Sek.`, cm2:`Termin im CRM aktualisiert`, cm3:`Nach Feierabend`,
 cht:`Website-Chat`, chn:`jetzt`, chi:`Hallo, wo ist meine Bestellung #4482?`, cho:`Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.<small>KI-Assistent · 4 Sek.</small>`,
-s1:`verpasste Anrufe, auch nachts und an Feiertagen`, s2b:`&lt;5 Sek.`, s2:`erste Antwort in Chat, E-Mail und Telefon`, s3:`der Routinefragen ohne Ihr Team gelöst`, s4:`Sprachen in jedem Assistenten, passend zum Kunden`,
-pk:`Was wir bauen`, ph:`KI-Personal für den Empfang. Und fürs Backoffice.`, pp:`Kein Chatbot von der Stange. Trainiert auf Ihre Produkte, Preise und Regeln, verbunden mit Ihren Tools.`,
+s1:`verpasste Anrufe, auch nachts und an Feiertagen`, s2b:`&lt;5 Sek.`, s2:`erste Antwort in Chat, E-Mail und Telefon`, s3:`der Routinefragen für Ihr Team gelöst`, s4:`Sprachen in jedem Assistenten, passend zum Kunden`,
+pk:`Was Sie bekommen`, ph:`KI-Personal für den Empfang. Und fürs Backoffice.`, pp:`Kein Chatbot von der Stange. Trainiert auf Ihre Produkte, Preise und Regeln, verbunden mit Ihren Tools.`,
 gl1:`Für Ihre Kunden`, gl2:`Hinter den Kulissen`, gl3:`Von KI gefunden`, ptag:`Am gefragtesten`,
-p1h:`Voice-Agent`, p1p:`Nimmt jeden Anruf mit natürlicher Stimme an — bucht, antwortet, übergibt. Tag und Nacht.`,
-p2h:`Chat-Assistent`, p2p:`Ein Assistent auf Website, WhatsApp und Instagram — verkauft und hilft sofort.`,
-p3h:`Support-Automatisierung`, p3p:`Posteingang und Helpdesk — sortiert und beantwortet, bevor Ihr Team am Platz sitzt.`,
-p4h:`Prozess-Automatisierung`, p4p:`Rechnungen, Erinnerungen, Lager und Dienstpläne — die Routine läuft nach Plan.`,
+p1h:`Voice-Agent`, p1p:`Nimmt jeden Anruf mit natürlicher Stimme an - bucht, antwortet, übergibt. Tag und Nacht.`,
+p2h:`Chat-Assistent`, p2p:`Ein Assistent auf Website, WhatsApp und Instagram - verkauft und hilft sofort.`,
+p3h:`Support-Automatisierung`, p3p:`Posteingang und Helpdesk - sortiert und beantwortet, bevor Ihr Team am Platz sitzt.`,
+p4h:`Prozess-Automatisierung`, p4p:`Rechnungen, Erinnerungen, Lager und Dienstpläne - die Routine läuft nach Plan.`,
 p5h:`Alarme &amp; Monitoring`, p5p:`Meldet die unbezahlte Rechnung oder den verärgerten Kunden, solange es noch klein ist.`,
-p6h:`Interner Assistent &amp; Suche`, p6p:`Alles, was Ihr Unternehmen weiß — in Sekunden gefunden, für Ihr ganzes Team.`,
+p6h:`Interner Assistent &amp; Suche`, p6p:`Alles, was Ihr Unternehmen weiß - in Sekunden gefunden, für Ihr ganzes Team.`,
 p7h:`KI-Sichtbarkeit (GEO)`, p7p:`Wenn Kunden ChatGPT oder Gemini fragen, wo sie kaufen sollen, ist Ihr Unternehmen die Antwort. Kostenloser Sichtbarkeits-Report inklusive.`,
-p8h:`Agent-taugliche Website`, p8p:`KI-Agenten surfen und kaufen bereits für ihre Besitzer. Wir sorgen dafür, dass Ihre Website eine ist, die sie bedienen können.`,
+p8h:`Agent-taugliche Website`, p8p:`KI-Agenten surfen und kaufen bereits für ihre Besitzer. Machen Sie Ihre Website zu einer, die sie bedienen können.`,
 dt1:`Heute · erledigt von Mina`, dt2:`Dienstag`,
 dr1:`Nächtliche E-Mails und Tickets sortieren<small>14 sortiert · 2 für Sie markiert</small>`, dr2:`Terminerinnerungen für heute senden<small>11 SMS gesendet · 1 Verschiebung erledigt</small>`,
 dr3:`Offene Rechnungen anmahnen<small>3 Erinnerungen · 1 Zahlung eingegangen</small>`, dr4:`Lager prüfen, Nachbestellung entwerfen<small>4 Artikel unter Minimum · Entwurf zur Freigabe</small>`,
 dr5:`Dienstplan für nächste Woche entwerfen`, dr6:`Tagesbericht an Sie`, dsd:`Erledigt`, dsp:`Läuft`, dsn:`Geplant`,
 dsum:`Heute: 34 Anrufe beantwortet, 12 Buchungen, 1.840 € in Rechnung gestellt. Eine Sache braucht Sie: der Nachbestellungs-Entwurf.<small>Tagesbericht · 18:00</small>`,
-ak:`Prozess-Automatisierung`, ah:`Eine To-do-Liste, die sich selbst erledigt.`, ap:`Geben Sie dem Assistenten Ihre wiederkehrende Routine — Erinnerungen, Rechnungen, Lager, Dienstpläne. Sie läuft nach Plan und berichtet.`,
-af1:`Tages- und Wochenaufgaben laufen pünktlich, ganz von allein`, af2:`Rechnungen erstellt und angemahnt, Erinnerungen gesendet, Nachschub vorbereitet`, af3:`Alles Ungewöhnliche wird Ihnen gemeldet — nie geraten`, af4:`Eine Abendnachricht: was erledigt ist, was Sie braucht`,
+ak:`Prozess-Automatisierung`, ah:`Eine To-do-Liste, die sich selbst erledigt.`, ap:`Geben Sie dem Assistenten Ihre wiederkehrende Routine - Erinnerungen, Rechnungen, Lager, Dienstpläne. Sie läuft nach Plan und berichtet.`,
+af1:`Tages- und Wochenaufgaben laufen pünktlich, ganz von allein`, af2:`Rechnungen erstellt und angemahnt, Erinnerungen gesendet, Nachschub vorbereitet`, af3:`Alles Ungewöhnliche wird Ihnen gemeldet - nie geraten`, af4:`Eine Abendnachricht: was erledigt ist, was Sie braucht`,
 apay:`Sie lesen eine Nachricht am Tag, statt zwanzig Aufgaben zu erledigen.`,
-lk:`Sprachen`, lh:`Ihr Unternehmen spricht eine Sprache. Ihr Assistent spricht zehn.`, lp:`Der Assistent erkennt die Sprache des Kunden und antwortet darin. Kunden, die früher an der Sprachbarriere verloren gingen, buchen jetzt wie Einheimische — ohne neue Mitarbeiter.`,
+lk:`Sprachen`, lh:`Ihr Unternehmen spricht eine Sprache. Ihr Assistent spricht zehn.`, lp:`Der Assistent erkennt die Sprache des Kunden und antwortet darin. Kunden, die früher an der Sprachbarriere verloren gingen, buchen jetzt wie Einheimische - ohne neue Mitarbeiter.`,
 lct:`Ein Assistent · Sprache automatisch erkannt`, llv:`live`,
-sk:`So funktioniert's`, sh:`Vier Schritte. Wochen, nicht Monate.`,
-sw1:`Woche 1`, sw2:`Wochen 2–3`, sw3:`Woche 4`, sw4:`Laufend`,
-st1h:`Audit`, st1p:`Wir sehen uns Ihre Anrufe, Chats und Papierarbeit an und wählen, was der Assistent zuerst übernimmt.`,
-st2h:`Aufbau &amp; Training`, st2p:`Trainiert auf Ihre Dokumente, Preise und Ihren Ton. Sie testen zuerst.`,
-st3h:`Anbindung`, st3p:`Ihre Nummer, Website, Messenger und CRM. Für Ihr Team ändert sich nichts.`,
-st4h:`Verbesserung`, st4p:`Wir lesen die Gespräche, beheben schwache Antworten, ergänzen Fähigkeiten. Jeden Monat besser.`,
-ck:`Anwendungsfälle`, chh:`So sieht es im echten Geschäft aus.`, cp:`Wählen Sie Ihr Geschäft. Was wir für Sie einrichten — und ein Live-Beispiel des Assistenten.`,
+sk:`So funktioniert's`, sh:`In Minuten eingerichtet. Heute live.`,
+sw1:`2 Min.`, sw2:`3 Min.`, sw3:`1 Anruf`, sw4:`Laufend`,
+st1h:`Assistentin erstellen`, st1p:`Fügen Sie Ihren Website-Link ein. Mina entwirft daraus ihre Antworten.`,
+st2h:`Mina anpassen`, st2p:`Öffnungszeiten, Regeln und Ton festlegen.`,
+st3h:`Live anhören`, st3p:`Rufen Sie Ihre Testnummer an und hören Sie Mina.`,
+st4h:`Live gehen &amp; verbessern`, st4p:`Verbinden Sie Ihre Kanäle. Mina wird jede Woche besser.`,
+ck:`Anwendungsfälle`, chh:`So sieht es im echten Geschäft aus.`, cp:`Wählen Sie Ihr Geschäft. Was wir für Sie einrichten - und ein Live-Beispiel des Assistenten.`,
 t0:`Praxis`, t1:`Beratung &amp; Recht`, t2:`Handwerk &amp; Service`, t3:`Restaurants`, t4:`Beauty &amp; Salons`, t5:`Agrar &amp; Landhandel`, t6:`E-Commerce`, t7:`Immobilien`, t8:`Logistik`,
-c0L:`<h3>Praxis</h3><p class="desc">Der Empfang geht um sechs nach Hause. Die Patienten nicht.</p><ul class="feats"><li>Bucht, verschiebt und storniert Termine per Telefon und Chat, 24/7</li><li>Beantwortet Preise, Vorbereitung und Öffnungszeiten aus Ihren Listen</li><li>Erinnert Patienten am Vortag — weniger No-Shows</li><li>Schreibt jede Änderung direkt in Kalender und CRM</li></ul><div class="payoff">Der Morgen beginnt mit einem sauberen Kalender.</div>`,
-c0R:`<div class="t"><span>Telefon · nach Feierabend</span><span>21:40</span></div><div class="msg in">Guten Abend, ich muss meinen Mittwochstermin verschieben.</div><div class="msg out">Gern. Donnerstag um 10:30 ist frei — soll ich buchen?<small>Im CRM aktualisiert · 21:41</small></div><div class="msg in">Ja, bitte.</div><div class="msg out">Erledigt. Die SMS-Bestätigung kommt sofort. Sonst noch etwas?<small>SMS gesendet · nach Feierabend</small></div>`,
-c1L:`<h3>Beratung &amp; Recht</h3><p class="desc">Neue Mandanten schildern ihren Fall einmal — und kommen vorbereitet.</p><ul class="feats"><li>Erfasst die Falldetails im Chat, Tag und Nacht</li><li>Bucht die Beratung in den Kalender des richtigen Partners</li><li>Findet jeden Vertrag und jede Mandantenhistorie in Sekunden</li><li>Entwirft Mandatsschreiben und Follow-ups in Ihrem Stil</li></ul><div class="payoff">Ein fertiges Aufnahmeformular statt eines verpassten Anrufs.</div>`,
-c1R:`<div class="t"><span>Website-Chat</span><span>00:12</span></div><div class="msg in">Ich habe einen Streit um einen Gewerbemietvertrag. Können Sie helfen?</div><div class="msg out">Ja. Zwei Fragen zur Vorbereitung: In welcher Stadt liegt die Immobilie, und haben Sie den Vertrag zur Hand?<small>Aufnahme gestartet · 00:12</small></div><div class="msg in">München. Ja, habe ich.</div><div class="msg out">Danke. Donnerstag 15:00 bei unserem Immobilienpartner ist frei — buchen und Checkliste senden?<small>Konfliktprüfung bestanden · 00:14</small></div>`,
+c0L:`<h3>Praxis</h3><p class="desc">Der Empfang geht um sechs nach Hause. Die Patienten nicht.</p><ul class="feats"><li>Bucht, verschiebt und storniert Termine per Telefon und Chat, 24/7</li><li>Beantwortet Preise, Vorbereitung und Öffnungszeiten aus Ihren Listen</li><li>Erinnert Patienten am Vortag - weniger No-Shows</li><li>Schreibt jede Änderung direkt in Kalender und CRM</li></ul><div class="payoff">Der Morgen beginnt mit einem sauberen Kalender.</div>`,
+c0R:`<div class="t"><span>Telefon · nach Feierabend</span><span>21:40</span></div><div class="msg in">Guten Abend, ich muss meinen Mittwochstermin verschieben.</div><div class="msg out">Gern. Donnerstag um 10:30 ist frei - soll ich buchen?<small>Im CRM aktualisiert · 21:41</small></div><div class="msg in">Ja, bitte.</div><div class="msg out">Erledigt. Die SMS-Bestätigung kommt sofort. Sonst noch etwas?<small>SMS gesendet · nach Feierabend</small></div>`,
+c1L:`<h3>Beratung &amp; Recht</h3><p class="desc">Neue Mandanten schildern ihren Fall einmal - und kommen vorbereitet.</p><ul class="feats"><li>Erfasst die Falldetails im Chat, Tag und Nacht</li><li>Bucht die Beratung in den Kalender des richtigen Partners</li><li>Findet jeden Vertrag und jede Mandantenhistorie in Sekunden</li><li>Entwirft Mandatsschreiben und Follow-ups in Ihrem Stil</li></ul><div class="payoff">Ein fertiges Aufnahmeformular statt eines verpassten Anrufs.</div>`,
+c1R:`<div class="t"><span>Website-Chat</span><span>00:12</span></div><div class="msg in">Ich habe einen Streit um einen Gewerbemietvertrag. Können Sie helfen?</div><div class="msg out">Ja. Zwei Fragen zur Vorbereitung: In welcher Stadt liegt die Immobilie, und haben Sie den Vertrag zur Hand?<small>Aufnahme gestartet · 00:12</small></div><div class="msg in">München. Ja, habe ich.</div><div class="msg out">Danke. Donnerstag 15:00 bei unserem Immobilienpartner ist frei - buchen und Checkliste senden?<small>Konfliktprüfung bestanden · 00:14</small></div>`,
 c2L:`<h3>Handwerk &amp; Service</h3><p class="desc">Sie reparieren. Er disponiert, kalkuliert und macht den Papierkram.</p><ul class="feats"><li>Nimmt ein Foto des Problems an, nennt eine Preisspanne aus Ihrer Liste</li><li>Bucht den Termin und erinnert den Techniker am Morgen</li><li>Sendet die Rechnung nach dem Auftrag und mahnt offene an</li><li>Hält Kunden auf dem Laufenden: unterwegs, verspätet, fertig</li></ul><div class="payoff">Der Meister repariert. Der Assistent disponiert.</div>`,
-c2R:`<div class="t"><span>WhatsApp</span><span>22:03</span></div><div class="msg in">📷 Heizkessel undicht. Was kostet die Reparatur?</div><div class="msg out">Danke — auf dem Foto sieht das nach einem Ventil aus. Solche Aufträge liegen bei 90–140 €. Morgen 9:00 oder 13:00?<small>Preis aus Ihrer Liste · 22:03</small></div><div class="msg in">9:00 passt.</div><div class="msg out">Gebucht. Tomas ruft 20 Minuten vor Ankunft an.<small>Techniker benachrichtigt · 22:04</small></div>`,
-c3L:`<h3>Restaurants</h3><p class="desc">Freitagabend voll — die Liste verpasster Anrufe leer.</p><ul class="feats"><li>Nimmt Reservierungen und Vorbestellungen an, während das Team serviert</li><li>Beantwortet Menüfragen inkl. Allergene aus Ihrer Karte</li><li>Übergibt große Gruppen und Events mit Details an den Manager</li><li>Ein Abendbericht: Gäste, No-Shows, Buchungen für morgen</li></ul><div class="payoff">Keine verlorenen Tische zur Stoßzeit.</div>`,
-c3R:`<div class="t"><span>Telefon · Freitag</span><span>19:22</span></div><div class="msg in">Ein Tisch für sechs, heute gegen acht?</div><div class="msg out">20:00 ist voll, aber 20:30 ist frei — der runde Tisch am Fenster. Buchen?<small>Live-Tischplan · 19:22</small></div><div class="msg in">Ja. Einer von uns isst glutenfrei.</div><div class="msg out">Notiert für die Küche. Bis 20:30.<small>Notiz zur Buchung · 19:23</small></div>`,
-c4L:`<h3>Beauty &amp; Salons</h3><p class="desc">Jeder verpasste Anruf buchte früher den Salon nebenan.</p><ul class="feats"><li>Fängt jeden Anruf und jede Nachricht ab — auch mitten im Föhnen</li><li>Füllt stornierte Slots automatisch aus der Warteliste</li><li>Erinnert Kundinnen am Vortag — No-Shows sinken</li><li>Lädt Kundinnen ein, die zwei Monate nicht da waren</li></ul><div class="payoff">Die Stühle bleiben nicht leer.</div>`,
-c4R:`<div class="t"><span>Instagram DM</span><span>13:47</span></div><div class="msg in">Gibt es morgen einen Termin für einen Haarschnitt?</div><div class="msg out">Ja — 11:00 bei Olha oder 16:30 bei Marta. Was passt?<small>Live-Kalender · 13:47</small></div><div class="msg in">16:30.</div><div class="msg out">Gebucht bei Marta. Noch eine Maniküre um 17:15 dazu? Der Platz nebenan ist frei.<small>Upsell aus dem Plan · 13:48</small></div>`,
+c2R:`<div class="t"><span>WhatsApp</span><span>22:03</span></div><div class="msg in">📷 Heizkessel undicht. Was kostet die Reparatur?</div><div class="msg out">Danke - auf dem Foto sieht das nach einem Ventil aus. Solche Aufträge liegen bei 90-140 €. Morgen 9:00 oder 13:00?<small>Preis aus Ihrer Liste · 22:03</small></div><div class="msg in">9:00 passt.</div><div class="msg out">Gebucht. Tomas ruft 20 Minuten vor Ankunft an.<small>Techniker benachrichtigt · 22:04</small></div>`,
+c3L:`<h3>Restaurants</h3><p class="desc">Freitagabend voll - die Liste verpasster Anrufe leer.</p><ul class="feats"><li>Nimmt Reservierungen und Vorbestellungen an, während das Team serviert</li><li>Beantwortet Menüfragen inkl. Allergene aus Ihrer Karte</li><li>Übergibt große Gruppen und Events mit Details an den Manager</li><li>Ein Abendbericht: Gäste, No-Shows, Buchungen für morgen</li></ul><div class="payoff">Keine verlorenen Tische zur Stoßzeit.</div>`,
+c3R:`<div class="t"><span>Telefon · Freitag</span><span>19:22</span></div><div class="msg in">Ein Tisch für sechs, heute gegen acht?</div><div class="msg out">20:00 ist voll, aber 20:30 ist frei - der runde Tisch am Fenster. Buchen?<small>Live-Tischplan · 19:22</small></div><div class="msg in">Ja. Einer von uns isst glutenfrei.</div><div class="msg out">Notiert für die Küche. Bis 20:30.<small>Notiz zur Buchung · 19:23</small></div>`,
+c4L:`<h3>Beauty &amp; Salons</h3><p class="desc">Jeder verpasste Anruf buchte früher den Salon nebenan.</p><ul class="feats"><li>Fängt jeden Anruf und jede Nachricht ab - auch mitten im Föhnen</li><li>Füllt stornierte Slots automatisch aus der Warteliste</li><li>Erinnert Kundinnen am Vortag - No-Shows sinken</li><li>Lädt Kundinnen ein, die zwei Monate nicht da waren</li></ul><div class="payoff">Die Stühle bleiben nicht leer.</div>`,
+c4R:`<div class="t"><span>Instagram DM</span><span>13:47</span></div><div class="msg in">Gibt es morgen einen Termin für einen Haarschnitt?</div><div class="msg out">Ja - 11:00 bei Olha oder 16:30 bei Marta. Was passt?<small>Live-Kalender · 13:47</small></div><div class="msg in">16:30.</div><div class="msg out">Gebucht bei Marta. Noch eine Maniküre um 17:15 dazu? Der Platz nebenan ist frei.<small>Upsell aus dem Plan · 13:48</small></div>`,
 c5L:`<h3>Agrar &amp; Landhandel</h3><p class="desc">In der Saison steht das Telefon nicht still. Jetzt bleibt es nie unbeantwortet.</p><ul class="feats"><li>Nimmt Bestellungen für Saatgut, Futter und Teile in jeder Sprache an</li><li>Prüft den Bestand live und bestätigt Lieferfenster</li><li>Meldet wetterkritische Lieferungen an den Disponenten</li><li>Kennt die Saison: Wer im März Saatgut kaufte, bekommt im Februar einen Anruf</li></ul><div class="payoff">Saisonspitzen ohne Saisonkräfte.</div>`,
-c5R:`<div class="t"><span>Telefon · Saison</span><span>07:15</span></div><div class="msg in">Ich brauche zwei Tonnen Futter, Lieferung Freitag.</div><div class="msg out">Auf Lager. Freitagvormittag ist frei — Lieferung an die übliche Hofadresse?<small>Bestand geprüft · 07:15</small></div><div class="msg in">Ja, vor zwölf.</div><div class="msg out">Bestätigt, Freitag 8:00–12:00. Hinweis: Für Donnerstagnacht ist Regen gemeldet — ich warne Sie, falls sich die Route verschiebt.<small>Wetterwarnung aktiv · 07:16</small></div>`,
-c6L:`<h3>E-Commerce</h3><p class="desc">„Wo ist meine Bestellung?" sind 40 % der Tickets. Jetzt 0 % des Arbeitstags Ihres Teams.</p><ul class="feats"><li>Beantwortet den Bestellstatus sofort mit Live-Tracking</li><li>Startet Retouren und Umtausch direkt im Chat</li><li>Empfiehlt Produkte aus Ihrem Katalog und prüft den Bestand</li><li>Bittet nach der Lieferung um eine Bewertung — im richtigen Moment</li></ul><div class="payoff">Ihr Team kümmert sich um echte Probleme.</div>`,
-c6R:`<div class="t"><span>Website-Chat</span><span>jetzt</span></div><div class="msg in">Hallo, wo ist meine Bestellung #4482?</div><div class="msg out">Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.<small>Live-Tracking · 4 Sek.</small></div><div class="msg in">Kann ich noch einen Artikel dazulegen?</div><div class="msg out">Sie ist schon verpackt — aber ich lege eine zweite Bestellung mit Gratisversand an. Soll ich?<small>Regeln aus Ihrer Policy · 6 Sek.</small></div>`,
+c5R:`<div class="t"><span>Telefon · Saison</span><span>07:15</span></div><div class="msg in">Ich brauche zwei Tonnen Futter, Lieferung Freitag.</div><div class="msg out">Auf Lager. Freitagvormittag ist frei - Lieferung an die übliche Hofadresse?<small>Bestand geprüft · 07:15</small></div><div class="msg in">Ja, vor zwölf.</div><div class="msg out">Bestätigt, Freitag 8:00-12:00. Hinweis: Für Donnerstagnacht ist Regen gemeldet - ich warne Sie, falls sich die Route verschiebt.<small>Wetterwarnung aktiv · 07:16</small></div>`,
+c6L:`<h3>E-Commerce</h3><p class="desc">„Wo ist meine Bestellung?" sind 40 % der Tickets. Jetzt 0 % des Arbeitstags Ihres Teams.</p><ul class="feats"><li>Beantwortet den Bestellstatus sofort mit Live-Tracking</li><li>Startet Retouren und Umtausch direkt im Chat</li><li>Empfiehlt Produkte aus Ihrem Katalog und prüft den Bestand</li><li>Bittet nach der Lieferung um eine Bewertung - im richtigen Moment</li></ul><div class="payoff">Ihr Team kümmert sich um echte Probleme.</div>`,
+c6R:`<div class="t"><span>Website-Chat</span><span>jetzt</span></div><div class="msg in">Hallo, wo ist meine Bestellung #4482?</div><div class="msg out">Sie hat heute unser Lager verlassen und kommt Dienstag an. Hier ist der Tracking-Link.<small>Live-Tracking · 4 Sek.</small></div><div class="msg in">Kann ich noch einen Artikel dazulegen?</div><div class="msg out">Sie ist schon verpackt - aber ich lege eine zweite Bestellung mit Gratisversand an. Soll ich?<small>Regeln aus Ihrer Policy · 6 Sek.</small></div>`,
 c7L:`<h3>Immobilien</h3><p class="desc">Inserate bekommen Anfragen um 23:00. Ihre Makler nicht.</p><ul class="feats"><li>Beantwortet Fragen zu Inseraten rund um die Uhr, in jeder Sprache</li><li>Qualifiziert den Lead: Budget, Termine, Finanzierung</li><li>Bucht Besichtigungen direkt in den Kalender des Maklers</li><li>Fasst nach der Besichtigung nach und schlägt ähnliche Objekte vor</li></ul><div class="payoff">Aufwachen mit gebuchter Besichtigung.</div>`,
-c7R:`<div class="t"><span>Portal-Anfrage</span><span>23:04</span></div><div class="msg in">Ist die 2-Zimmer-Wohnung in der Harju-Straße noch frei?</div><div class="msg out">Ja. Besichtigungen Donnerstag 17:00–19:00 — soll ich einen Slot buchen?<small>Kalender des Maklers · 23:04</small></div><div class="msg in">Donnerstag 18:00, bitte.</div><div class="msg out">Gebucht. Ich habe außerdem zwei ähnliche Wohnungen in Ihrer Nähe gesendet, beide im Budget.<small>Aus den Inseraten gematcht · 23:05</small></div>`,
+c7R:`<div class="t"><span>Portal-Anfrage</span><span>23:04</span></div><div class="msg in">Ist die 2-Zimmer-Wohnung in der Harju-Straße noch frei?</div><div class="msg out">Ja. Besichtigungen Donnerstag 17:00-19:00 - soll ich einen Slot buchen?<small>Kalender des Maklers · 23:04</small></div><div class="msg in">Donnerstag 18:00, bitte.</div><div class="msg out">Gebucht. Ich habe außerdem zwei ähnliche Wohnungen in Ihrer Nähe gesendet, beide im Budget.<small>Aus den Inseraten gematcht · 23:05</small></div>`,
 c8L:`<h3>Logistik</h3><p class="desc">Disponenten sollen disponieren, nicht dieselbe Antwort wiederholen.</p><ul class="feats"><li>Beantwortet „Wo ist der Lkw?" aus Live-GPS-Daten</li><li>Bucht Rampenzeiten und bestätigt Lieferfenster</li><li>Sendet PODs und Rechnungen im Moment der Anfrage</li><li>Warnt Kunden vor Verspätungen, bevor sie anrufen</li></ul><div class="payoff">Disponenten disponieren.</div>`,
-c8R:`<div class="t"><span>Telefon</span><span>13:12</span></div><div class="msg in">Wo ist der Lkw für Auftrag 7731?</div><div class="msg out">Auf der A2, noch 40 km — ETA 14:20. Ich melde mich, falls es sich verschiebt.<small>Live-GPS · 13:12</small></div><div class="msg in">Schicken Sie mir auch den POD von gestern.</div><div class="msg out">Gerade an Ihre E-Mail gesendet.<small>Dokument aus dem TMS · 13:13</small></div>`,
-q1:`Klingt das wie ein Roboter?`, a1:`Nein. Moderne Stimmen sind natürlich, und der Agent sagt, dass er ein Assistent ist. Kunden wollen in zwei Sekunden Hilfe — egal, wer abnimmt.`,
+c8R:`<div class="t"><span>Telefon</span><span>13:12</span></div><div class="msg in">Wo ist der Lkw für Auftrag 7731?</div><div class="msg out">Auf der A2, noch 40 km - ETA 14:20. Ich melde mich, falls es sich verschiebt.<small>Live-GPS · 13:12</small></div><div class="msg in">Schicken Sie mir auch den POD von gestern.</div><div class="msg out">Gerade an Ihre E-Mail gesendet.<small>Dokument aus dem TMS · 13:13</small></div>`,
+q1:`Klingt das wie ein Roboter?`, a1:`Nein. Moderne Stimmen sind natürlich, und der Agent sagt, dass er ein Assistent ist. Kunden wollen in zwei Sekunden Hilfe - egal, wer abnimmt.`,
 q2:`Was passiert bei schwierigen Fragen?`, a2:`Der Assistent übergibt das Gespräch mit einer vollständigen Zusammenfassung an Ihr Team. Er rät nie bei Dingen, die er nicht weiß.`,
-q3:`Was ist mit unseren Daten?`, a3:`Sie bleiben Ihre. Wir bauen private Setups, in denen Ihre Dokumente und Kundendaten nie öffentliche Modelle trainieren.`,
-q4:`Welche Sprachen?`, a4:`Zehn, im selben Assistenten: Englisch, Deutsch, Französisch, Spanisch, Italienisch, Polnisch, Ukrainisch, Türkisch, Portugiesisch und Arabisch. Er erkennt die Sprache des Kunden und antwortet darin — auch wenn Ihr Betrieb nur eine spricht.`,
-q5:`Wir sind kein Tech-Unternehmen. Schaffen wir das?`, a5:`Genau dafür bauen wir. Wir installieren, verbinden und betreiben alles; Ihr Team arbeitet wie gewohnt weiter. Sie bekommen Ergebnisse und eine Nummer zum Anrufen.`,
-q6:`Ersetzt das meine Leute?`, a6:`Nein. Es übernimmt die Routine — dieselben zehn Fragen, die verpassten Anrufe, den Papierkram — damit Ihre Leute die Arbeit machen, die nur Menschen können.`,
-q7:`Was kostet das?`, a7:`Wir kalkulieren nach Ergebnis, beginnend mit dem Audit. Die meisten Assistenten kosten im Monat weniger als eine Teilzeitkraft — Sie zahlen für Resultate, nicht für Lizenzen.`,
-q8:`Wie schnell geht der Start?`, a8:`Das Audit dauert 30 Minuten. Der erste Assistent beantwortet echte Kunden innerhalb von Wochen — die vier Schritte oben sind der ganze Weg.`,
-cth:`Hören Sie es antworten, bevor Sie entscheiden.`, ctp:`Ein kostenloses 30-Minuten-Audit. Wir zeigen die größten Chancen und lassen Sie mit einer Live-Sprachdemo sprechen.`, ctb1:`Kontakt aufnehmen →`,
+q3:`Was ist mit unseren Daten?`, a3:`Sie bleiben Ihre. Ihre Dokumente und Kundendaten liegen in einer privaten Umgebung und trainieren nie öffentliche Modelle.`,
+q4:`Welche Sprachen?`, a4:`Zehn, im selben Assistenten: Englisch, Deutsch, Französisch, Spanisch, Italienisch, Polnisch, Ukrainisch, Türkisch, Portugiesisch und Russisch. Er erkennt die Sprache des Kunden und antwortet darin - auch wenn Ihr Betrieb nur eine spricht.`,
+q5:`Wir sind kein Tech-Unternehmen. Schaffen wir das?`, a5:`Genau dafür ist es gebaut. Die Einrichtung ist ein geführter Ablauf - Link einfügen, ein paar Fragen beantworten, fertig. Kein Code, kein IT-Projekt, und der Support ist eine Nachricht entfernt.`,
+q6:`Ersetzt das meine Leute?`, a6:`Nein. Es übernimmt die Routine - dieselben zehn Fragen, die verpassten Anrufe, den Papierkram - damit Ihre Leute die Arbeit machen, die nur Menschen können.`,
+q7:`Was kostet das?`, a7:`Pläne ab 79 € im Monat. Keine Einrichtungsgebühr, monatlich kündbar, 30 Tage Geld-zurück-Garantie. Alle Preise stehen offen auf der Preisseite.`,
+q8:`Wie schnell geht der Start?`, a8:`Sprechen Sie noch heute mit Mina - die Live-Demo dauert Minuten. Ihr eigener Assistent kann noch am selben Tag echte Kunden beantworten.`,
+cth:`Hören Sie es antworten, bevor Sie entscheiden.`, ctp:`Rufen Sie Mina jetzt an oder buchen Sie eine 30-minütige Live-Demo. Sie sprechen mit dem Produkt, bevor Sie einen Cent zahlen.`, ctb1:`Kontakt aufnehmen →`,
 ft1:`AGB`, ft2:`Datenschutz`,
-mh:`Kostenloses Audit buchen`, msub:`30 Minuten. Wir sehen uns Anrufe, Chats und Routine an — und zeigen, was ein Assistent zuerst übernimmt.`,
+mh:`Live-Demo buchen`, msub:`30 Minuten. Sie sprechen live mit Mina - an Ihrem eigenen Anwendungsfall.`,
 ml1:`Ihr Name`, ml2:`Unternehmen`, ml3:`Was betreiben Sie?`, ml4:`E-Mail`, ml5:`Telefon (optional)`,
 o1:`Praxis`, o2:`Beratung &amp; Recht`, o3:`Handwerk &amp; Service`, o4:`Restaurant`, o5:`Beauty &amp; Salon`, o6:`Agrar &amp; Landhandel`, o7:`E-Commerce`, o8:`Immobilien`, o9:`Logistik`, o10:`Anderes`,
 mbtn:`Anfrage senden →`, mnote:`Wir antworten innerhalb eines Werktags. Oder schreiben Sie an <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>`
 },
 fr: {
-ashk:`Assistants IA · voix · chat · support`,
-ashp:`Un assistant IA sur votre ligne téléphonique, le chat de votre site, WhatsApp et l'e-mail. Il réserve, répond et vend en quelques secondes — dans la langue du client — et transmet les cas difficiles à votre équipe.`,
-astr:`Une société <b>Krok Group</b> · opérationnel en quelques semaines · vos données restent les vôtres`,
+gs:`Commencer`,
+ashp:`Un assistant IA sur votre ligne téléphonique, le chat de votre site, WhatsApp et l'e-mail. Il réserve, répond et vend en quelques secondes - dans la langue du client - et transmet les cas difficiles à votre équipe.`,
 aswk:`Ce que vous obtenez`, aswh:`Trois assistants. Un seul numéro.`, aswp:`Formé sur vos prix, vos services et votre ton. Connecté à votre agenda et votre CRM. Rien ne change pour votre équipe.`,
-asct2:`Un audit gratuit de 30 minutes. Nous montrons ce que l'assistant prend en charge en premier — et vous parlez à une démo vocale en direct.`,
+asct2:`Appelez Mina maintenant ou réservez une démo live de 30 minutes. Vous parlez au produit avant de payer quoi que ce soit.`,
 fqk:`Réponses honnêtes`, fqh:`Les questions que tout le monde pose.`,
 pdm:`▶&nbsp; Écouter l'appel · 0:16`,
-npl:`Tarifs`, ck1:`Nous utilisons le stockage local et des cookies pour retenir vos préférences — thème et langue. Pas de traçage, pas de publicité. <a href="fourmina-privacy.html">Confidentialité</a>`, ck2:`Accepter`, ck3:`Essentiels uniquement`,
-n1:`Assistants`, n2:`Automatisation`, n3:`Langues`, n4:`Comment ça marche`, n5:`Cas d'usage`, nbtn:`Audit gratuit`,
-hk:`Assistants IA · voix · automatisation · 10 langues`, hh:`Chaque client obtient une réponse. Jour et nuit.`,
-hp:`Des assistants IA qui répondent à vos clients au téléphone, par chat et par e-mail — et gèrent la routine en coulisses : rendez-vous, factures, stocks, alertes. Installés en quelques semaines.`,
-hb1:`Réserver un audit gratuit →`, hb2:`Écouter la démo vocale`, htr:`Une société <b>Krok Group</b> · développeurs seniors · vos données restent les vôtres`,
+npl:`Tarifs`, ck1:`Nous utilisons le stockage local et des cookies pour retenir vos préférences - thème et langue. Pas de traçage, pas de publicité. <a href="fourmina-privacy-v2.html">Confidentialité</a>`, ck2:`Accepter`, ck3:`Essentiels uniquement`,
+n1:`Assistants`, n2:`Automatisation`, n3:`Langues`, n4:`Comment ça marche`, n5:`Cas d'usage`, nbtn:`Démo live`,
+hh:`Chaque client obtient une réponse. Jour et nuit.`,
+hp:`Des assistants IA qui répondent à vos clients au téléphone, par chat et par e-mail - et gèrent la routine en coulisses : rendez-vous, factures, stocks, alertes. En ligne aujourd'hui.`,
+hb1:`Réserver une démo live →`, hb2:`Écouter la démo vocale`,
 cw:`Mina · agent vocal Fourmina`, cws:`Appel entrant · 21:47`, clv:`En ligne`,
 cln:`« Je peux déplacer votre rendez-vous à <b>jeudi 10 h 30</b>. Vous recevrez une confirmation par SMS. Autre chose ? »`,
 cm1:`Répondu en 2 s`, cm2:`Réservation mise à jour dans le CRM`, cm3:`Hors horaires`,
 cht:`Chat du site`, chn:`maintenant`, chi:`Bonjour, où est ma commande #4482 ?`, cho:`Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.<small>Assistant IA · 4 s</small>`,
-s1:`appel manqué, nuits et jours fériés compris`, s2b:`&lt;5 s`, s2:`première réponse par chat, e-mail et téléphone`, s3:`des questions courantes résolues sans votre équipe`, s4:`langues dans chaque assistant, adaptées au client`,
-pk:`Ce que nous construisons`, ph:`Du personnel IA pour l'accueil. Et pour le back-office.`, pp:`Pas un chatbot sur étagère. Entraîné sur vos produits, prix et règles, connecté à vos outils.`,
+s1:`appel manqué, nuits et jours fériés compris`, s2b:`&lt;5 s`, s2:`première réponse par chat, e-mail et téléphone`, s3:`des questions courantes résolues pour votre équipe`, s4:`langues dans chaque assistant, adaptées au client`,
+pk:`Ce que vous obtenez`, ph:`Du personnel IA pour l'accueil. Et pour le back-office.`, pp:`Pas un chatbot sur étagère. Entraîné sur vos produits, prix et règles, connecté à vos outils.`,
 gl1:`Pour vos clients`, gl2:`En coulisses`, gl3:`Trouvé par l'IA`, ptag:`Le plus demandé`,
-p1h:`Agent vocal`, p1p:`Décroche chaque appel d'une voix naturelle — réserve, répond, transmet. Jour et nuit.`,
-p2h:`Assistant de chat`, p2p:`Un assistant sur votre site, WhatsApp et Instagram — il vend et aide instantanément.`,
+p1h:`Agent vocal`, p1p:`Décroche chaque appel d'une voix naturelle - réserve, répond, transmet. Jour et nuit.`,
+p2h:`Assistant de chat`, p2p:`Un assistant sur votre site, WhatsApp et Instagram - il vend et aide instantanément.`,
 p3h:`Automatisation du support`, p3p:`Votre boîte mail et votre helpdesk, triés et traités avant l'arrivée de l'équipe.`,
-p4h:`Automatisation des processus`, p4p:`Factures, rappels, stocks et plannings — la routine tourne toute seule.`,
+p4h:`Automatisation des processus`, p4p:`Factures, rappels, stocks et plannings - la routine tourne toute seule.`,
 p5h:`Alertes &amp; suivi`, p5p:`Vous prévient de la facture impayée ou du client mécontent quand c'est encore petit.`,
 p6h:`Assistant interne &amp; recherche`, p6p:`Tout ce que sait votre entreprise, trouvé en secondes par toute l'équipe.`,
 p7h:`Visibilité IA (GEO)`, p7p:`Quand vos clients demandent à ChatGPT ou Gemini où acheter, votre entreprise est la réponse. Rapport de visibilité gratuit inclus.`,
-p8h:`Site prêt pour les agents IA`, p8p:`Les agents IA naviguent et achètent déjà pour leurs propriétaires. Nous faisons de votre site un site qu'ils savent utiliser.`,
+p8h:`Site prêt pour les agents IA`, p8p:`Les agents IA naviguent et achètent déjà pour leurs propriétaires. Faites de votre site un site qu'ils savent utiliser.`,
 dt1:`Aujourd'hui · géré par Mina`, dt2:`Mardi`,
 dr1:`Trier les e-mails et tickets de la nuit<small>14 triés · 2 signalés pour vous</small>`, dr2:`Envoyer les rappels de rendez-vous<small>11 SMS envoyés · 1 report géré</small>`,
 dr3:`Relancer les factures impayées<small>3 relances · 1 paiement reçu</small>`, dr4:`Vérifier le stock, préparer la commande<small>4 articles sous le minimum · brouillon à valider</small>`,
 dr5:`Préparer le planning de la semaine prochaine`, dr6:`Rapport du jour pour vous`, dsd:`Fait`, dsp:`En cours`, dsn:`Prévu`,
 dsum:`Aujourd'hui : 34 appels traités, 12 réservations, 1 840 € facturés. Une chose vous attend : le brouillon de commande.<small>Rapport du jour · 18:00</small>`,
-ak:`Automatisation des processus`, ah:`Une to-do list qui se fait toute seule.`, ap:`Confiez à l'assistant votre routine récurrente — rappels, factures, stocks, plannings. Elle tourne à l'heure et vous rend compte.`,
-af1:`Les tâches du jour et de la semaine s'exécutent à l'heure, sans qu'on le demande`, af2:`Factures créées et relancées, rappels envoyés, réapprovisionnements préparés`, af3:`Tout ce qui sort de l'ordinaire vous est signalé — jamais deviné`, af4:`Un message le soir : ce qui est fait, ce qui vous attend`,
+ak:`Automatisation des processus`, ah:`Une to-do list qui se fait toute seule.`, ap:`Confiez à l'assistant votre routine récurrente - rappels, factures, stocks, plannings. Elle tourne à l'heure et vous rend compte.`,
+af1:`Les tâches du jour et de la semaine s'exécutent à l'heure, sans qu'on le demande`, af2:`Factures créées et relancées, rappels envoyés, réapprovisionnements préparés`, af3:`Tout ce qui sort de l'ordinaire vous est signalé - jamais deviné`, af4:`Un message le soir : ce qui est fait, ce qui vous attend`,
 apay:`Vous lisez un message par jour au lieu de faire vingt tâches.`,
-lk:`Langues`, lh:`Votre entreprise parle une langue. Votre assistant en parle dix.`, lp:`L'assistant détecte la langue du client et répond dans celle-ci. Les clients perdus à cause de la barrière de la langue réservent désormais comme des locaux — sans embaucher.`,
+lk:`Langues`, lh:`Votre entreprise parle une langue. Votre assistant en parle dix.`, lp:`L'assistant détecte la langue du client et répond dans celle-ci. Les clients perdus à cause de la barrière de la langue réservent désormais comme des locaux - sans embaucher.`,
 lct:`Un assistant · langue détectée automatiquement`, llv:`en direct`,
-sk:`Comment ça marche`, sh:`Quatre étapes. Des semaines, pas des mois.`,
-sw1:`Semaine 1`, sw2:`Semaines 2–3`, sw3:`Semaine 4`, sw4:`En continu`,
-st1h:`Audit`, st1p:`Nous examinons vos appels, chats et paperasse, et choisissons ce que l'assistant reprend en premier.`,
-st2h:`Construction &amp; entraînement`, st2p:`Entraîné sur vos documents, prix et ton. Vous le testez avant tout le monde.`,
-st3h:`Connexion`, st3p:`Votre numéro, site, messageries et CRM. Rien ne change pour votre équipe.`,
-st4h:`Amélioration`, st4p:`Nous lisons les conversations, corrigeons les réponses faibles, ajoutons des compétences. Meilleur chaque mois.`,
-ck:`Cas d'usage`, chh:`À quoi ça ressemble dans une vraie entreprise.`, cp:`Choisissez votre activité. Ce que nous mettons en place — et un exemple en direct.`,
+sk:`Comment ça marche`, sh:`Configuré en quelques minutes. En ligne aujourd'hui.`,
+sw1:`2 min`, sw2:`3 min`, sw3:`1 appel`, sw4:`en continu`,
+st1h:`Créez votre assistante`, st1p:`Collez le lien de votre site. Mina en rédige ses réponses.`,
+st2h:`Personnalisez-la`, st2p:`Définissez vos horaires, vos règles et votre ton.`,
+st3h:`Écoutez-la en direct`, st3p:`Appelez votre numéro de test et écoutez Mina.`,
+st4h:`Lancez et améliorez`, st4p:`Connectez vos canaux. Mina s'améliore chaque semaine.`,
+ck:`Cas d'usage`, chh:`À quoi ça ressemble dans une vraie entreprise.`, cp:`Choisissez votre activité. Ce que nous mettons en place - et un exemple en direct.`,
 t0:`Cabinet médical`, t1:`Conseil &amp; droit`, t2:`Artisans &amp; dépannage`, t3:`Restaurants`, t4:`Beauté &amp; salons`, t5:`Agro &amp; agrofourniture`, t6:`E-commerce`, t7:`Immobilier`, t8:`Logistique`,
-c0L:`<h3>Cabinet médical</h3><p class="desc">L'accueil rentre à 18 h. Pas les patients.</p><ul class="feats"><li>Prend, déplace et annule les rendez-vous par téléphone et chat, 24h/24</li><li>Répond sur les tarifs, la préparation et les horaires depuis vos listes</li><li>Rappelle les patients la veille — moins de rendez-vous manqués</li><li>Inscrit chaque changement dans votre agenda et votre CRM</li></ul><div class="payoff">Le matin commence avec un agenda propre.</div>`,
-c0R:`<div class="t"><span>Téléphone · hors horaires</span><span>21:40</span></div><div class="msg in">Bonsoir, je dois déplacer mon rendez-vous de mercredi.</div><div class="msg out">Bien sûr. Jeudi 10 h 30 est libre — je réserve ?<small>CRM mis à jour · 21:41</small></div><div class="msg in">Oui, merci.</div><div class="msg out">C'est fait. La confirmation SMS arrive tout de suite. Autre chose ?<small>SMS envoyé · hors horaires</small></div>`,
-c1L:`<h3>Conseil &amp; droit</h3><p class="desc">Les nouveaux clients racontent leur dossier une fois — et arrivent préparés.</p><ul class="feats"><li>Recueille les détails du dossier par chat, jour et nuit</li><li>Réserve la consultation dans l'agenda du bon associé</li><li>Retrouve tout contrat ou historique client en secondes</li><li>Rédige lettres de mission et relances dans votre style</li></ul><div class="payoff">Un dossier d'admission prêt, pas un appel manqué.</div>`,
-c1R:`<div class="t"><span>Chat du site</span><span>00:12</span></div><div class="msg in">J'ai un litige sur un bail commercial. Pouvez-vous aider ?</div><div class="msg out">Oui. Deux questions pour préparer votre consultation : dans quelle ville se trouve le bien, et avez-vous le bail sous la main ?<small>Admission lancée · 00:12</small></div><div class="msg in">Lyon. Oui, je l'ai.</div><div class="msg out">Merci. Jeudi 15 h avec notre associé immobilier est libre — je réserve et j'envoie la liste des documents ?<small>Contrôle de conflit passé · 00:14</small></div>`,
+c0L:`<h3>Cabinet médical</h3><p class="desc">L'accueil rentre à 18 h. Pas les patients.</p><ul class="feats"><li>Prend, déplace et annule les rendez-vous par téléphone et chat, 24h/24</li><li>Répond sur les tarifs, la préparation et les horaires depuis vos listes</li><li>Rappelle les patients la veille - moins de rendez-vous manqués</li><li>Inscrit chaque changement dans votre agenda et votre CRM</li></ul><div class="payoff">Le matin commence avec un agenda propre.</div>`,
+c0R:`<div class="t"><span>Téléphone · hors horaires</span><span>21:40</span></div><div class="msg in">Bonsoir, je dois déplacer mon rendez-vous de mercredi.</div><div class="msg out">Bien sûr. Jeudi 10 h 30 est libre - je réserve ?<small>CRM mis à jour · 21:41</small></div><div class="msg in">Oui, merci.</div><div class="msg out">C'est fait. La confirmation SMS arrive tout de suite. Autre chose ?<small>SMS envoyé · hors horaires</small></div>`,
+c1L:`<h3>Conseil &amp; droit</h3><p class="desc">Les nouveaux clients racontent leur dossier une fois - et arrivent préparés.</p><ul class="feats"><li>Recueille les détails du dossier par chat, jour et nuit</li><li>Réserve la consultation dans l'agenda du bon associé</li><li>Retrouve tout contrat ou historique client en secondes</li><li>Rédige lettres de mission et relances dans votre style</li></ul><div class="payoff">Un dossier d'admission prêt, pas un appel manqué.</div>`,
+c1R:`<div class="t"><span>Chat du site</span><span>00:12</span></div><div class="msg in">J'ai un litige sur un bail commercial. Pouvez-vous aider ?</div><div class="msg out">Oui. Deux questions pour préparer votre consultation : dans quelle ville se trouve le bien, et avez-vous le bail sous la main ?<small>Admission lancée · 00:12</small></div><div class="msg in">Lyon. Oui, je l'ai.</div><div class="msg out">Merci. Jeudi 15 h avec notre associé immobilier est libre - je réserve et j'envoie la liste des documents ?<small>Contrôle de conflit passé · 00:14</small></div>`,
 c2L:`<h3>Artisans &amp; dépannage</h3><p class="desc">Vous réparez. Il planifie, chiffre et gère la paperasse.</p><ul class="feats"><li>Reçoit une photo du problème, donne une fourchette de prix depuis votre grille</li><li>Réserve l'intervention et rappelle le technicien le matin</li><li>Envoie la facture après le chantier et relance les impayées</li><li>Tient le client informé : en route, retardé, terminé</li></ul><div class="payoff">L'artisan répare. L'assistant planifie.</div>`,
-c2R:`<div class="t"><span>WhatsApp</span><span>22:03</span></div><div class="msg in">📷 Chaudière qui fuit par le bas. Combien pour réparer ?</div><div class="msg out">Merci — sur la photo, cela ressemble à une vanne. Ce type d'intervention va de 90 à 140 €. Demain 9 h ou 13 h ?<small>Prix de votre grille · 22:03</small></div><div class="msg in">9 h, parfait.</div><div class="msg out">Réservé. Tomas appellera 20 minutes avant d'arriver.<small>Technicien prévenu · 22:04</small></div>`,
+c2R:`<div class="t"><span>WhatsApp</span><span>22:03</span></div><div class="msg in">📷 Chaudière qui fuit par le bas. Combien pour réparer ?</div><div class="msg out">Merci - sur la photo, cela ressemble à une vanne. Ce type d'intervention va de 90 à 140 €. Demain 9 h ou 13 h ?<small>Prix de votre grille · 22:03</small></div><div class="msg in">9 h, parfait.</div><div class="msg out">Réservé. Tomas appellera 20 minutes avant d'arriver.<small>Technicien prévenu · 22:04</small></div>`,
 c3L:`<h3>Restaurants</h3><p class="desc">Coup de feu du vendredi en salle. Silence sur la liste des appels manqués.</p><ul class="feats"><li>Prend réservations et précommandes pendant que l'équipe sert</li><li>Répond aux questions sur la carte, allergènes compris</li><li>Transmet les grands groupes et événements au responsable avec les détails</li><li>Un rapport le soir : couverts, absences, réservations de demain</li></ul><div class="payoff">Aucune table perdue aux heures de pointe.</div>`,
-c3R:`<div class="t"><span>Téléphone · vendredi</span><span>19:22</span></div><div class="msg in">Une table pour six ce soir vers 20 h ?</div><div class="msg out">20 h est complet, mais 20 h 30 est libre — la table ronde près de la fenêtre. Je réserve ?<small>Plan de salle en direct · 19:22</small></div><div class="msg in">Oui. L'un de nous est sans gluten.</div><div class="msg out">Noté pour la cuisine. À 20 h 30.<small>Note ajoutée · 19:23</small></div>`,
-c4L:`<h3>Beauté &amp; salons</h3><p class="desc">Chaque appel manqué réservait le salon d'à côté.</p><ul class="feats"><li>Capte chaque appel et message, même en plein brushing</li><li>Remplit les créneaux annulés depuis la liste d'attente</li><li>Rappelle les clientes la veille — les absences chutent</li><li>Réinvite les clientes absentes depuis deux mois</li></ul><div class="payoff">Les fauteuils ne restent pas vides.</div>`,
-c4R:`<div class="t"><span>DM Instagram</span><span>13:47</span></div><div class="msg in">Un créneau pour une coupe demain ?</div><div class="msg out">Oui — 11 h avec Olha ou 16 h 30 avec Marta. Lequel vous va ?<small>Agenda en direct · 13:47</small></div><div class="msg in">16 h 30.</div><div class="msg out">Réservé avec Marta. Une manucure à 17 h 15 en plus ? Le poste d'à côté est libre.<small>Suggestion du planning · 13:48</small></div>`,
+c3R:`<div class="t"><span>Téléphone · vendredi</span><span>19:22</span></div><div class="msg in">Une table pour six ce soir vers 20 h ?</div><div class="msg out">20 h est complet, mais 20 h 30 est libre - la table ronde près de la fenêtre. Je réserve ?<small>Plan de salle en direct · 19:22</small></div><div class="msg in">Oui. L'un de nous est sans gluten.</div><div class="msg out">Noté pour la cuisine. À 20 h 30.<small>Note ajoutée · 19:23</small></div>`,
+c4L:`<h3>Beauté &amp; salons</h3><p class="desc">Chaque appel manqué réservait le salon d'à côté.</p><ul class="feats"><li>Capte chaque appel et message, même en plein brushing</li><li>Remplit les créneaux annulés depuis la liste d'attente</li><li>Rappelle les clientes la veille - les absences chutent</li><li>Réinvite les clientes absentes depuis deux mois</li></ul><div class="payoff">Les fauteuils ne restent pas vides.</div>`,
+c4R:`<div class="t"><span>DM Instagram</span><span>13:47</span></div><div class="msg in">Un créneau pour une coupe demain ?</div><div class="msg out">Oui - 11 h avec Olha ou 16 h 30 avec Marta. Lequel vous va ?<small>Agenda en direct · 13:47</small></div><div class="msg in">16 h 30.</div><div class="msg out">Réservé avec Marta. Une manucure à 17 h 15 en plus ? Le poste d'à côté est libre.<small>Suggestion du planning · 13:48</small></div>`,
 c5L:`<h3>Agro &amp; agrofourniture</h3><p class="desc">En saison, le téléphone ne s'arrête jamais. Désormais, il ne reste jamais sans réponse.</p><ul class="feats"><li>Prend les commandes de semences, d'aliments et de pièces dans toutes les langues</li><li>Vérifie le stock en direct et confirme les créneaux de livraison</li><li>Signale au répartiteur les livraisons sensibles à la météo</li><li>Connaît la saison : qui a acheté des semences en mars reçoit un appel en février</li></ul><div class="payoff">Les pics de saison sans saisonniers.</div>`,
-c5R:`<div class="t"><span>Téléphone · saison</span><span>07:15</span></div><div class="msg in">Il me faut deux tonnes d'aliment, livraison vendredi.</div><div class="msg out">En stock. Vendredi matin est libre — livraison à l'adresse habituelle de la ferme ?<small>Stock vérifié · 07:15</small></div><div class="msg in">Oui, avant midi.</div><div class="msg out">Confirmé, vendredi 8 h–12 h. À noter : pluie prévue jeudi soir — je vous préviens si la tournée glisse.<small>Veille météo active · 07:16</small></div>`,
-c6L:`<h3>E-commerce</h3><p class="desc">« Où est ma commande ? » représente 40 % des tickets. Désormais 0 % de la journée de votre équipe.</p><ul class="feats"><li>Répond sur le statut de commande avec suivi en direct</li><li>Lance retours et échanges directement dans le chat</li><li>Recommande des produits de votre catalogue et vérifie le stock</li><li>Demande un avis après la livraison — au bon moment</li></ul><div class="payoff">Votre équipe gère les vrais problèmes.</div>`,
-c6R:`<div class="t"><span>Chat du site</span><span>maintenant</span></div><div class="msg in">Bonjour, où est ma commande #4482 ?</div><div class="msg out">Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.<small>Suivi en direct · 4 s</small></div><div class="msg in">Puis-je y ajouter un article ?</div><div class="msg out">Elle est déjà emballée — mais je peux créer une seconde commande avec livraison offerte. Je le fais ?<small>Règles de votre politique · 6 s</small></div>`,
+c5R:`<div class="t"><span>Téléphone · saison</span><span>07:15</span></div><div class="msg in">Il me faut deux tonnes d'aliment, livraison vendredi.</div><div class="msg out">En stock. Vendredi matin est libre - livraison à l'adresse habituelle de la ferme ?<small>Stock vérifié · 07:15</small></div><div class="msg in">Oui, avant midi.</div><div class="msg out">Confirmé, vendredi 8 h-12 h. À noter : pluie prévue jeudi soir - je vous préviens si la tournée glisse.<small>Veille météo active · 07:16</small></div>`,
+c6L:`<h3>E-commerce</h3><p class="desc">« Où est ma commande ? » représente 40 % des tickets. Désormais 0 % de la journée de votre équipe.</p><ul class="feats"><li>Répond sur le statut de commande avec suivi en direct</li><li>Lance retours et échanges directement dans le chat</li><li>Recommande des produits de votre catalogue et vérifie le stock</li><li>Demande un avis après la livraison - au bon moment</li></ul><div class="payoff">Votre équipe gère les vrais problèmes.</div>`,
+c6R:`<div class="t"><span>Chat du site</span><span>maintenant</span></div><div class="msg in">Bonjour, où est ma commande #4482 ?</div><div class="msg out">Elle a quitté notre entrepôt aujourd'hui et arrive mardi. Voici le lien de suivi.<small>Suivi en direct · 4 s</small></div><div class="msg in">Puis-je y ajouter un article ?</div><div class="msg out">Elle est déjà emballée - mais je peux créer une seconde commande avec livraison offerte. Je le fais ?<small>Règles de votre politique · 6 s</small></div>`,
 c7L:`<h3>Immobilier</h3><p class="desc">Les annonces reçoivent des demandes à 23 h. Pas vos agents.</p><ul class="feats"><li>Répond aux questions sur les annonces à toute heure, dans toutes les langues</li><li>Qualifie le prospect : budget, dates, financement</li><li>Réserve les visites directement dans l'agenda de l'agent</li><li>Relance après la visite et propose des biens similaires</li></ul><div class="payoff">Réveillez-vous avec une visite réservée.</div>`,
-c7R:`<div class="t"><span>Demande du portail</span><span>23:04</span></div><div class="msg in">Le deux-pièces rue Harju est-il toujours disponible ?</div><div class="msg out">Oui. Visites jeudi de 17 h à 19 h — je vous réserve un créneau ?<small>Agenda de l'agent · 23:04</small></div><div class="msg in">Jeudi 18 h, s'il vous plaît.</div><div class="msg out">Réservé. Je vous ai aussi envoyé deux appartements similaires à proximité, dans votre budget.<small>Sélection des annonces · 23:05</small></div>`,
+c7R:`<div class="t"><span>Demande du portail</span><span>23:04</span></div><div class="msg in">Le deux-pièces rue Harju est-il toujours disponible ?</div><div class="msg out">Oui. Visites jeudi de 17 h à 19 h - je vous réserve un créneau ?<small>Agenda de l'agent · 23:04</small></div><div class="msg in">Jeudi 18 h, s'il vous plaît.</div><div class="msg out">Réservé. Je vous ai aussi envoyé deux appartements similaires à proximité, dans votre budget.<small>Sélection des annonces · 23:05</small></div>`,
 c8L:`<h3>Logistique</h3><p class="desc">Les répartiteurs devraient répartir, pas répéter la même réponse.</p><ul class="feats"><li>Répond « où est le camion ? » à partir du GPS en direct</li><li>Réserve les créneaux de quai et confirme les fenêtres de livraison</li><li>Envoie preuves de livraison et factures à la demande</li><li>Prévient les clients des retards avant qu'ils n'appellent</li></ul><div class="payoff">Les répartiteurs répartissent.</div>`,
-c8R:`<div class="t"><span>Téléphone</span><span>13:12</span></div><div class="msg in">Où est le camion de la commande 7731 ?</div><div class="msg out">Sur l'A2, à 40 km — arrivée prévue 14 h 20. Je vous préviens si ça glisse.<small>GPS en direct · 13:12</small></div><div class="msg in">Envoyez-moi aussi le bon de livraison d'hier.</div><div class="msg out">Envoyé à votre e-mail à l'instant.<small>Document du TMS · 13:13</small></div>`,
+c8R:`<div class="t"><span>Téléphone</span><span>13:12</span></div><div class="msg in">Où est le camion de la commande 7731 ?</div><div class="msg out">Sur l'A2, à 40 km - arrivée prévue 14 h 20. Je vous préviens si ça glisse.<small>GPS en direct · 13:12</small></div><div class="msg in">Envoyez-moi aussi le bon de livraison d'hier.</div><div class="msg out">Envoyé à votre e-mail à l'instant.<small>Document du TMS · 13:13</small></div>`,
 q1:`Ça va sonner comme un robot ?`, a1:`Non. Les voix modernes sont naturelles, et l'agent dit qu'il est un assistant. Les clients veulent être aidés en deux secondes, peu importe qui décroche.`,
 q2:`Et les questions difficiles ?`, a2:`L'assistant transmet la conversation à votre équipe avec un résumé complet. Il ne devine jamais ce qu'il ne sait pas.`,
-q3:`Et nos données ?`, a3:`Elles restent les vôtres. Nous construisons des configurations privées où vos documents et données clients n'entraînent jamais de modèles publics.`,
-q4:`Quelles langues ?`, a4:`Dix, dans le même assistant : anglais, allemand, français, espagnol, italien, polonais, ukrainien, turc, portugais et arabe. Il détecte la langue du client et répond dans celle-ci — même si votre entreprise n'en parle qu'une.`,
-q5:`Nous ne sommes pas une entreprise tech. On y arrivera ?`, a5:`C'est exactement pour vous que nous construisons. Nous installons, connectons et gérons tout ; votre équipe travaille comme avant. Vous obtenez des résultats et un numéro à appeler.`,
-q6:`Ça va remplacer mes employés ?`, a6:`Non. Il prend la routine — les dix mêmes questions, les appels manqués, la paperasse — pour que vos employés fassent le travail que seuls des humains peuvent faire.`,
-q7:`Combien ça coûte ?`, a7:`Nous facturons au résultat, à partir de l'audit. La plupart des assistants coûtent moins par mois qu'un employé à temps partiel — vous payez des résultats, pas des licences.`,
-q8:`En combien de temps peut-on démarrer ?`, a8:`L'audit dure 30 minutes. Le premier assistant répond à de vrais clients en quelques semaines — les quatre étapes ci-dessus sont tout le chemin.`,
-cth:`Écoutez-le répondre avant de décider.`, ctp:`Un audit gratuit de 30 minutes. Nous montrons les meilleures opportunités et vous faisons parler à une démo vocale en direct.`, ctb1:`Nous contacter →`,
+q3:`Et nos données ?`, a3:`Elles restent les vôtres. Vos documents et données clients vivent dans une configuration privée et n'entraînent jamais de modèles publics.`,
+q4:`Quelles langues ?`, a4:`Dix, dans le même assistant : anglais, allemand, français, espagnol, italien, polonais, ukrainien, turc, portugais et russe. Il détecte la langue du client et répond dans celle-ci - même si votre entreprise n'en parle qu'une.`,
+q5:`Nous ne sommes pas une entreprise tech. On y arrivera ?`, a5:`C'est exactement pour vous que c'est conçu. La configuration est guidée - collez un lien, répondez à quelques questions, c'est prêt. Pas de code, pas de projet informatique, et le support est à un message.`,
+q6:`Ça va remplacer mes employés ?`, a6:`Non. Il prend la routine - les dix mêmes questions, les appels manqués, la paperasse - pour que vos employés fassent le travail que seuls des humains peuvent faire.`,
+q7:`Combien ça coûte ?`, a7:`Les forfaits commencent à 79 €/mois. Pas de frais d'installation, résiliable chaque mois, garantie satisfait ou remboursé 30 jours. Tous les prix sont publics sur la page des tarifs.`,
+q8:`En combien de temps peut-on démarrer ?`, a8:`Parlez à Mina dès aujourd'hui - la démo live prend quelques minutes. Votre assistant peut répondre à de vrais clients le jour même.`,
+cth:`Écoutez-le répondre avant de décider.`, ctp:`Appelez Mina maintenant ou réservez une démo live de 30 minutes. Vous parlez au produit avant de payer quoi que ce soit.`, ctb1:`Nous contacter →`,
 ft1:`Conditions`, ft2:`Confidentialité`,
-mh:`Réserver un audit gratuit`, msub:`30 minutes. Nous examinons vos appels, chats et routine — et montrons ce qu'un assistant reprend en premier.`,
+mh:`Réserver une démo live`, msub:`30 minutes. Vous parlez à Mina en direct - sur votre propre cas d'usage.`,
 ml1:`Votre nom`, ml2:`Entreprise`, ml3:`Quelle est votre activité ?`, ml4:`E-mail`, ml5:`Téléphone (facultatif)`,
 o1:`Cabinet médical`, o2:`Conseil &amp; droit`, o3:`Artisans &amp; dépannage`, o4:`Restaurant`, o5:`Beauté &amp; salon`, o6:`Agro &amp; agrofourniture`, o7:`E-commerce`, o8:`Immobilier`, o9:`Logistique`, o10:`Autre`,
 mbtn:`Envoyer la demande →`, mnote:`Nous répondons sous un jour ouvré. Ou écrivez à <a href="mailto:hello@fourmina.com">hello@fourmina.com</a>`
@@ -558,7 +557,7 @@ function fmLang(l){
   fmLang(lang);
 })();
 function fmModal(open){
-  document.getElementById('auditModal').classList.toggle('open', open);
+  document.getElementById('demoModal').classList.toggle('open', open);
   if(open){ setTimeout(function(){ document.getElementById('f-name').focus(); }, 50); }
 }
 document.addEventListener('keydown', function(e){ if(e.key==='Escape') fmModal(false); });
@@ -572,7 +571,7 @@ function fmSubmit(e){
     name: v('f-name'), business: v('f-biz'), type: v('f-type'),
     email: v('f-email'), phone: v('f-phone'),
     page: (location.pathname.split('/').pop() || 'index'),
-    _subject: 'Fourmina lead — ' + v('f-biz'),
+    _subject: 'Fourmina lead - ' + v('f-biz'),
     _replyto: v('f-email'), _template: 'table', _captcha: 'false'
   };
   btn.disabled = true; var btnOld = btn.textContent; btn.textContent = 'Sending…';
@@ -582,7 +581,7 @@ function fmSubmit(e){
     body: JSON.stringify(payload)
   }).then(function(r){ if(!r.ok) throw new Error('send failed'); return r.json(); })
     .then(function(){
-      btn.textContent = 'Sent ✓ — we reply within one business day';
+      btn.textContent = 'Sent ✓ - we reply within one business day';
       setTimeout(function(){ fmModal(false); btn.disabled = false; btn.textContent = btnOld; form.reset(); }, 2200);
     })
     .catch(function(){
@@ -616,7 +615,7 @@ function fmToggle(){
 </script>
 
 <div class="cookiebar" id="fmCookie" role="dialog" aria-label="Cookie consent">
-  <span data-i18n="ck1">We use local storage and cookies to remember your preferences — theme and language. No tracking, no ads. <a href="fourmina-privacy.html">Privacy</a></span>
+  <span data-i18n="ck1">We use local storage and cookies to remember your preferences - theme and language. No tracking, no ads. <a href="fourmina-privacy-v2.html">Privacy</a></span>
   <div class="cb-btns"><button class="btn btn-primary" onclick="fmCookieOk('all')" data-i18n="ck2">Accept</button><button class="btn btn-ghost" onclick="fmCookieOk('essential')" data-i18n="ck3">Essential only</button></div>
 </div>
 <style>
