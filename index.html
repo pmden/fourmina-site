@@ -541,8 +541,21 @@ footer a{ text-decoration:underline; }
 /* Mina demo line: set the number once the line is live - hero CTA flips from modal to tel: automatically */
 const MINA_NUMBER = "";
 const MINA_DEMO_URL = "https://elevenlabs.io/app/talk-to?agent_id=agent_1101m0a7d62cfd8rv7bg96p9qgr8&branch_id=agtbrch_0601m0a7d6mkex1a0rckw3ea16h1"; // ElevenLabs demo agent
+const MINA_AGENT_ID = "agent_1101m0a7d62cfd8rv7bg96p9qgr8"; // embedded widget on-page
+function fmWidget(){
+  if(!document.querySelector('elevenlabs-convai')){
+    var w=document.createElement('elevenlabs-convai');
+    w.setAttribute('agent-id', MINA_AGENT_ID);
+    document.body.appendChild(w);
+    var sc=document.createElement('script');
+    sc.src='https://unpkg.com/@elevenlabs/convai-widget-embed';
+    sc.async=true; sc.type='text/javascript';
+    document.body.appendChild(sc);
+  }
+}
 (function(){['callMina','callMina2'].forEach(function(id){var b=document.getElementById(id);if(!b)return;
-if(MINA_DEMO_URL){b.href=MINA_DEMO_URL;b.target='_blank';b.rel='noopener';}
+if(MINA_AGENT_ID){b.addEventListener('click',function(e){e.preventDefault();fmWidget();});}
+else if(MINA_DEMO_URL){b.href=MINA_DEMO_URL;b.target='_blank';b.rel='noopener';}
 else if(MINA_NUMBER){b.href='tel:'+MINA_NUMBER;}
 else{b.addEventListener('click',function(e){e.preventDefault();var a=document.getElementById('minaDemo');if(a){if(a.paused){a.play();}else{a.pause();a.currentTime=0;}}else{fmModal(true);}});}});})();
 </script>
